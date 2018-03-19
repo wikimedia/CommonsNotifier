@@ -1,6 +1,5 @@
 from commonsbot import mysql
 from pywikibot.site import Namespace
-# from exceptions import RuntimeError
 
 
 def page_to_str(tuple):
@@ -39,7 +38,7 @@ class RecursiveCategoryScanner(object):
         self.pages = {}
         self.namespaces = namespaces
         self.query_namespaces = namespaces
-        if namespaces and Namespace.CATEGORY not in namespaces:
+        if len(namespaces) > 0 and not (Namespace.CATEGORY in namespaces):
             self.query_namespaces += (Namespace.CATEGORY,)
         self._recurse(category, depth)
         return [v for _, v in iter(self.pages.values())]

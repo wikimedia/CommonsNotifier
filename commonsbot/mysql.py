@@ -4,6 +4,15 @@ from pprint import pformat, pprint
 from commonsbot.config import settings as user_config
 
 
+def decode_tuple(tuple):
+    result = ()
+    for var in tuple:
+        if isinstance(var, bytes):
+            var = var.decode('utf8')
+        result += (var,)
+    return result
+
+
 def connect(connection_name):
     conf = user_config['db_connections'][connection_name]
     return pymysql.connect(conf['host'],
@@ -11,6 +20,7 @@ def connect(connection_name):
                            db=conf['database'],
                            user=conf['user'],
                            passwd=conf['password'],
+                           charset='utf8',
                            use_unicode=True)
 
 
@@ -18,7 +28,7 @@ def query(conn, sql, params=(), verbose=None):
     """
     Yield rows from a MySQL query.
     @param conn: database connection
-    @type conn: oursql.Connection
+    @type conn: pymysql.Connection
     @param sql: MySQL query to execute
     @type sql: str
     @param params: input parametes for the query, if needed
@@ -28,7 +38,6 @@ def query(conn, sql, params=(), verbose=None):
     @type verbose: None or bool
     @return: generator which yield tuples
     """
-    print('query')
     if verbose is None:
         verbose = False  # config.verbose_output
 
@@ -36,7 +45,6 @@ def query(conn, sql, params=(), verbose=None):
     if verbose:
         print('Executing query:\n%s' % sql)
         print('Parameters:\n%s' % pformat(params))
-    # query = query.encode('utf-8')
     params = tuple(p for p in params)
 
     if params:
@@ -44,10 +52,9 @@ def query(conn, sql, params=(), verbose=None):
     else:
         cursor.execute(sql)
 
-    for row in cursor.fetchall():
-        yield row
-
+    result = [decode_tuple(row) for row in cursor.fetchall()]
     cursor.close()
+    return result
 
 
 def tuple_sql(tuple):

@@ -1,5 +1,6 @@
 from commonsbot import mysql
 from pprint import pprint, pformat
+from datetime import datetime
 
 
 def split(l, n):
@@ -8,10 +9,19 @@ def split(l, n):
 
 
 class DeletionState(object):
-    def __init__(self, file_name, type, state):
+    FORMAT = '%Y-%m-%d %H:%M:%S'
+
+    def __init__(self, file_name, type, state, time=None):
         self.file_name = file_name
         self.type = type
-        self.state = state
+        self.state = str(state)
+        self.time = time
+
+    def age(self):
+        if self.time is None:
+            return 0
+        delta = datetime.utcnow() - self.time
+        return delta.total_seconds()
 
 
 class DeletionStateStore(object):
@@ -42,24 +52,28 @@ class DeletionStateStore(object):
         return present, missing
 
     def _state_batch(self, files, type):
-        sql = """SELECT title, deletion_type, state, touched
+        sql = """SELECT title, deletion_type, state, state_time
 FROM commons_deletions
 WHERE title IN (%s) AND deletion_type=%s""" % (mysql.tuple_sql(files), '%s')
         files.append(type)
         rows = mysql.query(self.conn, sql, files)
         result = {}
         for row in rows:
-            (title, type, state, touched) = row
-            file = DeletionState(title, type, state)
-            file.touched = touched
+            (title, type, state, time) = row
+            file = DeletionState(title, type, state, time)
             result[title] = file
         return result
 
     def save_state(self, states):
         print('Saving %d rows' % len(states))
-        for state in states:
-            print('row')
+        count = 0
+        for chunk in split(states, self.BATCH_SIZE):
             sql = """INSERT INTO commons_deletions(title, deletion_type, state)
-    VALUES (%s, %s, %s)"""
-            params = (state.file_name, state.type, state.state)
-            mysql.query(self.conn, sql, params, verbose=True)
+            VALUES %s""" % ', '.join(['(%s, %s, %s)'] * len(chunk))
+            params = ()
+            for state in chunk:
+                params += (state.file_name, state.type, state.state)
+            mysql.query(self.conn, sql, params)
+            count += len(chunk)
+            print('%d rows inserted' % count)
+        self.conn.commit()

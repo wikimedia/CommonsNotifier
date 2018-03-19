@@ -109,3 +109,4 @@ config.json
 .my.cnf
 replica.my.cnf
 throttle.ctrl
+lists/*.txt

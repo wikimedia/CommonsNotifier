@@ -7,15 +7,25 @@ import pprint
 
 commons = mysql.connect('replica')
 userdb = mysql.connect('userdb')
-
 maker = lists.RecursiveCategoryScanner(commons)
-slow_deletions = maker.scan( 'Deletion_requests', depth=2)
-print('----------')
-# for row in slow_deletions: pprint.pprint(row)
-print('%s pages found' % len(slow_deletions))
-
 store = DeletionStateStore(userdb)
-file = DeletionState('Foo.jpg', 'discussion', 'new')
-store.load_state([], 'ddadasads')
-store.save_state([file])
-# files = store.refresh_state(slow_deletions, 'discussion')
+
+
+def make_list(type, categories, depth, delay):
+    list = []
+    for cat in categories:
+        list.extend(maker.scan(cat, depth, (Namespace.FILE,)))
+    print('%s pages found for %s deletion' % (len(list), type))
+    states = store.refresh_state(list, type)
+    file = open('lists/%s.txt' % type, 'w')
+    count = 0
+    for state in states:
+        if state.state == 'new' and state.age() >= delay:
+            file.write("%s\n" % state.file_name)
+            count += 1
+    file.close()
+    print('%d files sent for tagging' % count)
+
+
+make_list('discussion', ['Deletion_requests'], 2, delay=60 * 60)
+make_list('speedy', ['Candidates_for_speedy_deletion'], 2, delay=60 * 15)
