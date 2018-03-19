@@ -99,3 +99,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# IntelliJ IDEA
+.idea
+
+# Project-specific
+user-config.py*
+config.json
+.my.cnf
+replica.my.cnf
+throttle.ctrl
