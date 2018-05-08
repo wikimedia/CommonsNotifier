@@ -1,4 +1,5 @@
 {
+    "dry_run": false,
     "db_connections": {
         "replica": {
             "host": "commonswiki.analytics.db.svc.eqiad.wmflabs",

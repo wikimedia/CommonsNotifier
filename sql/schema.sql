@@ -1,7 +1,7 @@
 CREATE TABLE commons_deletions (
     title VARCHAR(255) BINARY NOT NULL,
     deletion_type ENUM('speedy', 'discussion') NOT NULL,
-    state ENUM('new', 'notifying', 'notified', 'maybe gone', 'gone') NOT NULL DEFAULT 'new',
+    state ENUM('new', 'notifying', 'failed', 'notified', 'maybe gone', 'gone') NOT NULL DEFAULT 'new',
     state_time DATETIME NOT NULL DEFAULT now(),
     retries INT NOT NULL DEFAULT 0,
     touched TIMESTAMP NOT NULL DEFAULT now(),

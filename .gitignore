@@ -110,3 +110,5 @@ config.json
 replica.my.cnf
 throttle.ctrl
 lists/*.txt
+*.lwp
+apicache-py3

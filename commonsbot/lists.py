@@ -1,5 +1,7 @@
 from commonsbot import mysql
+from commonsbot.config import settings
 from pywikibot.site import Namespace
+from pprint import pprint
 
 
 def page_to_str(tuple):
@@ -22,6 +24,30 @@ WHERE cl_from=page_id AND cl_to=%s"""
         sql += ' AND page_namespace IN (%s)' % mysql.tuple_sql(namespaces)
 
     return mysql.query(conn, sql, params)
+
+def global_file_usage(conn, filename, limit, namespace=None):
+    result = {}
+    sql = 'SELECT DISTINCT(gil_wiki) FROM globalimagelinks WHERE gil_to=%s'
+    params = (filename,)
+    if not namespace is None:
+        sql += ' AND gil_page_namespace_id=%s'
+        params += (namespace,)
+    rows = mysql.query(conn, sql, params)
+
+    for row in rows:
+        wiki = row[0]
+        if not wiki in settings['wikis']:
+            continue
+        params = (filename, wiki, limit+1)
+        sql = """SELECT gil_page_title
+FROM globalimagelinks
+WHERE gil_to=%s AND gil_wiki=%s LIMIT %s"""
+        pages = []
+        for inner_row in mysql.query(conn, sql, params):
+            pages.append(inner_row[0])
+        result[wiki] = pages
+    
+    return result
 
 
 class RecursiveCategoryScanner(object):

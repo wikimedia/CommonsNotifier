@@ -1,6 +1,8 @@
 from commonsbot import mysql
 from pprint import pprint, pformat
 from datetime import datetime
+import pywikibot
+import mwparserfromhell
 
 
 def split(l, n):
@@ -16,12 +18,35 @@ class DeletionState(object):
         self.type = type
         self.state = str(state)
         self.time = time
+        self.info_loaded = False
+        self.discussion_page = None
 
     def age(self):
         if self.time is None:
             return 0
         delta = datetime.utcnow() - self.time
         return delta.total_seconds()
+
+    def get_discussion_info(self, site):
+        if self.info_loaded or self.type != 'discussion':
+            return
+
+        self.info_loaded = True
+        page = pywikibot.Page(site, 'File:%s' % self.file_name)
+        try:
+            text = page.get()
+        except:
+            return
+
+        code = mwparserfromhell.parse(text)
+        for template in code.filter_templates():
+            if template.name.matches('Delete|Test delete'):
+                if template.has('subpage'):
+                    self.discussion_page = template.get('subpage')
+                else:
+                    break
+
+        return
 
 
 class DeletionStateStore(object):
@@ -39,9 +64,22 @@ class DeletionStateStore(object):
         states.extend(present.values())
         return states
 
+    def set_state(self, type, files, state):
+        sql = """UPDATE commons_deletion
+            SET state=%s WHERE deletion_type=%s AND title IN (
+            """ + mysql.tuple_sql(files) + ')'
+        params = (state, type) + files
+        mysql.query(self.conn, sql, params)
+
+    def set_failure(self, type, files):
+        sql = """UPDATE commons_deletion
+            SET state='failed', retries=retries + 1 WHERE deletion_type=%s AND title IN (
+            """ + mysql.tuple_sql(files) + ')'
+        params = (type,) + files
+        mysql.query(self.conn, sql, params)
+
     def load_state(self, files, type):
         present = {}
-        mysql.query(self.conn, 'SHOW TABLES')
         for c in split(files, self.BATCH_SIZE):
             present.update(self._state_batch(c, type))
         missing = []
