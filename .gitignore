@@ -104,7 +104,7 @@ ENV/
 .idea
 
 # Project-specific
-user-config.py*
+user-password.py
 config.json
 .my.cnf
 replica.my.cnf
