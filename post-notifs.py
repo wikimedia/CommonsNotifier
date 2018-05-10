@@ -48,10 +48,10 @@ def spam_notifications(type, page, file, state):
         text = ''
     except pywikibot.IsRedirectPage:
         print('"%s" is a redirect, skipping' % talk_page.title())
-        return
+        return True
 
     if not talk_page.botMayEdit():
-        return
+        return True
 
     # TODO: support multifile messages?
     state.get_discussion_info(commons)
@@ -63,7 +63,9 @@ def spam_notifications(type, page, file, state):
         print('Posted a notification about %s to %s' %
               (file.title(), talk_page.title()))
     except:
-        pass
+        return False
+
+    return True
 
 
 def process_list(type):
@@ -82,24 +84,29 @@ def process_list(type):
     (file_states, _) = store.load_state(lines, type)
 
     for filename in lines:
+        ok = False
         file = FilePage(commons, filename)
         pageset = file.globalusage(MAX_GLOBALUSAGE)
+        if filename in file_states:
+            state = file_states[filename]
+        else:
+            print('No deletion state found for %s, stubbing' % filename)
+            state = DeletionState(filename, type, 'new')
 
         for usage in pageset:
-            # Rejigger the results into the wiki => page => [files] format
             wiki = usage.site.dbName()
             if wiki not in config.wikis:
                 continue
             if usage.namespace() != Namespace.MAIN:
                 continue
 
-            if filename in file_states:
-                state = file_states[filename]
-            else:
-                print('No deletion state found for %s, stubbing' % filename)
-                state = DeletionState(filename, type, 'new')
-            spam_notifications(type, usage, file, state)
+            ok = ok or spam_notifications(type, usage, file, state)
+
+        if ok:
+            store.set_state(type, [state], 'notified')
+        else:
+            store.set_failure(type, [state])
 
 
 process_list('discussion')
-# process_list('speedy')
+process_list('speedy')

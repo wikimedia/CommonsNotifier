@@ -65,15 +65,15 @@ class DeletionStateStore(object):
         return states
 
     def set_state(self, type, files, state):
-        sql = """UPDATE commons_deletion
+        sql = """UPDATE commons_deletions
             SET state=%s WHERE deletion_type=%s AND title IN (
             """ + mysql.tuple_sql(files) + ')'
-        params = (state, type) + files
+        params = (state, type) + tuple([file.file_name for file in files])
         mysql.query(self.conn, sql, params)
 
     def set_failure(self, type, files):
-        sql = """UPDATE commons_deletion
-            SET state='failed', retries=retries + 1
+        sql = """UPDATE commons_deletions
+            SET retries=retries + 1
             WHERE deletion_type=%s AND title IN (
             """ + mysql.tuple_sql(files) + ')'
         params = (type,) + files
