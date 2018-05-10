@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import os
-from commonsbot import mysql, lists
-from commonsbot.config import settings as config
+from commonsbot import mysql, lists, config
 from commonsbot.state import DeletionStateStore, DeletionState
 from commonsbot.i18n import I18n
 import pywikibot

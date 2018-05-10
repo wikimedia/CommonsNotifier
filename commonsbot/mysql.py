@@ -1,7 +1,7 @@
 import pymysql
 # from pywikibot import config2 as config, output
 from pprint import pformat, pprint
-import commonsbot.config as config
+from commonsbot import config
 
 
 def decode_tuple(tuple):

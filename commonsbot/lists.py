@@ -1,6 +1,4 @@
-from commonsbot import mysql
-#import commonsbot.config as config
-from commonsbot import config
+from commonsbot import mysql, config
 from pywikibot.site import Namespace
 from pprint import pprint
 
