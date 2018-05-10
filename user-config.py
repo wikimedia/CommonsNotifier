@@ -15,7 +15,7 @@ usernames['wikipedia']['*'] = \
     usernames['wikisource']['*'] = \
     usernames['wikiversity']['*'] = \
     usernames['test']['*'] = \
-    'MaxSem test bot'
+    'Community Tech bot'
 
 # Secret password file, see
 # https://www.mediawiki.org/wiki/Manual:Pywikibot/BotPasswords
