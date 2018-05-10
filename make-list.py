@@ -11,17 +11,19 @@ commons = Site('commons', 'commons')
 userdb = mysql.connect('userdb')
 store = DeletionStateStore(userdb)
 
+
 def load_files(categories, depth):
     files = set()
     for cat in categories:
         cat = Category(commons, cat)
         generator = CategorizedPageGenerator(cat,
-            recurse=depth,
-            namespaces=Namespace.FILE)
+                                             recurse=depth,
+                                             namespaces=Namespace.FILE)
         for page in generator:
             files.add(page.title(withNamespace=False))
 
     return list(files)
+
 
 def make_list(type, categories, depth, delay):
     files = load_files(categories, depth)

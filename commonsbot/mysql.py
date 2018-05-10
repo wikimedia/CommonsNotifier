@@ -18,9 +18,7 @@ def connect(connection_name):
     return pymysql.connect(conf['host'],
                            port=conf['port'],
                            db=conf['database'],
-                           #user=conf['user'],
-                           #passwd=conf['password'],
-                           read_default_file = config.mysql_config_file,
+                           read_default_file=config.mysql_config_file,
                            charset='utf8',
                            use_unicode=True)
 

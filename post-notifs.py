@@ -30,7 +30,7 @@ def get_messages(type, i18n, file):
         discussion = 'Commons:Deletion requests/%s' % discussion
     else:
         discussion = 'File:%s' % file_pretty
-    params = (file_pretty, file_pretty, discussion )
+    params = (file_pretty, file_pretty, discussion)
     body = i18n.get(msg) % params
 
     msg = 'message-summary-%s' % type
@@ -60,7 +60,8 @@ def spam_notifications(type, page, file, state):
 
     try:
         talk_page.put(text, summary)
-        print('Posted a notification about %s to %s' % (file.title(), talk_page.title()))
+        print('Posted a notification about %s to %s' %
+              (file.title(), talk_page.title()))
     except:
         pass
 
@@ -98,6 +99,7 @@ def process_list(type):
                 print('No deletion state found for %s, stubbing' % filename)
                 state = DeletionState(filename, type, 'new')
             spam_notifications(type, usage, file, state)
+
 
 process_list('discussion')
 # process_list('speedy')
