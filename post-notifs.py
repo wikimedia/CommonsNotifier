@@ -85,7 +85,6 @@ def process_list(type):
     file.close()
 
     (file_states, _) = store.load_state(lines, type)
-    pprint(file_states)
 
     wikis = {}
     for filename in lines:

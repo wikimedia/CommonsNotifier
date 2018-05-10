@@ -1,7 +1,7 @@
 import pymysql
 # from pywikibot import config2 as config, output
 from pprint import pformat, pprint
-from commonsbot.config import settings as user_config
+import commonsbot.config as config
 
 
 def decode_tuple(tuple):
@@ -14,12 +14,13 @@ def decode_tuple(tuple):
 
 
 def connect(connection_name):
-    conf = user_config['db_connections'][connection_name]
+    conf = config.db_connections[connection_name]
     return pymysql.connect(conf['host'],
                            port=conf['port'],
                            db=conf['database'],
-                           user=conf['user'],
-                           passwd=conf['password'],
+                           #user=conf['user'],
+                           #passwd=conf['password'],
+                           read_default_file = config.mysql_config_file,
                            charset='utf8',
                            use_unicode=True)
 

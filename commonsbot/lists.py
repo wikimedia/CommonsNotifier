@@ -1,5 +1,6 @@
 from commonsbot import mysql
-from commonsbot.config import settings
+#import commonsbot.config as config
+from commonsbot import config
 from pywikibot.site import Namespace
 from pprint import pprint
 
@@ -36,7 +37,7 @@ def global_file_usage(conn, filename, limit, namespace=None):
 
     for row in rows:
         wiki = row[0]
-        if not wiki in settings['wikis']:
+        if not wiki in config.wikis:
             continue
         params = (filename, wiki, limit+1)
         sql = """SELECT gil_page_title
@@ -46,7 +47,7 @@ WHERE gil_to=%s AND gil_wiki=%s LIMIT %s"""
         for inner_row in mysql.query(conn, sql, params):
             pages.append(inner_row[0])
         result[wiki] = pages
-    
+
     return result
 
 

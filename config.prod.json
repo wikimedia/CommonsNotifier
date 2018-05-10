@@ -1,18 +1,13 @@
 {
-    "dry_run": false,
     "db_connections": {
         "replica": {
             "host": "commonswiki.analytics.db.svc.eqiad.wmflabs",
             "port": 3306,
-            "user": "s53689",
-            "password": "***",
             "database": "commonswiki_p"
         },
         "userdb": {
             "host": "tools.db.svc.eqiad.wmflabs",
             "port": 3306,
-            "user": "s53689",
-            "password": "***",
             "database": "s53689__commonsbot"
         }
     }
