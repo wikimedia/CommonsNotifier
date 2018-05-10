@@ -7,7 +7,7 @@ file.close()
 db_connections = settings['db_connections']
 
 file = open('wikis-enabled', 'r')
-wikis = [s.strip() for s in file.readlines()]
+wikis = set([s.strip() for s in file.readlines()])
 file.close()
 
 mysql_config_file = None

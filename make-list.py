@@ -1,22 +1,33 @@
 #!/usr/bin/python3
 
-from commonsbot import mysql, lists
+from commonsbot import mysql
 from commonsbot.state import DeletionStateStore, DeletionState
+from pywikibot import Site, Category
+from pywikibot.pagegenerators import CategorizedPageGenerator
 from pywikibot.site import Namespace
-import pprint
+from pprint import pprint
 
-commons = mysql.connect('replica')
+commons = Site('commons', 'commons')
 userdb = mysql.connect('userdb')
-maker = lists.RecursiveCategoryScanner(commons)
 store = DeletionStateStore(userdb)
 
+def load_files(categories, depth):
+    files = set()
+    for cat in categories:
+        cat = Category(commons, cat)
+        generator = CategorizedPageGenerator(cat,
+            recurse=depth,
+            namespaces=Namespace.FILE)
+        for page in generator:
+            files.add(page.title(withNamespace=False))
+
+    return list(files)
 
 def make_list(type, categories, depth, delay):
-    list = []
-    for cat in categories:
-        list.extend(maker.scan(cat, depth, (Namespace.FILE,)))
-    print('%s pages found for %s deletion' % (len(list), type))
-    states = store.refresh_state(list, type)
+    files = load_files(categories, depth)
+    print('%s pages found for %s deletion' % (len(files), type))
+
+    states = store.refresh_state(files, type)
     file = open('lists/%s.txt' % type, 'w')
     count = 0
     for state in states:

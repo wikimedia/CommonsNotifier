@@ -23,4 +23,4 @@ usernames['wikipedia']['*'] = \
 password_file = 'user-password.py'
 
 # Setting this to True generates lots of debug output
-verbose_output = True
+verbose_output = False
