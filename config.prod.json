@@ -1,10 +1,5 @@
 {
     "db_connections": {
-        "replica": {
-            "host": "commonswiki.analytics.db.svc.eqiad.wmflabs",
-            "port": 3306,
-            "database": "commonswiki_p"
-        },
         "userdb": {
             "host": "tools.db.svc.eqiad.wmflabs",
             "port": 3306,

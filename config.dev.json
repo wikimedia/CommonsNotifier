@@ -1,10 +1,5 @@
 {
     "db_connections": {
-        "replica": {
-            "host": "127.0.0.1",
-            "port": 33060,
-            "database": "commonswiki_p"
-        },
         "userdb": {
             "host": "127.0.0.1",
             "port": 33061,
