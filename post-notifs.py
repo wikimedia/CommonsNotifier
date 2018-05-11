@@ -3,6 +3,7 @@ import os
 from commonsbot import mysql, config
 from commonsbot.state import DeletionStateStore, DeletionState
 from commonsbot.i18n import I18n
+from commonsbot.utils import PerWikiCounter
 import pywikibot
 from pywikibot import Site, Page, FilePage
 from pywikibot.site import Namespace
@@ -83,6 +84,7 @@ def process_list(type):
 
     (file_states, _) = store.load_state(lines, type)
 
+    wikis = PerWikiCounter(NOTIFS_PER_WIKI)
     for filename in lines:
         ok = False
         file = FilePage(commons, filename)
@@ -98,6 +100,8 @@ def process_list(type):
             if wiki not in config.wikis:
                 continue
             if usage.namespace() != Namespace.MAIN:
+                continue
+            if not wikis.next(wiki, filename):
                 continue
 
             ok = ok or spam_notifications(type, usage, file, state)
