@@ -1,6 +1,24 @@
 import json
 from os import path
+import re
 
+def format(msg, params):
+    if len(params) == 0:
+        return msg
+
+    used = set()
+    for match in re.finditer('(?<=\\$)\\d+', msg):
+        ms = match.group()
+        index = int(ms) - 1
+        if index >= len(params):
+            raise ValueError('Message has parameter $%s but was passed only %d parameters' % (ms, len(params)))
+        msg = msg.replace('$' + ms, str(params[index]), 1)
+        used.add(index)
+
+    param_set = set(range(len(params)))
+    if param_set != used:
+        raise ValueError('Mismatch between parameters passed and found in the message')
+    return msg
 
 class I18n(object):
     _cache = {}
@@ -27,5 +45,5 @@ class I18n(object):
         self.data = json.loads(file.read())
         file.close()
 
-    def get(self, key):
-        return self.data[key]
+    def msg(self, key, params=()):
+        return format(self.data[key], params)

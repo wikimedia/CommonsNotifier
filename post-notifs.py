@@ -21,7 +21,7 @@ def get_messages(type, i18n, file):
     file_pretty = file.file_name.replace('_', ' ')
 
     msg = 'message-header-%s' % type
-    header = i18n.get(msg)
+    header = i18n.msg(msg)
 
     msg = 'message-body-%s' % type
     if type == 'discussion':
@@ -31,11 +31,11 @@ def get_messages(type, i18n, file):
         discussion = 'Commons:Deletion requests/%s' % discussion
     else:
         discussion = 'File:%s' % file_pretty
-    params = (file_pretty, file_pretty, discussion)
-    body = i18n.get(msg) % params
+    params = (file_pretty, discussion)
+    body = i18n.msg(msg, params)
 
     msg = 'message-summary-%s' % type
-    summary = i18n.get(msg)
+    summary = i18n.msg(msg)
     return (header, body, summary)
 
 
