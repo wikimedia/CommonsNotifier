@@ -39,21 +39,15 @@ def get_messages(type, i18n, file):
     return (header, body, summary)
 
 
-def spam_notifications(type, page, file, state):
+def spam_notifications(type, talk_page, file, state):
     i18n = I18n.factory(page.site.code)
-    # Assumes we ever only care about mainspace
-    talk_page = page.toggleTalkPage()
+
     try:
         text = talk_page.get()
     except pywikibot.exceptions.NoPage:
         text = ''
     except pywikibot.IsRedirectPage:
         print('"%s" is a redirect, skipping' % talk_page.title())
-        return True
-
-    if not talk_page.botMayEdit():
-        return True
-    if not talk_page.canBeEdited():
         return True
 
     # TODO: support multifile messages?
@@ -103,10 +97,16 @@ def process_list(type):
                 continue
             if usage.namespace() != Namespace.MAIN:
                 continue
+
+            talk_page = usage.toggleTalkPage()
+            if not talk_page.botMayEdit():
+                continue
+            if not talk_page.canBeEdited():
+                continue
             if not wikis.next(wiki, filename):
                 continue
 
-            ok = ok or spam_notifications(type, usage, file, state)
+            ok = ok or spam_notifications(type, talk_page, file, state)
 
         if ok:
             store.set_state(type, [state], 'notified')
