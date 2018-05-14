@@ -53,6 +53,8 @@ def spam_notifications(type, page, file, state):
 
     if not talk_page.botMayEdit():
         return True
+    if not talk_page.canBeEdited():
+        return True
 
     # TODO: support multifile messages?
     state.get_discussion_info(commons)
