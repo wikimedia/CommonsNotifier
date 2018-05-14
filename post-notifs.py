@@ -46,9 +46,6 @@ def spam_notifications(type, talk_page, file, state):
         text = talk_page.get()
     except pywikibot.exceptions.NoPage:
         text = ''
-    except pywikibot.IsRedirectPage:
-        print('"%s" is a redirect, skipping' % talk_page.title())
-        return True
 
     # TODO: support multifile messages?
     state.get_discussion_info(commons)
@@ -99,6 +96,8 @@ def process_list(type):
                 continue
 
             talk_page = usage.toggleTalkPage()
+            if talk_page.isRedirectPage():
+                continue
             if not talk_page.botMayEdit():
                 continue
             if not talk_page.canBeEdited():
