@@ -53,7 +53,7 @@ def spam_notifications(type, talk_page, file, state):
     text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
     try:
-        talk_page.put(text, summary)
+        talk_page.put(text, summary, watch=False, botflag=False)
         print('Posted a notification about %s to %s' %
               (file.title(), talk_page.title()))
     except:
