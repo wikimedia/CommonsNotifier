@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os
+import os, sys
 from commonsbot import mysql, config
 from commonsbot.state import DeletionStateStore, DeletionState
 from commonsbot.i18n import I18n
@@ -40,11 +40,12 @@ def get_messages(type, i18n, file):
 
 
 def spam_notifications(type, talk_page, file, state):
-    i18n = I18n.factory(page.site.code)
+    i18n = I18n.factory(talk_page.site.code)
 
     try:
         text = talk_page.get()
     except pywikibot.exceptions.NoPage:
+        print('exception: %s' % sys.exc_info()[0])
         text = ''
 
     # TODO: support multifile messages?
@@ -52,12 +53,9 @@ def spam_notifications(type, talk_page, file, state):
     (header, body, summary) = get_messages(type, i18n, state)
     text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
-    try:
-        talk_page.put(text, summary, watch=False, botflag=False)
-        print('Posted a notification about %s to %s' %
-              (file.title(), talk_page.title()))
-    except:
-        return False
+    talk_page.put(text, summary, botflag=False)
+    print('Posted a notification about %s to %s' %
+            (file.title(), talk_page.title()))
 
     return True
 

@@ -1,4 +1,5 @@
 from commonsbot import mysql
+from commonsbot.utils import get_nomination_page
 from pprint import pprint, pformat
 from datetime import datetime
 import pywikibot
@@ -36,17 +37,10 @@ class DeletionState(object):
         try:
             text = page.get()
         except:
+            print("Unexpected error:", sys.exc_info()[0])
             return
 
-        code = mwparserfromhell.parse(text)
-        for template in code.filter_templates():
-            if template.name.matches('Delete|Test delete'):
-                if template.has('subpage'):
-                    self.discussion_page = template.get('subpage')
-                else:
-                    break
-
-        return
+        self.discussion_page = get_nomination_page(text)
 
 
 class DeletionStateStore(object):
@@ -76,7 +70,7 @@ class DeletionStateStore(object):
             SET retries=retries + 1
             WHERE deletion_type=%s AND title IN (
             """ + mysql.tuple_sql(files) + ')'
-        params = (type,) + files
+        params = (type,) + tuple([f.file_name for f in files])
         mysql.query(self.conn, sql, params)
 
     def load_state(self, files, type):
