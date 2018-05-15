@@ -53,7 +53,8 @@ def spam_notifications(type, talk_page, file, state):
     (header, body, summary) = get_messages(type, i18n, state)
     text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
-    talk_page.put(text, summary, botflag=False)
+    talk_page.text = text
+    talk_page.save(summary=summary, botflag=True, tags='bot trial')
     print('Posted a notification about %s to %s' %
             (file.title(), talk_page.title()))
 
