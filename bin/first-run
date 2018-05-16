@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source (dirname $0)/vars.sh
+
+# Populate the list
+python3 ${DIR}/make-list.py
+
+# No list should have been populated, but if they were, discard
+rm ${DIR}/*.txt || true
+
+# Only inform users of files that were nominated after the bot started running.
+# Mark all existing files as handled to achieve that.
+echo "USE ${DB}; UPDATE commons_deletions SET state='notified';" | sql local

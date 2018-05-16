@@ -112,3 +112,4 @@ throttle.ctrl
 lists/*.txt
 *.lwp
 apicache-py3
+lockfile
