@@ -103,6 +103,9 @@ ENV/
 # IntelliJ IDEA
 .idea
 
+# VS Code
+.vscode
+
 # Project-specific
 user-password.py
 config.json
