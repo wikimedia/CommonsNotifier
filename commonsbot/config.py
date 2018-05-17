@@ -11,11 +11,12 @@ wikis = set([s.strip() for s in file.readlines()])
 file.close()
 
 mysql_config_file = None
-for file in ['.', os.environ['HOME']]:
-    file = '%s/replica.my.cnf' % file
-    if os.path.isfile(file):
-        mysql_config_file = file
-        break
+for dir in ['.', os.environ['HOME']]:
+    for file in ['my.cnf','replica.my.cnf']:
+        file = '%s/%s' % (dir, file)
+        if os.path.isfile(file):
+            mysql_config_file = file
+            break
 if mysql_config_file is None:
     raise OSError('replica.my.cnf not found!')
 
