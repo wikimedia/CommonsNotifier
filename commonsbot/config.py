@@ -6,6 +6,10 @@ settings = json.loads(file.read())
 file.close()
 db_connections = settings['db_connections']
 
+dry_run = False
+if 'dry-run' in settings:
+    dry_run = settings['dry-run']
+
 file = open('wikis-enabled', 'r')
 wikis = set([s.strip() for s in file.readlines()])
 file.close()

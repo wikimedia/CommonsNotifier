@@ -51,9 +51,12 @@ def spam_notifications(type, talk_page, file, state):
     # TODO: support multifile messages?
     state.get_discussion_info(commons)
     (header, body, summary) = get_messages(type, i18n, state)
-    text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
+    talk_page.text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
-    talk_page.text = text
+    if config.dry_run:
+        print('DRY RUN: not posting about %s to %s' % (file, talk_page))
+        return True
+
     talk_page.save(summary=summary, botflag=True, tags='bot trial')
     print('Posted a notification about %s to %s' %
             (file.title(), talk_page.title()))
