@@ -3,7 +3,7 @@
 source (dirname $0)/vars.sh
 
 # Populate the list
-python3 ${DIR}/make-list.py
+${BIN}/python3 ${DIR}/make-list.py
 
 # No list should have been populated, but if they were, discard
 rm ${DIR}/*.txt || true

@@ -13,8 +13,8 @@ echo "Starting cronjob with timestamp ${TIMESTAMP}"
     # Save old listfiles
     for f in ${DIR}/lists/*.txt; do mv -- "$f" "$f.${TIMESTAMP}"; done
 
-    python3 ${DIR}/make-list.py
-    python3 ${DIR}/post-notifs.py
+    ${BIN}/python3 ${DIR}/make-list.py
+    ${BIN}/python3 ${DIR}/post-notifs.py
 ) 9> ${DIR}/lockfile
 
 echo "Cronjob ${TIMESTAMP} finished at $(date)"
