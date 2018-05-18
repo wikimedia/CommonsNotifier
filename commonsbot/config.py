@@ -24,4 +24,4 @@ for dir in ['.', os.environ['HOME']]:
 if mysql_config_file is None:
     raise OSError('replica.my.cnf not found!')
 
-__all__ = ('settings', 'db_connections', 'mysql_config_file')
+__all__ = ('settings', 'db_connections', 'mysql_config_file', 'dry_run')
