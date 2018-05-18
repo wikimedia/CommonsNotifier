@@ -11,7 +11,10 @@ echo "Starting cronjob with timestamp ${TIMESTAMP}"
     flock -n 9 || ( echo 'Previous cronjob still running, exiting' ; exit 0 )
 
     # Save old listfiles
-    for f in ${DIR}/lists/*.txt; do mv -- "$f" "$f.${TIMESTAMP}"; done
+    for f in ${DIR}/lists/*.txt; do
+        [ -e "$f" ] || continue
+        mv -- "$f" "$f.${TIMESTAMP}"
+    done
 
     ${BIN}/python3 ${DIR}/make-list.py
     ${BIN}/python3 ${DIR}/post-notifs.py
