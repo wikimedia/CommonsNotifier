@@ -17,6 +17,7 @@ echo "Starting cronjob with timestamp ${TIMESTAMP}"
         mv -- "$f" "$f.${TIMESTAMP}"
     done
 
+    cd ${DIR}
     ${BIN}/python3 ${DIR}/make-list.py
     ${BIN}/python3 ${DIR}/post-notifs.py
 ) 9> ${DIR}/lockfile
