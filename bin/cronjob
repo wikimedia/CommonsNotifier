@@ -12,7 +12,8 @@ echo "Starting cronjob with timestamp ${TIMESTAMP}"
 
     # Save old listfiles
     for f in ${DIR}/lists/*.txt; do
-        [ -e "$f" ] || continue
+        # Skip if file doesn't exist of empty
+        [ -e "$f" -o ! -s "$f" ] || continue
         mv -- "$f" "$f.${TIMESTAMP}"
     done
 
