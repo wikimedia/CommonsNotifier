@@ -45,7 +45,6 @@ def spam_notifications(type, talk_page, file, state):
     try:
         text = talk_page.get()
     except pywikibot.exceptions.NoPage:
-        print('exception: %s' % sys.exc_info()[0])
         text = ''
 
     # TODO: support multifile messages?
