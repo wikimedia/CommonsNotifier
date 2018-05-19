@@ -72,7 +72,7 @@ def process_list(type):
     filename = 'lists/%s.txt' % type
     if not os.path.isfile(filename) or not os.path.exists(filename):
         return
-    file = open(filename, 'r')
+    file = open(filename, 'r', encoding='utf8')
     lines = [s.strip() for s in file.readlines()]
     file.close()
 

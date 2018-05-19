@@ -30,7 +30,7 @@ def make_list(type, categories, depth, delay):
     print('%s pages found for %s deletion' % (len(files), type))
 
     states = store.refresh_state(files, type)
-    file = open('lists/%s.txt' % type, 'w')
+    file = open('lists/%s.txt' % type, 'w', encoding='utf8')
     count = 0
     for state in states:
         if state.state == 'new' and state.age() >= delay:
