@@ -29,9 +29,10 @@ def get_messages(type, i18n, file):
         if discussion is None:
             discussion = 'File:%s' % file_pretty
         discussion = 'Commons:Deletion requests/%s' % discussion
+        params = (file_pretty, discussion)
     else:
         discussion = 'File:%s' % file_pretty
-    params = (file_pretty, discussion)
+        params = (file_pretty,)
     body = i18n.msg(msg, params)
 
     msg = 'message-summary-%s' % type
