@@ -113,6 +113,11 @@ config.json
 replica.my.cnf
 throttle.ctrl
 lists/*.txt
+lists/*.txt.*
 *.lwp
 apicache-py3
 lockfile
+pyenv.cfg
+bin/python*
+lib64
+virtualenv/*
