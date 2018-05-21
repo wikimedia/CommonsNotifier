@@ -117,7 +117,7 @@ lists/*.txt.*
 *.lwp
 apicache-py3
 lockfile
-pyenv.cfg
+pyvenv.cfg
 bin/python*
 lib64
 virtualenv/*
