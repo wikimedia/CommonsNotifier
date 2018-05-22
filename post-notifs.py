@@ -48,8 +48,14 @@ def spam_notifications(type, talk_page, file, state):
     except pywikibot.exceptions.NoPage:
         text = ''
 
+    try:
+        state.get_discussion_info(commons)
+    except:
+        ex = sys.exc_info()[0]
+        print('%s getting file info, skipping: %s' % (type(ex).__name__, str(ex)))
+        continue
+
     # TODO: support multifile messages?
-    state.get_discussion_info(commons)
     (header, body, summary) = get_messages(type, i18n, state)
     talk_page.text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
