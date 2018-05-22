@@ -54,7 +54,7 @@ def spam_notifications(type, talk_page, file, state):
         ex = sys.exc_info()[0]
         print('%s getting file info, skipping: %s' % (type(ex).__name__, str(ex)),
               file=sys.stderr)
-        continue
+        return False
 
     # TODO: support multifile messages?
     (header, body, summary) = get_messages(type, i18n, state)
