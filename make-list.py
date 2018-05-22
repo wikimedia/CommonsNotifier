@@ -40,5 +40,9 @@ def make_list(type, categories, depth, delay):
     print('%d files sent for tagging' % count)
 
 
-make_list('discussion', ['Deletion_requests'], 2, delay=60 * 60)
-make_list('speedy', ['Candidates_for_speedy_deletion'], 2, delay=60 * 15)
+make_list('discussion', ['Deletion_requests'], depth=2, delay=60 * 60)
+make_list('speedy',
+          [
+              'Candidates for speedy deletion',
+              'Copyright violations',
+          ], depth=False, delay=60 * 15)
