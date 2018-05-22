@@ -54,11 +54,11 @@ def spam_notifications(type, talk_page, file, state):
     talk_page.text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
     if config.dry_run:
-        print(u'DRY RUN: not posting about %s to %s' % (file, talk_page))
+        print('DRY RUN: not posting about %s to %s' % (file, talk_page))
         return True
 
     talk_page.save(summary=summary, botflag=True, tags='bot trial')
-    print(u'Posted a notification about %s to %s' %
+    print('Posted a notification about %s to %s' %
             (file, talk_page))
 
     return True
@@ -87,7 +87,7 @@ def process_list(type):
         if filename in file_states:
             state = file_states[filename]
         else:
-            print(u'No deletion state found for %s, stubbing' % filename)
+            print('No deletion state found for %s, stubbing' % filename)
             state = DeletionState(filename, type, 'new')
 
         for usage in pageset:
