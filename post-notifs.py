@@ -52,7 +52,8 @@ def spam_notifications(type, talk_page, file, state):
         state.get_discussion_info(commons)
     except:
         ex = sys.exc_info()[0]
-        print('%s getting file info, skipping: %s' % (type(ex).__name__, str(ex)))
+        print('%s getting file info, skipping: %s' % (type(ex).__name__, str(ex)),
+              file=sys.stderr)
         continue
 
     # TODO: support multifile messages?
