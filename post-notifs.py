@@ -40,7 +40,7 @@ def get_messages(type, i18n, file):
     return (header, body, summary)
 
 
-def spam_notifications(type, talk_page, file, state):
+def spam_notifications(notif_type, talk_page, file, state):
     i18n = I18n.factory(talk_page.site.code)
 
     try:
@@ -51,13 +51,13 @@ def spam_notifications(type, talk_page, file, state):
     try:
         state.get_discussion_info(commons)
     except:
-        ex = sys.exc_info()[0]
-        print('%s getting file info, skipping: %s' % (type(ex).__name__, str(ex)),
+        ex = sys.exc_info()
+        print('%s getting file info, skipping: %s' % (notif_type(ex).__name__, str(ex)),
               file=sys.stderr)
         return False
 
     # TODO: support multifile messages?
-    (header, body, summary) = get_messages(type, i18n, state)
+    (header, body, summary) = get_messages(notif_type, i18n, state)
     talk_page.text += '\n\n== %s ==\n%s ~~~~\n' % (header, body)
 
     if config.dry_run:
