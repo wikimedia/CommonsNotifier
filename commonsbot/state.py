@@ -34,11 +34,7 @@ class DeletionState(object):
 
         self.info_loaded = True
         page = pywikibot.Page(site, 'File:%s' % self.file_name)
-        try:
-            text = page.get()
-        except:
-            print("Unexpected error:", sys.exc_info()[0])
-            return
+        text = page.get()
 
         self.discussion_page = get_nomination_page(text)
 
