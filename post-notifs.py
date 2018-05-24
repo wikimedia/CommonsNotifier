@@ -126,3 +126,5 @@ def process_list(type):
 
 process_list('discussion')
 process_list('speedy')
+store.expire_failed()
+userdb.commit()

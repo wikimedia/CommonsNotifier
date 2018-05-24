@@ -41,6 +41,7 @@ class DeletionState(object):
 
 class DeletionStateStore(object):
     BATCH_SIZE = 100
+    MAX_FAILURES = 3
 
     def __init__(self, conn):
         self.conn = conn
@@ -79,6 +80,12 @@ class DeletionStateStore(object):
                 missing.append(file)
 
         return present, missing
+
+    def expire_failed(self):
+        sql = """UPDATE commons_deletions SET state='failed', state_time=now()
+            WHERE state='new' AND retries > %s
+            """
+        mysql.query(self.conn, sql, (self.MAX_FAILURES,))
 
     def _state_batch(self, files, type):
         sql = """SELECT title, deletion_type, state, state_time
