@@ -121,6 +121,8 @@ def process_list(type):
         else:
             store.set_failure(type, [state])
 
+    userdb.commit()
+
 
 process_list('discussion')
 process_list('speedy')
