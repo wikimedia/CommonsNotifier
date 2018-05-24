@@ -97,6 +97,7 @@ def process_list(type):
             print('No deletion state found for %s, stubbing' % filename)
             state = DeletionState(filename, type, 'new')
 
+        count = 0
         for usage in pageset:
             wiki = usage.site.dbName()
             if wiki not in config.wikis:
@@ -115,8 +116,9 @@ def process_list(type):
                 continue
 
             ok = ok or spam_notifications(type, talk_page, file, state)
+            count += 1
 
-        if ok:
+        if ok or count == 0:
             store.set_state(type, [state], 'notified')
         else:
             store.set_failure(type, [state])
