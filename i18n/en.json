@@ -1,6 +1,6 @@
 {
     "message-header-speedy": "A Commons file used in this page has been nominated for speedy deletion",
-    "message-body-speedy": "The file [[commons:File:$1|$1]] on Wikimedia Commons has been nominated for speedy deletion. View the deletion reason at the [[commons:$1|Commons file description page]].",
+    "message-body-speedy": "The file [[commons:File:$1|$1]] on Wikimedia Commons has been nominated for speedy deletion. View the deletion reason at the [[commons:File:$1|Commons file description page]].",
     "message-summary-speedy": "An image used on this article has been marked for deletion",
     "message-header-discussion": "A Commons file used on this page has been nominated for deletion",
     "message-body-discussion": "The file [[commons:File:$1|$1]] on Wikimedia Commons has been nominated for deletion. View and participate in the deletion discussion at the [[commons:$2|nomination page]].",
