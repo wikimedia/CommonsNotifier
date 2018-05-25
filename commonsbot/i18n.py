@@ -3,24 +3,42 @@ from os import path
 import re
 
 def format(msg, params):
+    """
+    Expands parameters for a MediaWiki-style message string
+    @param msg: format string
+    @type msg: str
+    @param params: message parameters
+    @type params: tuple
+    """
+
     if len(params) == 0:
         return msg
 
     used = set()
+    last_index = 0
+    result = ''
     for match in re.finditer('(?<=\\$)\\d+', msg):
         ms = match.group()
         index = int(ms) - 1
         if index >= len(params):
             raise ValueError('Message has parameter $%s but was passed only %d parameters' % (ms, len(params)))
-        msg = msg.replace('$' + ms, str(params[index]), 1)
+        result += msg[last_index:match.start() - 1]
+        result += str(params[index])
+        last_index = match.end()
         used.add(index)
+
+    result += msg[last_index:]
 
     param_set = set(range(len(params)))
     if param_set != used:
-        raise ValueError('Mismatch between parameters passed and found in the message')
-    return msg
+        raise ValueError('Mismatch between parameters passed and found in the message "%s"' % msg)
+    return result
+
 
 class I18n(object):
+    """
+    Represents a set of localisation messages in a single language
+    """
     _cache = {}
     _aliases = {
         'test': 'en'
