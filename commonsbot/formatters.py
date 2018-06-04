@@ -75,7 +75,7 @@ class SpeedyFormatter(Formatter):
         result = self.msg('body-start', len(files)) + '\n'
 
         for file in files:
-            result += '* [[File:{0}|{0}]]\n'.format(file.file_name)
+            result += '* [[commons:File:{0}|{0}]]\n'.format(file.file_name)
 
         result += self.msg('body-end', len(files))
 

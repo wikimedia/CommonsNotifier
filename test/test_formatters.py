@@ -62,8 +62,8 @@ Participate in the deletion discussion at the [[commons:Commons:Deletion request
 
 == {{PLURAL:2|A Commons file|Commons files}} used on this page {{PLURAL:2|has|have}} been nominated for speedy deletion ==
 The following Wikimedia Commons {{PLURAL:2|file|files}} used on this page {{PLURAL:2|has|have}} been nominated for speedy deletion:
-* [[File:File1.jpg|File1.jpg]]
-* [[File:File2.jpg|File2.jpg]]
+* [[commons:File:File1.jpg|File1.jpg]]
+* [[commons:File:File2.jpg|File2.jpg]]
 You can see the {{PLURAL:2|reason|reasons}} for deletion at the file description {{PLURAL:2|page|pages}} linked above. ~~~~
 """
         result = f.format(states)
