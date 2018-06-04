@@ -36,7 +36,7 @@ class DeletionState(object):
 
         self.info_loaded = True
         if self.discussion_page is None:
-            page = pywikibot.Page(site, 'File:%s' % self.file_name)
+            page = pywikibot.Page(site, 'File:' + self.file_name)
         else:
             page = self.discussion_page
         text = page.get()
@@ -45,7 +45,8 @@ class DeletionState(object):
         if discussion is None:
             print("Can't retrieve a discussion page for %s, guessing" % \
                   self.file_name, file=sys.stderr)
-            discussion = 'Commons:Deletion requests/File:%s' % self.file_name
+            discussion = 'File:' + self.file_name
+        discussion = 'Commons:Deletion requests/' + discussion
 
         self.discussion_page = discussion
 
