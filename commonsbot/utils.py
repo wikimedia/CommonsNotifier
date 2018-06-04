@@ -1,19 +1,41 @@
 import mwparserfromhell
 
 
-class PerWikiCounter(object):
+class PerWikiMapper(object):
     def __init__(self, pages_per_file_per_wiki):
-        self.wikis = {}
+        self._wikis = {}
         self.pages_per_file_per_wiki = pages_per_file_per_wiki
 
-    def next(self, wiki, page):
-        if wiki not in self.wikis:
-            self.wikis[wiki] = {}
-        pages = self.wikis[wiki]
-        if page not in pages:
-            pages[page] = 0
-        pages[page] += 1
-        return pages[page] <= self.pages_per_file_per_wiki
+    def add(self, file, page):
+        """
+        @type page: pywikibot.Page
+        @type file: str
+        """
+        wiki = page.site.dbName
+        if wiki not in self._wikis:
+            self._wikis[wiki] = {}
+        files = self._wikis[wiki]
+        if file not in files:
+            files[file] = []
+        if len(files[file]) < self.pages_per_file_per_wiki:
+            files[file].append(page)
+
+
+    def files_per_page(self):
+        for files in self._wikis.values():
+            page_mapping = {}
+            result = {}
+            for file, pages in files.items():
+                for page in pages:
+                    title = page.title()
+                    page_mapping[title] = page
+                    if title not in result:
+                        result[title] = []
+                    result[title].append(file)
+
+            for title in sorted(iter(result)):
+                yield page_mapping[title], result[title]
+
 
 def get_nomination_page(wikitext):
     code = mwparserfromhell.parse(wikitext)

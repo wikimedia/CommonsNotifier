@@ -4,6 +4,7 @@ from pprint import pprint, pformat
 from datetime import datetime
 import pywikibot
 import mwparserfromhell
+import sys
 
 
 def split(l, n):
@@ -21,6 +22,7 @@ class DeletionState(object):
         self.time = time
         self.info_loaded = False
         self.discussion_page = None
+        self.file_page = None
 
     def age(self):
         if self.time is None:
@@ -28,15 +30,24 @@ class DeletionState(object):
         delta = datetime.utcnow() - self.time
         return delta.total_seconds()
 
-    def get_discussion_info(self, site):
+    def load_discussion_info(self, site):
         if self.info_loaded or self.type != 'discussion':
             return
 
         self.info_loaded = True
-        page = pywikibot.Page(site, 'File:%s' % self.file_name)
+        if self.discussion_page is None:
+            page = pywikibot.Page(site, 'File:%s' % self.file_name)
+        else:
+            page = self.discussion_page
         text = page.get()
 
-        self.discussion_page = get_nomination_page(text)
+        discussion = get_nomination_page(text)
+        if discussion is None:
+            print("Can't retrieve a discussion page for %s, guessing" % \
+                  self.file_name, file=sys.stderr)
+            discussion = 'Commons:Deletion requests/File:%s' % self.file_name
+
+        self.discussion_page = discussion
 
 
 class DeletionStateStore(object):
@@ -56,6 +67,8 @@ class DeletionStateStore(object):
         return states
 
     def set_state(self, type, files, state):
+        if not files:
+            return
         sql = """UPDATE commons_deletions
             SET state=%s WHERE deletion_type=%s AND title IN (
             """ + mysql.tuple_sql(files) + ')'
@@ -63,10 +76,11 @@ class DeletionStateStore(object):
         mysql.query(self.conn, sql, params)
 
     def set_failure(self, type, files):
+        if not files:
+            return
         sql = """UPDATE commons_deletions
             SET retries=retries + 1
-            WHERE deletion_type=%s AND title IN (
-            """ + mysql.tuple_sql(files) + ')'
+            WHERE deletion_type=%s AND title IN (""" + mysql.tuple_sql(files) + ')'
         params = (type,) + tuple([f.file_name for f in files])
         mysql.query(self.conn, sql, params)
 

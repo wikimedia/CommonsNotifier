@@ -64,4 +64,6 @@ class I18n(object):
         file.close()
 
     def msg(self, key, params=()):
+        if type(params) != tuple:
+            params = (params,)
         return format(self.data[key], params)
