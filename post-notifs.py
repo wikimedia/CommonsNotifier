@@ -8,10 +8,11 @@ from commonsbot.formatters import SpeedyFormatter, DiscussionFormatter
 import pywikibot
 from pywikibot import Site, Page, FilePage
 from pywikibot.site import Namespace
-from pprint import pprint
+
 
 NOTIFS_PER_WIKI = 10
 MAX_GLOBALUSAGE = 10000
+
 
 userdb = mysql.connect('userdb')
 store = DeletionStateStore(userdb)
@@ -27,15 +28,15 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
         text = ''
 
     formatter = formatter_class(i18n)
-    talk_page.text += formatter.format(files)
+    talk_page.text = text + formatter.format(files)
     summary = formatter.format_summary()
 
     if config.dry_run:
-        print('DRY RUN: not posting about %s to %s' % (file, talk_page))
+        print('DRY RUN: not posting about %d %s files to %s' % (len(files), notif_type, talk_page))
         return True
 
     talk_page.save(summary=summary, botflag=True, tags='bot trial')
-    print('Posted a notification about %d files to %s' % (len(files), talk_page))
+    print('Posted a notification about %d %s files to %s' % (len(files), notif_type, talk_page))
 
     return True
 
@@ -94,7 +95,7 @@ def process_list(type, formatter_class):
             states.append(state)
 
         try:
-            spam_notifications(type, formatter_class, talk_page, states)
+            spam_notifications(type, formatter_class, page.toggleTalkPage(), states)
         except:
             # Error - save state to avoid reposting and then rethrow
             failed = set(states)

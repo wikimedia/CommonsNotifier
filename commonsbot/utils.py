@@ -3,7 +3,7 @@ import mwparserfromhell
 
 class PerWikiMapper(object):
     def __init__(self, pages_per_file_per_wiki):
-        self._wikis = {}
+        self.wikis = {}
         self.pages_per_file_per_wiki = pages_per_file_per_wiki
 
     def add(self, file, page):
@@ -11,10 +11,10 @@ class PerWikiMapper(object):
         @type page: pywikibot.Page
         @type file: str
         """
-        wiki = page.site.dbName
-        if wiki not in self._wikis:
-            self._wikis[wiki] = {}
-        files = self._wikis[wiki]
+        wiki = page.site.dbName()
+        if wiki not in self.wikis:
+            self.wikis[wiki] = {}
+        files = self.wikis[wiki]
         if file not in files:
             files[file] = []
         if len(files[file]) < self.pages_per_file_per_wiki:
@@ -22,7 +22,7 @@ class PerWikiMapper(object):
 
 
     def files_per_page(self):
-        for files in self._wikis.values():
+        for files in self.wikis.values():
             page_mapping = {}
             result = {}
             for file, pages in files.items():

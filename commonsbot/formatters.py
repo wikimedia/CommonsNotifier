@@ -2,6 +2,10 @@ from commonsbot.i18n import I18n
 from abc import abstractmethod
 
 
+def subst_plural(sql):
+    return sql.replace('{{PLURAL:', '{{subst:PLURAL:')
+
+
 class Formatter(object):
     def __init__(self, deletion_type, i18n):
         """
@@ -15,7 +19,7 @@ class Formatter(object):
         if len(files) == 0:
             raise ValueError('Attempt to format a message about 0 files')
         params = (self.format_heading(files), self.format_body(files))
-        return '\n\n== %s ==\n%s ~~~~\n' % params
+        return subst_plural('\n\n== %s ==\n%s ~~~~\n' % params)
 
     def format_summary(self):
         return self.msg('summary')
