@@ -3,7 +3,7 @@ import os, sys
 from commonsbot import mysql, config
 from commonsbot.state import DeletionStateStore, DeletionState
 from commonsbot.i18n import I18n
-from commonsbot.utils import PerWikiMapper
+from commonsbot.utils import PerWikiMapper, check_already_posted
 from commonsbot.formatters import SpeedyFormatter, DiscussionFormatter
 import pywikibot
 from pywikibot import Site, Page, FilePage
@@ -20,6 +20,8 @@ commons = Site('commons', 'commons')
 
 
 def spam_notifications(notif_type, formatter_class, talk_page, files):
+    assert len(files) > 0
+
     i18n = I18n.factory(talk_page.site.code)
 
     try:
@@ -27,18 +29,31 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
     except pywikibot.exceptions.NoPage:
         text = ''
 
+    ourlist = []
+    for file in files:
+        if check_already_posted(text, file.file_name, notif_type):
+            print('%s has already been notified about %s, skipping' % (talk_page, file.file_name), file=sys.stderr)
+        else:
+            ourlist.append(file)
+
+    if len(ourlist) == 0:
+        print('Nothing to report about at %s' % talk_page, file=sys.stderr)
+        return
+
+    ourlist.sort(key=lambda file: file.file_name)
+
     formatter = formatter_class(i18n)
-    talk_page.text = text + formatter.format(files)
+    talk_page.text = text + formatter.format(ourlist)
     summary = formatter.format_summary()
 
     if config.dry_run:
-        print('DRY RUN: not posting about %d %s files to %s' % (len(files), notif_type, talk_page))
-        return True
+        print('DRY RUN: not posting about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
+        return
 
     talk_page.save(summary=summary, botflag=True, tags='bot trial')
-    print('Posted a notification about %d %s files to %s' % (len(files), notif_type, talk_page))
+    print('Posted a notification about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
 
-    return True
+    return
 
 
 def process_list(type, formatter_class):

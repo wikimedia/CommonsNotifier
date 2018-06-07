@@ -1,4 +1,13 @@
+from datetime import datetime, timezone
+from dateutil import parser
+import re
 import mwparserfromhell
+
+
+"""
+No more than this number of days between posts about the same file
+"""
+REPOST_DAYS = 180
 
 
 class PerWikiMapper(object):
@@ -49,3 +58,28 @@ def get_nomination_page(wikitext):
                         return subpage
 
     return None
+
+
+def check_already_posted(text, filename, deletion_type, now=datetime.utcnow()):
+    """
+    @type text: str
+    @type filename: str
+    @type deletion_type: str
+    """
+    params = (re.escape(deletion_type), re.escape(filename))
+    regexp = '<!-- COMMONSBOT: %s \\| (?P<date>\\S+) \\| %s -->' % params
+    for match in re.finditer(regexp, text):
+        try:
+            date = parser.parse(match.group('date'))
+            # Convert from TZ-aware datetime
+            date = datetime.utcfromtimestamp(date.timestamp())
+            diff = now - date
+            if diff.days < REPOST_DAYS:
+                return True
+        except:
+            # Did someone mess with the bot-readable string?
+            # Better be safe than sorry and not post again
+            return True
+        pass
+
+    return False

@@ -1,5 +1,6 @@
 import unittest
-from commonsbot.utils import get_nomination_page, PerWikiMapper
+from datetime import datetime
+from commonsbot.utils import get_nomination_page, check_already_posted, PerWikiMapper
 from pywikibot import Site, Page
 
 
@@ -36,6 +37,26 @@ class TestParsing(unittest.TestCase):
         for input, expected in cases:
             with self.subTest():
                 self.assertEqual(expected, get_nomination_page(input))
+
+    def test_already_posted(self):
+        cases = [
+            # ('', False, 'empty string'),
+            # ('foo', False, 'random string'),
+            # ('<!-- COMMONSBOT: -->', False, 'incomplete tag'),
+            # ('<!-- COMMONSBOT: speedy | 2017-05-15T13:30:00+00:00 | File.jpg -->', False, 'wrong discussion type'),
+            # ('<!-- COMMONSBOT: discussion | 2017-05-15T13:30:00+00:00 | Fail.jpg -->', False, 'wrong filename'),
+            # ('<!-- COMMONSBOT: discussion | 2017-05-15T99:99:00+00:00 | File.jpg -->', True, 'invalid date'),
+            # ('<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File.jpg -->', True, 'has recent post'),
+            ('<!-- COMMONSBOT: discussion | 2017-05-15T13:30:00+00:00 | File.jpg -->', False, 'has old posts'),
+            # ('<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File.jpg --><!-- COMMONSBOT: discussion | 2017-05-15T13:30:00+00:00 | File.jpg -->', True, 'match after a miss'),
+        ]
+
+        now = datetime(2018, 6, 1)
+        for input, expected, msg in cases:
+            with self.subTest():
+                result = check_already_posted(input, 'File.jpg', 'discussion', now=now)
+                self.assertEqual(expected, result, msg)
+
 
 class TestMapper(unittest.TestCase):
 

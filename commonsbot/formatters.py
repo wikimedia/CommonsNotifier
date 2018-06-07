@@ -1,3 +1,4 @@
+from datetime import datetime
 from commonsbot.i18n import I18n
 from abc import abstractmethod
 
@@ -14,10 +15,11 @@ class Formatter(object):
         """
         self.deletion_type = deletion_type
         self.i18n = i18n
+        self.time = datetime.utcnow()
 
     def format(self, files):
         if len(files) == 0:
-            raise ValueError('Attempt to format a message about 0 files')
+            raise ValueError('Attempted to format a message about 0 files')
         params = (self.format_heading(files), self.format_body(files))
         return subst_plural('\n\n== %s ==\n%s ~~~~\n' % params)
 
@@ -30,6 +32,19 @@ class Formatter(object):
     @abstractmethod
     def format_body(self, files):
         pass
+
+    def format_line(self, filename, discussion=None):
+        result = '* '
+        formatted ='commons:File:{0}|{0}'.format(filename)
+        if discussion is None:
+            result += '[[%s]]' % formatted
+        else:
+            params = (formatted, 'commons:' + discussion)
+            result += self.msg('line', params)
+        ts = self.time.isoformat()
+        result += '<!-- COMMONSBOT: %s | %s | %s -->\n' % (self.deletion_type, ts, filename)
+
+        return result
 
     def msg(self, key, params=()):
         key = self.deletion_type + '-' + key
@@ -51,14 +66,7 @@ class DiscussionFormatter(Formatter):
             same_pages = same_pages and file.discussion_page == files[0].discussion_page
 
         for file in files:
-            result += '* '
-            filename ='commons:File:{0}|{0}'.format(file.file_name)
-            if same_pages:
-                result += '[[%s]]' % filename
-            else:
-                params = (filename, 'commons:' + file.discussion_page)
-                result += self.msg('line', params)
-            result += '\n'
+            result += self.format_line(file.file_name, None if same_pages else file.discussion_page)
 
         if same_pages:
             result += self.msg('body-end-matching', 'commons:' + files[0].discussion_page)
@@ -79,7 +87,7 @@ class SpeedyFormatter(Formatter):
         result = self.msg('body-start', len(files)) + '\n'
 
         for file in files:
-            result += '* [[commons:File:{0}|{0}]]\n'.format(file.file_name)
+            result += self.format_line(file.file_name)
 
         result += self.msg('body-end', len(files))
 
