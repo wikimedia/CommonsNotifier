@@ -14,9 +14,14 @@ NOTIFS_PER_WIKI = 10
 MAX_GLOBALUSAGE = 10000
 
 
-userdb = mysql.connect('userdb')
-store = DeletionStateStore(userdb)
 commons = Site('commons', 'commons')
+
+def with_store(callable):
+    userdb = mysql.connect('userdb')
+    store = DeletionStateStore(userdb)
+    callable(store)
+    userdb.commit()
+    userdb.close()
 
 
 def spam_notifications(notif_type, formatter_class, talk_page, files):
@@ -69,7 +74,11 @@ def process_list(type, formatter_class):
     lines = [s.strip() for s in file.readlines()]
     file.close()
 
-    (file_states, _) = store.load_state(lines, type)
+    file_states = {}
+    def load(store):
+        nonlocal file_states
+        (file_states, _) = store.load_state(lines, type)
+    with_store(load)
     mapper = PerWikiMapper(NOTIFS_PER_WIKI)
     notified_files = set()
 
@@ -115,18 +124,17 @@ def process_list(type, formatter_class):
             # Error - save state to avoid reposting and then rethrow
             failed = set(states)
             failed_only = failed - notified_files
-            store.set_failure(type, list(failed_only))
-            store.set_state(type, list(notified_files), 'notified')
-            userdb.commit()
+            def save(store):
+                store.set_failure(type, list(failed_only))
+                store.set_state(type, list(notified_files), 'notified')
+            with_store(save)
             raise
 
         notified_files.update(states)
 
-    store.set_state(type, list(notified_files), 'notified')
-    userdb.commit()
+    with_store(lambda store: store.set_state(type, list(notified_files), 'notified'))
 
 
 process_list('discussion', DiscussionFormatter)
 process_list('speedy', SpeedyFormatter)
-store.expire_failed()
-userdb.commit()
+with_store(lambda store: store.expire_failed())
