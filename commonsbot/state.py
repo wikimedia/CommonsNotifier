@@ -39,7 +39,7 @@ class DeletionState(object):
             page = pywikibot.Page(site, 'File:' + self.file_name)
         else:
             page = self.discussion_page
-        text = page.get()
+        text = page.get(get_redirect=True)
 
         discussion = get_nomination_page(text)
         if discussion is None:
