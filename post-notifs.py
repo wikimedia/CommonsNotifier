@@ -55,7 +55,7 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
         print('DRY RUN: not posting about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
         return
 
-    talk_page.save(summary=summary, botflag=True, tags='bot trial')
+    talk_page.save(summary=summary, botflag=False)
     print('Posted a notification about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
 
     return
