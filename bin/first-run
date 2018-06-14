@@ -6,7 +6,7 @@ source $(dirname $0)/vars.sh
 ${BIN}/python3 ${DIR}/make-list.py
 
 # No list should have been populated, but if they were, discard
-rm ${DIR}/lists/*.txt || true
+rm ${DIR}/lists/*.txt
 
 # Only inform users of files that were nominated after the bot started running.
 # Mark all existing files as handled to achieve that.

@@ -11,11 +11,13 @@ echo "Starting cronjob with timestamp ${TIMESTAMP}"
     flock -n 9 || ( echo 'Previous cronjob still running, exiting' ; exit 0 )
 
     # Save old listfiles
-    for f in ${DIR}/lists/*.txt; do
-        # Skip if file doesn't exist of empty
-        [ -e "$f" -o ! -s "$f" ] || continue
-        mv -- "$f" "$f.${TIMESTAMP}"
-    done
+    if compgen -G "${DIR}/lists/*.txt" > /dev/null; then
+        for f in ${DIR}/lists/*.txt; do
+            # Skip if file doesn't exist or empty
+            [ -e "$f" -o ! -s "$f" ] || continue
+            mv -- "$f" "$f.${TIMESTAMP}"
+        done
+    fi
 
     cd ${DIR}
     ${BIN}/python3 ${DIR}/make-list.py
