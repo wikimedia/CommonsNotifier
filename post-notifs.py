@@ -132,7 +132,7 @@ def process_list(type, formatter_class):
 
         notified_files.update(states)
 
-    with_store(lambda store: store.set_state(type, list(notified_files), 'notified'))
+    with_store(lambda store: store.set_state(type, list(file_states.values()), 'notified'))
 
 
 process_list('discussion', DiscussionFormatter)
