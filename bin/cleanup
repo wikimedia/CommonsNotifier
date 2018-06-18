@@ -5,7 +5,7 @@
 source $(dirname $0)/vars.sh
 
 # Delete 1 week old list files
-find "${DIR}/lists/*.txt.*" -mtime +7 -delete
+find "${DIR}/lists/" -name '*.txt.*' -mtime +7 -delete
 
 # Delete DB rows older than 240 days
 echo "USE ${DB}; DELETE FROM commons_deletions WHERE touched < NOW() - INTERVAL 240 DAY;" | sql local
