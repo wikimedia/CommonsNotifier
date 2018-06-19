@@ -1,4 +1,4 @@
 mwparserfromhell == 0.5.1
-pywikibot ~= 3.0
+pywikibot == 3.0.20180603
 pymysql == 0.8.0
 python-dateutil == 2.7.3
