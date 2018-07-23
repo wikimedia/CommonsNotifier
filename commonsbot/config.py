@@ -6,11 +6,8 @@ basedir = os.path.dirname(os.path.dirname(__file__)) + '/'
 file = open(basedir + 'config.json', 'rt')
 settings = json.loads(file.read())
 file.close()
-db_connections = settings['db_connections']
 
-dry_run = False
-if 'dry-run' in settings:
-    dry_run = settings['dry-run']
+dry_run = settings['dry-run']
 
 file = open(basedir + 'wikis-enabled', 'r')
 wikis = set([s.strip() for s in file.readlines()])
@@ -26,4 +23,4 @@ for dir in ['.', basedir, os.environ['HOME']]:
 if mysql_config_file is None:
     raise OSError('replica.my.cnf not found!')
 
-__all__ = ('settings', 'db_connections', 'mysql_config_file', 'dry_run')
+__all__ = ('settings', 'mysql_config_file', 'dry_run')

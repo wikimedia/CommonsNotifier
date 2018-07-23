@@ -8,7 +8,7 @@ from pywikibot.site import Namespace
 from pprint import pprint
 
 commons = Site('commons', 'commons')
-userdb = mysql.connect('userdb')
+userdb = mysql.connect()
 store = DeletionStateStore(userdb)
 
 

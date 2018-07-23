@@ -1,9 +1,0 @@
-{
-    "db_connections": {
-        "userdb": {
-            "host": "127.0.0.1",
-            "port": 33061,
-            "database": "s53689__commonsbot"
-        }
-    }
-}

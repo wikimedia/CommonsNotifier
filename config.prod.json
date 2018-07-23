@@ -1,9 +1,0 @@
-{
-    "db_connections": {
-        "userdb": {
-            "host": "tools.db.svc.eqiad.wmflabs",
-            "port": 3306,
-            "database": "s53689__commonsbot"
-        }
-    }
-}

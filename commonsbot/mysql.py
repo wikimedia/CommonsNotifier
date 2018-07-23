@@ -13,12 +13,8 @@ def decode_tuple(tuple):
     return result
 
 
-def connect(connection_name):
-    conf = config.db_connections[connection_name]
-    return pymysql.connect(conf['host'],
-                           port=conf['port'],
-                           db=conf['database'],
-                           read_default_file=config.mysql_config_file,
+def connect():
+    return pymysql.connect(read_default_file=config.mysql_config_file,
                            charset='utf8',
                            use_unicode=True)
 

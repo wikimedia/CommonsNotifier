@@ -17,7 +17,7 @@ MAX_GLOBALUSAGE = 10000
 commons = Site('commons', 'commons')
 
 def with_store(callable):
-    userdb = mysql.connect('userdb')
+    userdb = mysql.connect()
     store = DeletionStateStore(userdb)
     callable(store)
     userdb.commit()
