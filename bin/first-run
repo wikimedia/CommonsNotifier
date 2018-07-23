@@ -2,7 +2,10 @@
 
 source $(dirname $0)/vars.sh
 
-# Populate the list
+# Initialize the DB
+cat ${DIR}/sql/schema.sql | mysql --defaults-file=${DIR}/my.cnf
+
+# Populate the initial list
 ${BIN}/python3 ${DIR}/make-list.py
 
 # No list should have been populated, but if they were, discard
@@ -10,4 +13,4 @@ rm ${DIR}/lists/*.txt
 
 # Only inform users of files that were nominated after the bot started running.
 # Mark all existing files as handled to achieve that.
-echo "USE ${DB}; UPDATE commons_deletions SET state='notified';" | sql local
+echo "UPDATE commons_deletions SET state='notified';" | mysql --defaults-file=${DIR}/my.cnf

@@ -1,4 +1,4 @@
-CREATE TABLE commons_deletions (
+CREATE TABLE IF NOT EXISTS commons_deletions (
     title VARCHAR(255) BINARY NOT NULL,
     deletion_type ENUM('speedy', 'discussion') NOT NULL,
     state ENUM('new', 'notifying', 'failed', 'notified', 'maybe gone', 'gone') NOT NULL DEFAULT 'new',
