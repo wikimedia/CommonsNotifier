@@ -1,3 +1,14 @@
 {
-    "dry-run": false
+    "dry-run": false,
+    "wiki-options": {
+        "default": {
+            "minoredit": false,
+            "markasbot": false,
+            "tags": null,
+            "language": null
+        },
+        "enwiki": {
+            "markasbot": false
+        }
+    }
 }

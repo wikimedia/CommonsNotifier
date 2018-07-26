@@ -27,7 +27,11 @@ def with_store(callable):
 def spam_notifications(notif_type, formatter_class, talk_page, files):
     assert len(files) > 0
 
-    i18n = I18n.factory(talk_page.site.code)
+    wiki_options = config.for_wiki(talk_page.site.dbName())
+    lang_code = wiki_options['language']
+    if lang_code is None:
+        lang_code = talk_page.site.code
+    i18n = I18n.factory(lang_code)
 
     try:
         text = talk_page.get()
@@ -55,7 +59,10 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
         print('DRY RUN: not posting about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
         return
 
-    talk_page.save(summary=summary, botflag=False)
+    kvargs = {}
+    if wiki_options['tags'] is not None:
+        kvargs['tags'] = wiki_options['tags']
+    talk_page.save(summary=summary, botflag=wiki_options['markasbot'], minor=wiki_options['minoredit'], **kvargs)
     print('Posted a notification about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
 
     return

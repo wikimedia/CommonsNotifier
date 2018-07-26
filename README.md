@@ -90,6 +90,11 @@ Add its dbname to `wikis-enabled` in Git and make sure that all messages are loc
 ## Configration
 All settings are kept in `config.json`:
 * `dry-run` - whether dry run mode os on, see "Stopping the bot" above.
+** `wiki-options` - dictionary of `dbname: options`, with every wiki possibly overriding setting from `"default"`. Possible per-wiki options:
+*** `minoredit` - (bool) whether edits should be marked as minor
+*** `markasbot` - (bool) whether edits should be marked as bot edits
+*** `tags` (string|null) - pipe-separated edit tags to apply to edits or `null` for none
+*** `language` (string|null) - override for language code used for messages on this wiki, or `null` to not override
 
 ## Development
 

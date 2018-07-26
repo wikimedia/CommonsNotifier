@@ -23,4 +23,12 @@ for dir in ['.', basedir, os.environ['HOME']]:
 if mysql_config_file is None:
     raise OSError('replica.my.cnf not found!')
 
-__all__ = ('settings', 'mysql_config_file', 'dry_run')
+def for_wiki(dbname):
+    wikis = settings['wiki-options']
+    result = wikis['default'].copy()
+    if dbname in wikis:
+        result.update(wikis[dbname])
+
+    return result
+
+__all__ = ('settings', 'mysql_config_file', 'dry_run', 'for_wiki')
