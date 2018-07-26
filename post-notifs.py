@@ -2,7 +2,7 @@
 import os, sys
 from commonsbot import mysql, config
 from commonsbot.state import DeletionStateStore, DeletionState
-from commonsbot.i18n import I18n
+from commonsbot.i18n import I18n, language_has_all_messages
 from commonsbot.utils import PerWikiMapper, check_already_posted
 from commonsbot.formatters import SpeedyFormatter, DiscussionFormatter
 import pywikibot
@@ -31,6 +31,8 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
     lang_code = wiki_options['language']
     if lang_code is None:
         lang_code = talk_page.site.code
+    if not language_has_all_messages(lang_code):
+        return
     i18n = I18n.factory(lang_code)
 
     try:
