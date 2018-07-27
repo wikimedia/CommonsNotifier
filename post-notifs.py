@@ -64,10 +64,11 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
     kvargs = {}
     if wiki_options['tags'] is not None:
         kvargs['tags'] = wiki_options['tags']
-    talk_page.save(summary=summary, botflag=wiki_options['markasbot'], minor=wiki_options['minoredit'], **kvargs)
-    print('Posted a notification about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
-
-    return
+    try:
+        talk_page.save(summary=summary, botflag=wiki_options['markasbot'], minor=wiki_options['minoredit'], **kvargs)
+        print('Posted a notification about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
+    except pywikibot.LockedPage:
+        print('Page %s is protected, skipping' % talk_page, file=sys.stderr)
 
 
 def process_list(type, formatter_class):
