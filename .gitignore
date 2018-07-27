@@ -109,6 +109,7 @@ ENV/
 # Project-specific
 user-password.py
 .my.cnf
+my.cnf
 replica.my.cnf
 throttle.ctrl
 lists/*.txt
