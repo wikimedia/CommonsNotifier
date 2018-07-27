@@ -21,7 +21,7 @@ class Formatter(object):
         if len(files) == 0:
             raise ValueError('Attempted to format a message about 0 files')
         params = (self.format_heading(files), self.format_body(files))
-        return subst_plural('\n\n== %s ==\n%s ~~~~\n' % params)
+        return subst_plural('\n\n== %s ==\n%s —~~~~\n' % params)
 
     def format_summary(self):
         return self.msg('summary')
