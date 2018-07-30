@@ -2,7 +2,7 @@
     "speedy-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion",
     "speedy-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion:",
     "speedy-body-end": "You can see the {{PLURAL:$1|reason|reasons}} for deletion at the file description {{PLURAL:$1|page|pages}} linked above.",
-    "speedy-summary": "File(s) used on this page are up for speedy deletion",
+    "speedy-summary": "Files used on this page are up for speedy deletion",
     "discussion-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion",
     "discussion-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion:",
     "discussion-body-end-matching": "Participate in the deletion discussion at the [[$1|nomination page]].",
