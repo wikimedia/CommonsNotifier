@@ -43,7 +43,7 @@ class PerWikiMapper(object):
                     result[title].append(file)
 
             for title in sorted(iter(result)):
-                yield page_mapping[title], result[title]
+                yield page_mapping[title], sorted(result[title])
 
 
 def get_nomination_page(wikitext):
