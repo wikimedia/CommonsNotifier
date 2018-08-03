@@ -84,7 +84,7 @@ class TestMapper(unittest.TestCase):
             'Page1-dewiki>Bar.jpg|Baz.jpg|Quux.jpg',
             'Page2-dewiki>Bar.jpg'
         ]
-        self.assertEqual(file_list, expected)
+        self.assertEqual(sorted(file_list), sorted(expected))
 
 
 if __name__ == '__main__':
