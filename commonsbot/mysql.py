@@ -14,6 +14,8 @@ def decode_tuple(tuple):
 
 
 def connect():
+    if config.mysql_config_file is None:
+        raise OSError('MySQL user configuration file (my.cnf or replica.my.cnf) not found!')
     return pymysql.connect(read_default_file=config.mysql_config_file,
                            charset='utf8',
                            use_unicode=True)

@@ -20,8 +20,6 @@ for dir in ['.', basedir, os.environ['HOME']]:
         if os.path.isfile(file):
             mysql_config_file = file
             break
-if mysql_config_file is None:
-    raise OSError('replica.my.cnf not found!')
 
 def for_wiki(dbname):
     wikis = settings['wiki-options']
