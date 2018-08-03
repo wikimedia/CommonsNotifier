@@ -26,7 +26,7 @@ class TestFormatters(unittest.TestCase):
 The following Wikimedia Commons {{subst:PLURAL:2|file|files}} used on this page {{subst:PLURAL:2|has|have}} been nominated for deletion:
 * [[commons:File:File1.jpg|File1.jpg]] ([[commons:Commons:Deletion requests/File1.jpg|discussion]])<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File1.jpg -->
 * [[commons:File:File2.jpg|File2.jpg]] ([[commons:Commons:Deletion requests/File2.jpg|discussion]])<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File2.jpg -->
-Participate in the deletion {{subst:PLURAL:2|discussions}} at the nomination {{subst:PLURAL:2|pages}} linked above. ~~~~
+Participate in the deletion {{subst:PLURAL:2|discussions}} at the nomination {{subst:PLURAL:2|pages}} linked above. —~~~~
 """
         result = f.format(states)
         self.assertEqual(expected, result)
@@ -38,7 +38,7 @@ Participate in the deletion {{subst:PLURAL:2|discussions}} at the nomination {{s
 The following Wikimedia Commons {{subst:PLURAL:2|file|files}} used on this page {{subst:PLURAL:2|has|have}} been nominated for deletion:
 * [[commons:File:File1.jpg|File1.jpg]]<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File1.jpg -->
 * [[commons:File:File2.jpg|File2.jpg]]<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File2.jpg -->
-Participate in the deletion discussion at the [[commons:Commons:Deletion requests/File1.jpg|nomination page]]. ~~~~
+Participate in the deletion discussion at the [[commons:Commons:Deletion requests/File1.jpg|nomination page]]. —~~~~
 """
         result = f.format(states)
         self.assertEqual(expected, result)
@@ -48,7 +48,7 @@ Participate in the deletion discussion at the [[commons:Commons:Deletion request
 == {{subst:PLURAL:1|A Commons file|Commons files}} used on this page {{subst:PLURAL:1|has|have}} been nominated for deletion ==
 The following Wikimedia Commons {{subst:PLURAL:1|file|files}} used on this page {{subst:PLURAL:1|has|have}} been nominated for deletion:
 * [[commons:File:File1.jpg|File1.jpg]]<!-- COMMONSBOT: discussion | 2018-05-15T13:30:00+00:00 | File1.jpg -->
-Participate in the deletion discussion at the [[commons:Commons:Deletion requests/File1.jpg|nomination page]]. ~~~~
+Participate in the deletion discussion at the [[commons:Commons:Deletion requests/File1.jpg|nomination page]]. —~~~~
 """
         result = f.format(states[:1])
         self.assertEqual(expected, result)
@@ -67,7 +67,7 @@ Participate in the deletion discussion at the [[commons:Commons:Deletion request
 The following Wikimedia Commons {{subst:PLURAL:2|file|files}} used on this page {{subst:PLURAL:2|has|have}} been nominated for speedy deletion:
 * [[commons:File:File1.jpg|File1.jpg]]<!-- COMMONSBOT: speedy | 2018-05-15T13:30:00+00:00 | File1.jpg -->
 * [[commons:File:File2.jpg|File2.jpg]]<!-- COMMONSBOT: speedy | 2018-05-15T13:30:00+00:00 | File2.jpg -->
-You can see the {{subst:PLURAL:2|reason|reasons}} for deletion at the file description {{subst:PLURAL:2|page|pages}} linked above. ~~~~
+You can see the {{subst:PLURAL:2|reason|reasons}} for deletion at the file description {{subst:PLURAL:2|page|pages}} linked above. —~~~~
 """
         result = f.format(states)
         self.assertEqual(expected, result)

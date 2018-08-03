@@ -1,12 +1,12 @@
 {
-    "speedy-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion",
-    "speedy-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion:",
-    "speedy-body-end": "You can see the {{PLURAL:$1|reason|reasons}} for deletion at the file description {{PLURAL:$1|page|pages}} linked above.",
-    "speedy-summary": "Files used on this page are up for speedy deletion",
-    "discussion-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion",
-    "discussion-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion:",
-    "discussion-body-end-matching": "Participate in the deletion discussion at the [[$1|nomination page]].",
-    "discussion-body-end-mismatching": "Participate in the deletion {{PLURAL:$1|discussions}} at the nomination {{PLURAL:$1|pages}} linked above.",
-    "discussion-summary": "File(s) used on this page are up for deletion",
-    "discussion-line": "[[$1]] ([[$2|discussion]])"
+    "commtech-commons-speedy-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion",
+    "commtech-commons-speedy-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion:",
+    "commtech-commons-speedy-body-end": "You can see the {{PLURAL:$1|reason|reasons}} for deletion at the file description {{PLURAL:$1|page|pages}} linked above.",
+    "commtech-commons-speedy-summary": "Files used on this page are up for speedy deletion",
+    "commtech-commons-discussion-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion",
+    "commtech-commons-discussion-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion:",
+    "commtech-commons-discussion-body-end-matching": "Participate in the deletion discussion at the [[$1|nomination page]].",
+    "commtech-commons-discussion-body-end-mismatching": "Participate in the deletion {{PLURAL:$1|discussions}} at the nomination {{PLURAL:$1|pages}} linked above.",
+    "commtech-commons-discussion-summary": "Files used on this page are up for deletion",
+    "commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])"
 }

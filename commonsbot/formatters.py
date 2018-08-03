@@ -47,7 +47,7 @@ class Formatter(object):
         return result
 
     def msg(self, key, params=()):
-        key = self.deletion_type + '-' + key
+        key = 'commtech-commons-' + self.deletion_type + '-' + key
         return self.i18n.msg(key, params)
 
 class DiscussionFormatter(Formatter):
