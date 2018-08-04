@@ -5,6 +5,7 @@ import re
 
 _presence_cache = {}
 
+
 def format(msg, params):
     """
     Expands parameters for a MediaWiki-style message string
@@ -37,6 +38,7 @@ def format(msg, params):
         raise ValueError('Mismatch between parameters passed and found in the message "%s"' % msg)
     return result
 
+
 def language_has_all_messages(code):
     """
     Verifies that a language has all the required messages
@@ -62,11 +64,10 @@ def language_has_all_messages(code):
             # Metadata
             continue
         if msg not in messages:
-             print('Language "%s" misses message "%s"' % (code, msg), file=sys.stderr)
-             result = False
+            print('Language "%s" misses message "%s"' % (code, msg), file=sys.stderr)
+            result = False
     _presence_cache[code] = result
     return result
-
 
 
 class I18n(object):

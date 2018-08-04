@@ -15,11 +15,12 @@ file.close()
 
 mysql_config_file = None
 for dir in ['.', basedir, os.environ['HOME']]:
-    for file in ['my.cnf','replica.my.cnf']:
+    for file in ['my.cnf', 'replica.my.cnf']:
         file = '%s/%s' % (dir, file)
         if os.path.isfile(file):
             mysql_config_file = file
             break
+
 
 def for_wiki(dbname):
     wikis = settings['wiki-options']
@@ -28,5 +29,6 @@ def for_wiki(dbname):
         result.update(wikis[dbname])
 
     return result
+
 
 __all__ = ('settings', 'mysql_config_file', 'dry_run', 'for_wiki')

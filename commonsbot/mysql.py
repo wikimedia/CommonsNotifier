@@ -55,4 +55,4 @@ def query(conn, sql, params=(), verbose=None):
 
 
 def tuple_sql(tuple):
-    return ', '.join(['%s']*len(tuple))
+    return ', '.join(['%s'] * len(tuple))
