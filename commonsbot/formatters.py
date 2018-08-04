@@ -35,7 +35,7 @@ class Formatter(object):
 
     def format_line(self, filename, discussion=None):
         result = '* '
-        formatted ='commons:File:{0}|{0}'.format(filename)
+        formatted = 'commons:File:{0}|{0}'.format(filename)
         if discussion is None:
             result += '[[%s]]' % formatted
         else:
@@ -49,6 +49,7 @@ class Formatter(object):
     def msg(self, key, params=()):
         key = 'commtech-commons-' + self.deletion_type + '-' + key
         return self.i18n.msg(key, params)
+
 
 class DiscussionFormatter(Formatter):
     def __init__(self, i18n):

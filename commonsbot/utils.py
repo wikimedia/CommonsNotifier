@@ -29,7 +29,6 @@ class PerWikiMapper(object):
         if len(files[file]) < self.pages_per_file_per_wiki:
             files[file].append(page)
 
-
     def files_per_page(self):
         for files in self.wikis.values():
             page_mapping = {}
@@ -50,12 +49,12 @@ def get_nomination_page(wikitext):
     code = mwparserfromhell.parse(wikitext)
     for template in code.filter_templates():
         if template.name.matches('Delete') \
-            or template.name.matches('Test delete'):
-                if template.has('subpage'):
-                    subpage = str(template.get('subpage').value)
-                    subpage = subpage.strip()
-                    if subpage != '':
-                        return subpage
+           or template.name.matches('Test delete'):
+            if template.has('subpage'):
+                subpage = str(template.get('subpage').value)
+                subpage = subpage.strip()
+                if subpage != '':
+                    return subpage
 
     return None
 

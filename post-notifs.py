@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import os, sys
+import os
+import sys
 from commonsbot import mysql, config
 from commonsbot.state import DeletionStateStore, DeletionState
 from commonsbot.i18n import I18n, language_has_all_messages
@@ -16,10 +17,16 @@ MAX_GLOBALUSAGE = 10000
 
 commons = Site('commons', 'commons')
 
-def with_store(callable):
+
+def with_store(callback):
+    """
+    Wraps operations on database into open/save to prevent connections from timing out
+    @param callback: Function to be called that receives a DeletionStateStore object as a parameter
+    @type callback: function
+    """
     userdb = mysql.connect()
     store = DeletionStateStore(userdb)
-    callable(store)
+    callback(store)
     userdb.commit()
     userdb.close()
 
@@ -85,9 +92,11 @@ def process_list(type, formatter_class):
     file.close()
 
     file_states = {}
+
     def load(store):
         nonlocal file_states
         (file_states, _) = store.load_state(lines, type)
+
     with_store(load)
     mapper = PerWikiMapper(NOTIFS_PER_WIKI)
     notified_files = set()
@@ -98,7 +107,7 @@ def process_list(type, formatter_class):
             state = file_states[filename]
         else:
             print('No deletion state found for %s, stubbing' % filename,
-                file=sys.stderr)
+                  file=sys.stderr)
             state = DeletionState(filename, type, 'new')
             file_states[filename] = state
         state.file_page = file
@@ -134,6 +143,7 @@ def process_list(type, formatter_class):
             # Error - save state to avoid reposting and then rethrow
             failed = set(states)
             failed_only = failed - notified_files
+
             def save(store):
                 store.set_failure(type, list(failed_only))
                 store.set_state(type, list(notified_files), 'notified')

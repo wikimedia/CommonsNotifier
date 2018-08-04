@@ -43,7 +43,7 @@ class DeletionState(object):
 
         discussion = get_nomination_page(text)
         if discussion is None:
-            print("Can't retrieve a discussion page for %s, guessing" % \
+            print("Can't retrieve a discussion page for %s, guessing" %
                   self.file_name, file=sys.stderr)
             discussion = 'File:' + self.file_name
         discussion = 'Commons:Deletion requests/' + discussion
