@@ -5,6 +5,13 @@ from commonsbot import config
 
 
 def decode_tuple(tuple):
+    """
+    Decodes binary strings in a result row
+
+    @param tuple: Database row
+    @type tuple: tuple
+    @rtype: tuple
+    """
     result = ()
     for var in tuple:
         if isinstance(var, bytes):
@@ -14,6 +21,11 @@ def decode_tuple(tuple):
 
 
 def connect():
+    """
+    Connects to the database
+
+    @rtype: pymysql.Connection
+    """
     if config.mysql_config_file is None:
         raise OSError('MySQL user configuration file (my.cnf or replica.my.cnf) not found!')
     return pymysql.connect(read_default_file=config.mysql_config_file,

@@ -21,6 +21,7 @@ commons = Site('commons', 'commons')
 def with_store(callback):
     """
     Wraps operations on database into open/save to prevent connections from timing out
+
     @param callback: Function to be called that receives a DeletionStateStore object as a parameter
     @type callback: function
     """
@@ -32,6 +33,18 @@ def with_store(callback):
 
 
 def spam_notifications(notif_type, formatter_class, talk_page, files):
+    """
+    Posts a notification to the talk page
+
+    @param notif_type: Notification type
+    @type notif_type: str
+    @param formatter_class: Class to be used for formatting messages
+    @type formatter_class: commonsbot.formatters.Formatter
+    @param talk_page: Page to post to
+    @type talk_page: pywikibot.Page
+    @param files: A list of DeletionState objects to report
+    @type files: list
+    """
     assert len(files) > 0
 
     wiki_options = config.for_wiki(talk_page.site.dbName())
@@ -80,9 +93,12 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
 
 def process_list(type, formatter_class):
     """
-    Processes a list of files to notify about
+    Post notifications about a certain type of deletions
 
+    @param type: Deletion type
     @type type: str
+    @param formatter_class: Class to be used for formatting messages
+    @type formatter_class: commonsbot.formatters.Formatter
     """
     filename = 'lists/%s.txt' % type
     if not os.path.isfile(filename) or not os.path.exists(filename):

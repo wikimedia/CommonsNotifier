@@ -13,6 +13,15 @@ store = DeletionStateStore(userdb)
 
 
 def load_files(categories, depth):
+    """
+    Returns a list of unique files in categories
+
+    @param categories: List of Commons category names as strings
+    @type categories: list
+    @param depth: Category recursion depth
+    @type depth: int
+    @rtype: list
+    """
     files = set()
     for cat in categories:
         cat = Category(commons, cat)
@@ -26,6 +35,18 @@ def load_files(categories, depth):
 
 
 def make_list(type, categories, depth, delay):
+    """
+    Makes a list of files up for deletion
+
+    @param type: Deletion type
+    @type type: str
+    @param categories: List of Commons category names as strings
+    @type categories: list
+    @param depth: Category recursion depth
+    @type depth: int
+    @param delay: For how long should a file be up for deletion to be reported, in seconds
+    @type delay: int
+    """
     files = load_files(categories, depth)
     print('%s pages found for %s deletion' % (len(files), type))
 

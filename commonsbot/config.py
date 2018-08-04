@@ -23,6 +23,13 @@ for dir in ['.', basedir, os.environ['HOME']]:
 
 
 def for_wiki(dbname):
+    """
+    Returns settings for a given wiki
+
+    @param dbname: Wiki
+    @type dbname: str
+    @rtype: dict
+    """
     wikis = settings['wiki-options']
     result = wikis['default'].copy()
     if dbname in wikis:
