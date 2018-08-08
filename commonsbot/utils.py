@@ -11,13 +11,25 @@ REPOST_DAYS = 180
 
 
 class PerWikiMapper(object):
+    """
+    Accumulates information which pages on each wiki need to be notified about which files
+    """
+
     def __init__(self, pages_per_file_per_wiki):
+        """
+        @param pages_per_file_per_wiki: Notify each wiki not more than this number of times about each file
+        @type pages_per_file_per_wiki: int
+        """
         self.wikis = {}
         self.pages_per_file_per_wiki = pages_per_file_per_wiki
 
     def add(self, file, page):
         """
+        Accumulates information about one file usage
+
+        @param page: Page using a nominated file
         @type page: pywikibot.Page
+        @param file: Nominated file
         @type file: str
         """
         wiki = page.site.dbName()
@@ -30,6 +42,11 @@ class PerWikiMapper(object):
             files[file].append(page)
 
     def files_per_page(self):
+        """
+        Returns a generator listing pages and files accumulated by this mapper
+
+        @rtype: (pywikibot.Page, commonsbot.state.DeletionState[])
+        """
         for files in self.wikis.values():
             page_mapping = {}
             result = {}
@@ -46,6 +63,13 @@ class PerWikiMapper(object):
 
 
 def get_nomination_page(wikitext):
+    """
+    Parses file description page wikitext to find out deletion nomination page
+
+    @param wikitext: Page text
+    @type wikitext: str
+    @rtype: str|None
+    """
     code = mwparserfromhell.parse(wikitext)
     for template in code.filter_templates():
         if template.name.matches('Delete') \
