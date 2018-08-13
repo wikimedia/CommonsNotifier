@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Um arquivo do Commons|Arquivos do Commons}} usado nesta página {{PLURAL:$1|foi|foram}} foi indicado para exclusão rápida",
+	"commtech-commons-speedy-body-start": "Os seguintes Wikimedia Commons {{PLURAL:$1|arquivos|arquivos}} usados nesta página {{PLURAL:$1|foi|foram}} foram indicados para exclusão rápida:",
+	"commtech-commons-speedy-body-end": "Você pode ver o {{PLURAL:$1|motivo|motivos}} para exclusão na descrição do arquivo {{PLURAL:$1|página|páginas}} vinculada acima.",
+	"commtech-commons-speedy-summary": "Os arquivos usados nesta página estão prontos para serem excluídos rapidamente",
+	"commtech-commons-discussion-header": "{{PLURAL: $1|Um arquivo do Commons|Arquivos do Commons}} usado nesta página {{PLURAL:$ 1|foi|foram}} foi indicado para exclusão",
+	"commtech-commons-discussion-body-start": "Os seguintes Wikimedia Commons {{PLURAL:$1| arquivo|arquivos}} usados nesta página {{PLURAL:$1|foi|foram}} foram indicados para exclusão:",
+	"commtech-commons-discussion-body-end-matching": "Participe da discussão de exclusão na [[$1|página de nomeação]].",
+	"commtech-commons-discussion-body-end-mismatching": "Participe da exclusão {{PLURAL:$1|discussões}} na nomeação {{PLURAL:$1|páginas}} vinculada acima.",
+	"commtech-commons-discussion-summary": "Os arquivos usados nesta página estão prontos para serem excluídos",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussão]])"
+}

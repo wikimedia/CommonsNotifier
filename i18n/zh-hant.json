@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"commtech-commons-speedy-header": "使用在此頁面的{{PLURAL:$1|一個共享資源檔案|共享資源檔案}}{{PLURAL:$1|有|有}}被列為需快速刪除",
+	"commtech-commons-speedy-body-start": "以下使用在此頁面的維基共享資源{{PLURAL:$1|檔案|檔案}}{{PLURAL:$1|有|有}}被列為需快速刪除：",
+	"commtech-commons-speedy-body-end": "您可以查看以上連結的檔案描述{{PLURAL:$1|頁面|頁面}}來查看刪除{{PLURAL:$1|依據|依據}}",
+	"commtech-commons-speedy-summary": "使用在此頁面要被快速刪除的檔案",
+	"commtech-commons-discussion-header": "使用在此頁面的{{PLURAL:$1|一個共享資源檔案|共享資源檔案}}{{PLURAL:$1|有|有}}被列為需快速刪除",
+	"commtech-commons-discussion-body-start": "以下使用在此頁面的維基共享資源{{PLURAL:$1|檔案|檔案}}{{PLURAL:$1|有|有}}被列為需快速刪除：",
+	"commtech-commons-discussion-body-end-matching": "在[[$1|提名頁面]]參與有關刪除的討論。",
+	"commtech-commons-discussion-body-end-mismatching": "在以上連結的提名{{PLURAL:$1|頁面}}參與有關刪除的{{PLURAL:$1|討論}}。",
+	"commtech-commons-discussion-summary": "使用在此頁面要被快速刪除的檔案",
+	"commtech-commons-discussion-line": "[[$1]]（[[$2|討論]]）"
+}

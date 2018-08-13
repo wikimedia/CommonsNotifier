@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Ei Commons-fil|Commons-filer}} som er brukt på denne siden har blitt nominert for hurtigsletting",
+	"commtech-commons-speedy-body-start": "Følgende Wikimedia Commons-{{PLURAL:$1|fil|filer}} som er brukt på denne siden har blitt nominert for hurtigsletting:",
+	"commtech-commons-speedy-body-end": "Du kan se {{PLURAL:$1|årsaken|årsakene}} for sletting på {{PLURAL:$1|filbeskrivelsessiden|filbeskrivelsessidene}} som lenkes ovenfor.",
+	"commtech-commons-speedy-summary": "Filer som er brukt på denne siden er merket for hurtigsletting",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Ei Commons-fil|Commons-filer}} som er brukt på denne siden har blitt nominert for sletting",
+	"commtech-commons-discussion-body-start": "Følgende Wikimedia Commons-{{PLURAL:$1|fil|filer}} som er brukt på denne siden har bltt nominert for sletting:",
+	"commtech-commons-discussion-body-end-matching": "Delta i slettediskusjonen på [[$1|nominasjonssiden]].",
+	"commtech-commons-discussion-body-end-mismatching": "Delta i {{PLURAL:$1|slettediskusjonen|slettediskusjonene}} på {{PLURAL:$1|nominasjonssiden|nominasjonssidene}} som lenkes ovenfor.",
+	"commtech-commons-discussion-summary": "Filer brukt på denne siden har blitt nominert for sletting",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|diskusjon]])"
+}

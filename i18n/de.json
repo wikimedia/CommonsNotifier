@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Eine Commons-Datei|Commons-Dateien}} auf dieser Seite {{PLURAL:$1|wurde|wurden}} zur Schnelllöschung vorgeschlagen",
+	"commtech-commons-speedy-body-start": "Die {{PLURAL:$1|folgende Wikimedia-Commons-Datei|folgenden Wikimedia-Commons-Dateien}} auf dieser Seite {{PLURAL:$1|wurde|wurden}} zur Schnelllöschung vorgeschlagen:",
+	"commtech-commons-speedy-body-end": "Du kannst {{PLURAL:$1|den Grund|die Gründe}} für die Löschung auf {{PLURAL:$1|der oben verlinkten Dateibeschreibungsseite|den oben verlinkten Dateibeschreibungsseiten}} einsehen.",
+	"commtech-commons-speedy-summary": "Auf dieser Seite verwendete Dateien sind zur Schnelllöschung vorgesehen",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Eine Commons-Datei|Commons-Dateien}} auf dieser Seite {{PLURAL:$1|wurde|wurden}} zur Löschung vorgeschlagen",
+	"commtech-commons-discussion-body-start": "Die {{PLURAL:$1|folgende Wikimedia-Commons-Datei|folgenden Wikimedia-Commons-Dateien}} auf dieser Seite {{PLURAL:$1|wurde|wurden}} zur Löschung vorgeschlagen:",
+	"commtech-commons-discussion-body-end-matching": "Nimm an der Löschdiskussion auf der [[$1|Vorschlagsseite]] teil.",
+	"commtech-commons-discussion-body-end-mismatching": "Nimm an {{PLURAL:$1|der Löschdiskussion|den Löschdiskussionen}} teil, die oben verlinkt {{PLURAL:$1|ist|sind}}.",
+	"commtech-commons-discussion-summary": "Auf dieser Seite verwendete Dateien sind zur Löschung vorgesehen",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|Diskussion]])"
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Um ficheiro da wiki Commons usado nesta página foi nomeado|Ficheiros da wiki Commons usados nesta página foram nomeados}} para eliminação rápida",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|O seguinte ficheiro da wiki Commons usado nesta página foi nomeado|Os seguintes ficheiros da wiki Commons usados nesta página foram nomeados}} para eliminação rápida:",
+	"commtech-commons-speedy-body-end": "Pode ver {{PLURAL:$1|o motivo|os motivos}} para a eliminação {{PLURAL:$1|na página de descrição do ficheiro, na hiperligação|nas páginas de descrição dos ficheiros, nas hiperligações}} acima.",
+	"commtech-commons-speedy-summary": "Ficheiros usados nesta página estão nomeados para eliminação rápida",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Um ficheiro da wiki Commons usado nesta página foi nomeado|Ficheiros da wiki Commons usados nesta página foram nomeados}} para eliminação",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|O seguinte ficheiro da wiki Wikimedia Commons usado nesta página foi nomeado|Os seguintes ficheiros da wiki Wikimedia Commons usados nesta página foram nomeados}} para eliminação:",
+	"commtech-commons-discussion-body-end-matching": "Participe no debate sobre a eliminação na [[$1|página da nomeação]].",
+	"commtech-commons-discussion-body-end-mismatching": "Participe nos debates sobre as eliminações nas [[$1|páginas das nomeações]], acessíveis pelas hiperligações acima.",
+	"commtech-commons-discussion-summary": "Ficheiros usados nesta página estão nomeados para eliminação",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussão]])"
+}
