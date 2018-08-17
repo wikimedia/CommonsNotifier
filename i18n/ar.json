@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|ملف كومنز المستخدم|ملفات كومنز المستخدمة}} في هذه الصفحة تم {{PLURAL:$1|ترشيحه|ترشيحها}} للحذف السريع",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|ملف ويكيميديا كومنز التالي المستخدم|ملفات ويكيميديا كومنز التالية المستخدمة}} في هذه الصفحة تم {{PLURAL:$1|ترشيحه|ترشيحها}} للحذف السريع",
+	"commtech-commons-speedy-body-end": "يمكنك الاطلاع على {{PLURAL:$1|سبب|أسباب}} الحذف في {{PLURAL:$1|صفحة|صفحات}} وصف الملف المرتبطة أعلاه.",
+	"commtech-commons-speedy-summary": "الملفات المستخدمة في هذه الصفحة جاهزة للحذف السريع",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|ملف كومنز المستخدم|ملفات كومنز المستخدمة}} في هذه الصفحة تم {{PLURAL:$1|ترشيحه|ترشيحها}} للحذف",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|ملف ويكيميديا كومنز التالي المستخدم|ملفات ويكيميديا كومنز التالية المستخدمة}} في هذه الصفحة تم {{PLURAL:$1|ترشيحه|ترشيحها}} للحذف",
+	"commtech-commons-discussion-body-end-matching": "شارك في نقاش الحذف في [[$1|صفحة الترشيح]].",
+	"commtech-commons-discussion-body-end-mismatching": "شارك في {{PLURAL:$1|نقاشات}}  الحذف في {{PLURAL:$1|صفحات}} الترشيح المرتبطة أعلاه.",
+	"commtech-commons-discussion-summary": "الملفات المستخدمة في هذه الصفحة معروضة للحذف",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|نقاش]])"
+}

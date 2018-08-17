@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Un ficheru de Commons usáu|$1 ficheros de Commons usaos}} nesta páxina {{PLURAL:$1|marcóse|marcáronse}} pa desaniciu nel intre",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|El siguiente ficheru|Los siguientes ficheros}} de Wikimedia Commons {{PLURAL:$1|usáu|usaos}} nesta páxina {{PLURAL:$1|marcóse|marcáronse}} pa desaniciu nel intre",
+	"commtech-commons-speedy-body-end": "Puedes ver {{PLURAL:$1|el motivu|los motivos}} del desaniciu {{PLURAL:$1|na páxina|nes páxines}} de descripción de {{PLURAL:$1|ficheru enllazada|ficheros enllazaes}} más arriba.",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discutiniu]])"
+}

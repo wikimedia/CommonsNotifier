@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andrei Stroe",
+			"Strainu"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Un fișier|Unele fișiere}} de la Commons folosite pe această pagină {{PLURAL:$1|a fost propus|au fost propuse}} pentru ștergere rapidă",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Următorul fișier|Următoarele fișiere}} de la Wikimedia Commons folosite pe această pagină {{PLURAL:$1|a fost propus|au fost propuse}} pentru ștergere rapidă:",
+	"commtech-commons-speedy-body-end": "Puteți vedea {{PLURAL:$1|motivul|motivele}} ștergerii în {{PLURAL:$1|pagina|paginile}} de descriere de mai sus.",
+	"commtech-commons-speedy-summary": "Unele fișiere folosite pe această pagină urmează să fie șterse rapid",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Un fișier|Unele fișiere}} de la Commons folosite pe această pagină {{PLURAL:$1|a fost propus|au fost propuse}} pentru ștergere",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Următorul fișier|Următoarele fișiere}} de la Wikimedia Commons folosite pe această pagină {{PLURAL:$1|a fost propus|au fost propuse}} pentru ștergere:",
+	"commtech-commons-discussion-body-end-matching": "Participați la discuția de ștergere din [[$1|pagina propunerii]].",
+	"commtech-commons-discussion-body-end-mismatching": "Participați la {{PLURAL:$1|discuțiile}} de ștergere care se țin în {{PLURAL:$1|paginile}} de mai sus.",
+	"commtech-commons-discussion-summary": "Unele fișiere folosite în această pagină au fost propuse pentru ștergere",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discuție de ștergere]])"
+}
