@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Egy|Néhány}} Commons-fájl azonnali törlésre lett jelölve",
+	"commtech-commons-speedy-body-start": "A következő Wikimédia Commonsba feltöltött, ezen a lapon használt {{PLURAL:$1|fájl|fájlok}} azonnali törlésre {{PLURAL:$1|lett|lettek}} jelölve:",
+	"commtech-commons-speedy-body-end": "Az {{PLURAL:$1|okát a fájl leírólapján|okokat a fájlok leírólapjain}} találod (fentebb linkelve).",
+	"commtech-commons-speedy-summary": "A lapon használt fájlok azonnali törlésre jelölve",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Egy|Néhány}} Commons-fájl törlésre lett jelölve",
+	"commtech-commons-discussion-body-start": "A következő Wikimédia Commonsba feltöltött, ezen a lapon használt {{PLURAL:$1|fájl|fájlok}} törlésre {{PLURAL:$1|lett|lettek}} jelölve:",
+	"commtech-commons-discussion-body-end-matching": "A törlési megbeszélésben a [[$1|jelölés lapján]] vehetsz részt.",
+	"commtech-commons-discussion-body-end-mismatching": "A törlési megbeszélésben a jelölések lapjain vehetsz részt (fentebb linkelve).",
+	"commtech-commons-discussion-summary": "A lapon használt fájlok törlésre jelölve",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|megbeszélés]])"
+}
