@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"WTM",
+			"Wostr"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Plik|Pliki}} {{PLURAL:$1|użyty|użyte}} na tej stronie {{PLURAL:$1|został zgłoszony|zostały zgłoszone}} do natychmiastowego usunięcia",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Następujący plik|Następujące pliki}} z Wikimedia Commons {{PLURAL:$1|użyty|użyte}} na tej stronie {{PLURAL:$1|został zgłoszony|zostały zgłoszone}} do natychmiastowego usunięcia:",
+	"commtech-commons-speedy-body-end": "Możesz zobaczyć {{PLURAL:$1|przyczynę zgłoszenia|przyczyny zgłoszeń}} do usunięcia na {{PLURAL:$1|stronie opisu pliku podanej|stronach opisu plików podanych}} powyżej.",
+	"commtech-commons-speedy-summary": "Pliki użyte na tej stronie zostały zgłoszone do ekspresowego usunięcia",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Plik|Pliki}} {{PLURAL:$1|użyty|użyte}} na tej stronie {{PLURAL:$1|został zgłoszony|zostały zgłoszone}} do usunięcia",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Następujący plik|Następujące pliki}} Wikimedia Commons {{PLURAL:$1|używany|używane}} na tej stronie {{PLURAL:$1|został zgłoszony|zostały zgłoszone}} do usunięcia.",
+	"commtech-commons-discussion-body-end-matching": "Weź udział w dyskusji nad usunięciem na [[$1|stronie zgłoszenia]].",
+	"commtech-commons-discussion-body-end-mismatching": "Weź udział w {{PLURAL:$1|dyskusjach}} nad usunięciem na {{PLURAL:$1|stronach}} zgłoszenia podanych powyżej.",
+	"commtech-commons-discussion-summary": "Pliki użyte na tej stronie zostały zgłoszone do usunięcia",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|dyskusja]])"
+}
