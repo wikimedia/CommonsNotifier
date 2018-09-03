@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Awangba Mangang"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|ꯀꯃꯣꯟꯁ ꯀꯤ ꯐꯥꯏꯜ ꯱|ꯀꯃꯣꯟꯁ ꯐꯥꯏꯜꯁꯤꯡ}} ꯃꯁꯤꯒꯤ ꯂꯃꯥꯏꯁꯤꯗ  ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯁꯤ {{PLURAL:$1|ꯌꯥꯎꯈꯔꯦ|ꯌꯥꯎꯔꯦ}} ꯑꯗꯨꯝ ꯑꯊꯨꯨꯨꯕ ꯀꯛꯊꯠꯅꯕ ꯈꯣꯝꯒꯠꯄꯗ",
+	"commtech-commons-speedy-body-start": "ꯃꯈꯥꯒꯤ ꯋꯤꯀꯤꯃꯦꯗꯤꯌꯥ ꯀꯃꯣꯟꯁ ꯒꯤ {{PLURAL:$1|ꯐꯥꯏꯜ|ꯐꯥꯏꯜꯁꯤꯡ}} ꯃꯁꯤꯒꯤ ꯂꯃꯥꯏꯁꯤꯗ ꯁꯤꯖꯤꯟꯅꯔꯤꯕꯁꯤ {{PLURAL:$1|ꯌꯥꯎꯈꯔꯦ|ꯌꯥꯎꯔꯦ}} ꯑꯗꯨꯝ ꯑꯊꯨꯕ ꯀꯛꯊꯠꯅꯕꯒꯤ ꯈꯟꯒꯠꯄꯗ:",
+	"commtech-commons-speedy-body-end": "ꯅꯪꯅ ꯌꯦꯡꯕ ꯌꯥꯒꯅꯤ ꯐꯥꯏꯜ ꯀꯛꯊꯠꯈꯤꯕꯒꯤ ꯑꯀꯨꯞꯄ ꯋꯥꯔꯝ {{PLURAL:$1|ꯃꯔꯝ|ꯃꯔꯝꯁꯤꯡ}} ꯗꯨ  {{PLURAL:$1|ꯂꯃꯥꯏ|ꯂꯃꯥꯏꯁꯤꯡ}} ꯗꯥ, ꯁꯝꯅꯔꯦ ꯃꯊꯛꯀ ꯫",
+	"commtech-commons-speedy-summary": "ꯃꯁꯤꯒꯤ ꯂꯃꯥꯏꯁꯤꯗ ꯁꯤꯖꯤꯟꯅꯔꯤꯕꯁꯤꯡ ꯁꯤ ꯑꯊꯨꯕ ꯀꯛꯊꯠꯄꯒꯤ ꯁꯔꯨꯛꯅꯤ",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|ꯀꯃꯣꯟꯁ ꯐꯥꯏꯜ ꯱|ꯀꯃꯣꯟꯁ ꯐꯥꯏꯜꯁꯤꯡ}} ꯃꯁꯤꯒꯤ ꯂꯃꯥꯏꯁꯤꯗ ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯁꯤ ꯀꯛꯊꯠꯅꯕ ꯈꯟꯒꯠꯄꯗ {{PLURAL:$1|ꯌꯥꯎꯈꯔꯦ|ꯌꯥꯎꯔꯦ}} ꯫",
+	"commtech-commons-discussion-body-start": "ꯃꯈꯥꯒꯤ ꯋꯤꯀꯤꯃꯦꯗꯤꯌꯥ ꯀꯃꯣꯟꯁ{{PLURAL:$1|ꯐꯥꯏꯜ|ꯐꯥꯏꯜꯁꯤꯡ}} ꯃꯁꯤꯒꯤ ꯂꯃꯥꯏꯁꯤꯗ ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯁꯤ ꯑꯊꯨꯕ ꯀꯛꯊꯠꯅꯕ ꯈꯟꯒꯠꯄꯗ  {{PLURAL:$1|ꯌꯥꯎꯈꯔꯦ|ꯌꯥꯎꯔꯦ}} ꯫",
+	"commtech-commons-discussion-body-end-matching": "[[$1|ꯈꯟꯒꯠꯂꯕ ꯂꯃꯥꯏ]] ꯗ ꯁꯔꯨꯛ ꯌꯥꯗꯨꯅ ꯀꯛꯊꯠꯄꯒꯤ ꯈꯟꯅ ꯅꯩꯅꯕ ꯌꯥꯎ ꯫",
+	"commtech-commons-discussion-body-end-mismatching": "ꯀꯛꯊꯠꯄꯒꯤ {{PLURAL:$1|ꯈꯟꯅ ꯅꯩꯅꯕ}} ꯗꯨ ꯌꯥꯎ {{PLURAL:$1|ꯂꯃꯥꯏꯁꯤꯡ}} ꯗ ꯃꯊꯛꯇꯨꯒ ꯁꯝꯅꯗꯨꯅ ꯂꯩꯔꯦ ꯫",
+	"commtech-commons-discussion-summary": "ꯃꯁꯤꯒꯤ ꯂꯃꯥꯏ ꯁꯤꯗ ꯁꯤꯖꯤꯟꯅꯔꯤꯕꯁꯤ ꯀꯛꯊꯠꯅꯕ ꯀꯥꯡꯂꯨꯞꯇ ꯂꯩꯔꯦ",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|ꯈꯟꯅ ꯅꯩꯅꯕ]])"
+}
