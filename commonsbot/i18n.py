@@ -2,6 +2,7 @@ import json
 import sys
 from os import path
 import re
+from glob import glob
 
 _presence_cache = {}
 
@@ -96,12 +97,16 @@ class I18n(object):
         I18n._cache[language] = obj
         return obj
 
+    @staticmethod
+    def _directory():
+        dirname = path.dirname(__file__)
+        return path.normpath('%s/../i18n' % dirname)
+
     def __init__(self, language):
         self.language = language
-        dir = path.dirname(__file__)
-        filename = path.normpath('%s/../i18n/%s.json' % (dir, self.language))
-        file = open(filename, 'r')
-        self.data = json.loads(file.read())
+        filename = '%s/%s.json' % (I18n._directory(), self.language)
+        file = open(filename, 'r', encoding='utf8')
+        self.data = json.load(file)
         file.close()
 
     def msg(self, key, params=()):
@@ -115,3 +120,16 @@ class I18n(object):
         @rtype: list
         """
         return self.data.keys()
+
+    @staticmethod
+    def languages():
+        """
+        Returns a list of language codes available, qqq is not included
+        @rtype: list
+        """
+        list = []
+        for file in glob(I18n._directory() + '/*.json'):
+            lang = path.splitext(path.basename(file))[0]
+            if lang != 'qqq':
+                list.append(lang)
+        return sorted(list)
