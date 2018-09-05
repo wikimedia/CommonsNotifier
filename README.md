@@ -87,7 +87,7 @@ Old listfiles are saved to `logs/{discussion|speedy}.txt.<timestamp>`.
 ## Adding a new wiki
 Add its dbname to `wikis-enabled` in Git and make sure that all messages are localized by running `check-i18n.py`.
 
-## Configration
+## Configuration
 All settings are kept in `config.json`:
 * `dry-run` - whether dry run mode os on, see "Stopping the bot" above.
 ** `wiki-options` - dictionary of `dbname: options`, with every wiki possibly overriding setting from `"default"`. Possible per-wiki options:
