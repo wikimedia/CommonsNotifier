@@ -85,7 +85,7 @@ To add some extra verbose debug output, set `verbose_output` to `True` in `user-
 Old listfiles are saved to `logs/{discussion|speedy}.txt.<timestamp>`.
 
 ## Adding a new wiki
-Add its dbname to `wikis-enabled` in Git and make sure that all messages are localized.
+Add its dbname to `wikis-enabled` in Git and make sure that all messages are localized by running `check-i18n.py`.
 
 ## Configration
 All settings are kept in `config.json`:
@@ -100,9 +100,10 @@ All settings are kept in `config.json`:
 
 ### Overview
 
-The bot's main operation consists of two scripts:
+The bot's main operation consists of three scripts:
 * `make-list.py` creates lists of files that have been around for long enough to be notified about.
 * `post-notifs.py` runs off these files to determine which pages need updating and post the messages.
+* `check-i18n.py` is a dev script that outputs statistics on language translation progress.
 
 ### Testing
 The repository has a makefile, so just run
