@@ -129,6 +129,9 @@ def process_list(type, formatter_class):
         state.file_page = file
         if type == 'discussion':
             state.load_discussion_info(commons)
+            page = Page(commons, state.discussion_page)
+            if not page.exists():
+                continue
 
         pageset = file.globalusage(MAX_GLOBALUSAGE)
         for page in pageset:
