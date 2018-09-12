@@ -58,10 +58,10 @@ bin/first-run
 Set up cron jobs (with `crontab -e`):
 ```
 # Run the bot's main script every 15 minutes
-5,20,35,50 * * * * jsub -once -N commtech-commons ${HOME}/bot/bin/cronjob
+5,20,35,50 * * * * jsub -quiet -once -N commtech-commons ${HOME}/bot/bin/cronjob
 
 # Clean up old logfiles and DB entries daily
-0 3 * * * jsub -once -N commtech-commons-cleanup ${HOME}/bot/bin/cleanup
+0 3 * * * jsub -quiet -once -N commtech-commons-cleanup ${HOME}/bot/bin/cleanup
 ```
 
 ## Running the bot
@@ -85,7 +85,9 @@ To add some extra verbose debug output, set `verbose_output` to `True` in `user-
 Old listfiles are saved to `logs/{discussion|speedy}.txt.<timestamp>`.
 
 ## Adding a new wiki
-Add its dbname to `wikis-enabled` in Git and make sure that all messages are localized by running `check-i18n.py`.
+* Add its dbname to `wikis-enabled` in Git.
+* Make sure that all messages are localized by running `check-i18n.py`.
+* Make sure that the bot account is present on the wiki.
 
 ## Configuration
 All settings are kept in `config.json`:
