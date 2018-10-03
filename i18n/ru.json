@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Infovarius",
+			"Movses",
+			"Vlad5250"
+		]
+	},
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Следующий файл Wikimedia Commons используется на текущей странице, однако номинирован|Следующие файлы Wikimedia Commons используются на текущей странице, однако номинированы}} к быстрому удалению:",
+	"commtech-commons-speedy-body-end": "Вы можете видеть {{PLURAL:$1|причину|причины}} для удаления на {{PLURAL:$1|странице|страницах}} описания {{PLURAL:$1|файла|файлах}} по ссылкам выше.",
+	"commtech-commons-speedy-summary": "Файлы, используемые на этой странице, предложены к быстрому удалению",
+	"commtech-commons-discussion-body-end-matching": "Участвуйте в обсуждении удаления на [[$1|странице номинации]].",
+	"commtech-commons-discussion-summary": "Файлы, использованные на этой странице, подлежат удалению",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|обсуждение]])"
+}
