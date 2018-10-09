@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Movses"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Файл Commons, що використовується|Файли Commons, що використовуються}} на цій сторінці номіновано до швидкого вилучення",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Наступний файл Commons, що використовується|Наступні файли Commons, що використовуються}} на цій сторінці номіновано до швидкого вилучення:",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Файл Commons, що використовується|Файли Commons, що використовуються}} на цій сторінці номіновано до вилучення",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Наступний файл Commons, що використовується|Наступні файли Commons, що використовуються}} на цій сторінці номіновано до вилучення:",
+	"commtech-commons-discussion-body-end-mismatching": "Візьміть участь у обговоренні вилучення {{PLURAL:$1|сторінки|сторінок}} за посиланнями вище"
+}
