@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ontsed"
+			"Ontsed",
+			"Beta16"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Un file Commons usato|I file Commons usati}} in questa pagina {{PLURAL:$1|è stato proposto|sono stati proposti}} per la cancellazione immediata",
@@ -11,6 +12,7 @@
 	"commtech-commons-discussion-header": "{{PLURAL:$1|Un file Commons usato|I file Commons usati}} in questa pagina {{PLURAL:$1|è stato proposto|sono stati proposti}} per la cancellazione",
 	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Il seguente|I seguenti}} file Wikimedia Commons {{PLURAL:$1|usato|usati}} in questa pagina {{PLURAL:$1|è stato proposto|sono stati proposti}} per la cancellazione:",
 	"commtech-commons-discussion-body-end-matching": "Partecipa alla discussione per la cancellazione sulla [[$1|pagina delle nomine]].",
+	"commtech-commons-discussion-body-end-mismatching": "Partecipa alle {{PLURAL:$1|discussioni}} sulla proposta di cancellazione per {{PLURAL:$1|la pagina collegata|le pagine collegate}} sopra.",
 	"commtech-commons-discussion-summary": "I file utilizzati in questa pagina sono pronti per la cancellazione",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussione]])"
 }
