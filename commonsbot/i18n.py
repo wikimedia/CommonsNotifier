@@ -19,7 +19,6 @@ def format(msg, params):
     if len(params) == 0:
         return msg
 
-    used = set()
     last_index = 0
     result = ''
     for match in re.finditer('(?<=\\$)\\d+', msg):
@@ -30,13 +29,9 @@ def format(msg, params):
         result += msg[last_index:match.start() - 1]
         result += str(params[index])
         last_index = match.end()
-        used.add(index)
 
     result += msg[last_index:]
 
-    param_set = set(range(len(params)))
-    if param_set != used:
-        raise ValueError('Mismatch between parameters passed and found in the message "%s"' % msg)
     return result
 
 

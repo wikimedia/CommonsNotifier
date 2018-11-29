@@ -13,6 +13,8 @@ class TestI18n(unittest.TestCase):
             ('uh $1 bar $1 baz $1', ('foo',), 'uh foo bar foo baz foo'),
             ('$2$1', ('foo', 'bar'), 'barfoo'),
             ('$1 $2', ('$2 bill', "y'all"), "$2 bill y'all"),
+            ('$1 bill', (), '$1 bill'),
+            ('not using a parameter', ('whatever'), 'not using a parameter'),
         ]
 
         for msg, params, expected in cases:
