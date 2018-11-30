@@ -66,6 +66,15 @@ def language_has_all_messages(code):
     return result
 
 
+class MessageNotFound(Exception):
+    """
+    Exception thrown when a message is not found
+    """
+
+    def __init__(self, lang_code, message_key):
+        super.__init__("Language %s misses message '%s'" % (lang_code, message_key))
+
+
 class I18n(object):
     """
     Represents a set of localisation messages in a single language
@@ -105,6 +114,8 @@ class I18n(object):
         file.close()
 
     def msg(self, key, params=()):
+        if key not in self.data:
+            raise MessageNotFound(self.language, key)
         if type(params) != tuple:
             params = (params,)
         return format(self.data[key], params)

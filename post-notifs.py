@@ -3,9 +3,9 @@ import os
 import sys
 from commonsbot import mysql, config
 from commonsbot.state import DeletionStateStore, DeletionState
-from commonsbot.i18n import I18n, language_has_all_messages
+from commonsbot.i18n import I18n, language_has_all_messages, MessageNotFound
 from commonsbot.utils import PerWikiMapper, check_already_posted
-from commonsbot.formatters import SpeedyFormatter, DiscussionFormatter
+from commonsbot.formatters import SpeedyFormatter, DiscussionFormatter, NoPermissionFormatter
 import pywikibot
 from pywikibot import Site, Page, FilePage
 from pywikibot.site import Namespace
@@ -48,11 +48,15 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
     assert len(files) > 0
 
     wiki_options = config.for_wiki(talk_page.site.dbName())
+
+    if notif_type not in wiki_options['notification_types']:
+        return
+
     lang_code = wiki_options['language']
     if lang_code is None:
         lang_code = talk_page.site.code
-    if not language_has_all_messages(lang_code):
-        return
+    # if not language_has_all_messages(lang_code):
+    #     return
     i18n = I18n.factory(lang_code)
 
     try:
@@ -73,9 +77,13 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
 
     ourlist.sort(key=lambda file: file.file_name)
 
-    formatter = formatter_class(i18n)
-    talk_page.text = text + formatter.format(ourlist)
-    summary = formatter.format_summary()
+    try:
+        formatter = formatter_class(i18n)
+        talk_page.text = text + formatter.format(ourlist)
+        summary = formatter.format_summary()
+    except MessageNotFound as e:
+        print(str(e), file=sys.stderr)
+        return
 
     if config.dry_run:
         print('DRY RUN: not posting about %d %s files to %s' % (len(ourlist), notif_type, talk_page))
@@ -177,4 +185,5 @@ def process_list(type, formatter_class):
 
 process_list('discussion', DiscussionFormatter)
 process_list('speedy', SpeedyFormatter)
+process_list('nopermission', NoPermissionFormatter)
 with_store(lambda store: store.expire_failed())

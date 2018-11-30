@@ -138,16 +138,10 @@ class DiscussionFormatter(Formatter):
         return result
 
 
-class SpeedyFormatter(Formatter):
+class PageTagFormatter(Formatter):
     """
-    Formats messages about speedy deletion nominations
+    Base class for template-based deletion formatters
     """
-
-    def __init__(self, i18n):
-        """
-        @type i18n: commonsbot.i18n.I18n
-        """
-        Formatter.__init__(self, 'speedy', i18n)
 
     def format_body(self, files):
         result = self.msg('body-start', len(files)) + '\n'
@@ -158,3 +152,27 @@ class SpeedyFormatter(Formatter):
         result += self.msg('body-end', len(files))
 
         return result
+
+
+class SpeedyFormatter(PageTagFormatter):
+    """
+    Formats messages about speedy deletion nominations
+    """
+
+    def __init__(self, i18n):
+        """
+        @type i18n: commonsbot.i18n.I18n
+        """
+        Formatter.__init__(self, 'speedy', i18n)
+
+
+class NoPermissionFormatter(PageTagFormatter):
+    """
+    Formats messages about missing permissions
+    """
+
+    def __init__(self, i18n):
+        """
+        @type i18n: commonsbot.i18n.I18n
+        """
+        Formatter.__init__(self, 'nopermission', i18n)

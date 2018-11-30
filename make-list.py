@@ -67,3 +67,4 @@ make_list('speedy',
               'Candidates for speedy deletion',
               'Copyright violations',
           ], depth=False, delay=60 * 15)
+make_list('nopermission', ['Media missing permission'], depth=1, delay=60 * 60)
