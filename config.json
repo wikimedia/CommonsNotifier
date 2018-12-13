@@ -5,10 +5,21 @@
             "minoredit": false,
             "markasbot": false,
             "tags": null,
-            "language": null
+            "language": null,
+            "notification_types": [
+                "speedy",
+                "discussion"
+            ]
         },
         "enwiki": {
             "markasbot": false
+        },
+        "testwiki": {
+            "notification_types": [
+                "speedy",
+                "discussion",
+                "nopermission"
+            ]
         }
     }
 }

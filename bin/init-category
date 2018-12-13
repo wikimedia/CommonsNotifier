@@ -1,0 +1,21 @@
+#!/bin/bash
+
+source $(dirname $0)/vars.sh
+
+CATEGORY=$1
+
+if [ -z "${CATEGORY}" ] ; then
+    echo 'Usage: bin/init-category <category name>'
+    exit 1
+fi
+
+# Populate the initial list
+${BIN}/python3 ${DIR}/make-list.py
+
+# No list should have been populated, but if they were, discard
+rm ${DIR}/lists/*.txt
+
+# Only inform users of files that were nominated after the bot started running.
+# Mark all existing files as handled to achieve that.
+echo "UPDATE commons_deletions SET state='notified' WHERE deletion_type='${CATEGORY}';" | mysql --defaults-file=${DIR}/my.cnf
+
