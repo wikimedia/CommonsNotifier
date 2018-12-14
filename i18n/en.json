@@ -9,7 +9,7 @@
     "commtech-commons-discussion-body-end-mismatching": "Participate in the deletion {{PLURAL:$1|discussions}} at the nomination {{PLURAL:$1|pages}} linked above.",
     "commtech-commons-discussion-summary": "Files used on this page are up for deletion",
     "commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
-    "commtech-commons-nopermission-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} is missing permission",
+    "commtech-commons-nopermission-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|is|are}} missing permission",
     "commtech-commons-nopermission-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|is|are}} missing permission information and may be deleted:",
     "commtech-commons-nopermission-body-end": "You can see the details at the file description {{PLURAL:$1|page|pages}} linked above.",
     "commtech-commons-nopermission-summary": "Files used on this page are missing permission"
