@@ -20,6 +20,13 @@
                 "discussion",
                 "nopermission"
             ]
+        },
+        "enwikivoyage": {
+            "notification_types": [
+                "speedy",
+                "discussion",
+                "nopermission"
+            ]
         }
     }
 }
