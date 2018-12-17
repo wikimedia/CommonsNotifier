@@ -13,5 +13,9 @@
 	"commtech-commons-discussion-body-end-matching": "Participer à la discussion sur la supression de la [[$1|pages nominées]].",
 	"commtech-commons-discussion-body-end-mismatching": "Participer aux {{PLURAL:$1|discussions}} sur la supression des {{PLURAL:$1|pages}} nominées liées ci-dessus.",
 	"commtech-commons-discussion-summary": "Les fichiers utilisés sur cette page sont prêts pour la supression",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Un fichier|Des fichiers}} de Commons utilisé{{PLURAL:$1||s}} sur cette page n' {{PLURAL:$1|a|ont}} pas d'informations d'autorisation",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Le fichier suivant|Les fichiers suivants}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page n'{{PLURAL:$1|a|ont}} pas d'informations d'autorisation et pourrai{{PLURAL:$1|t|ent}} être supprimé{{PLURAL:$1||s}} :",
+	"commtech-commons-nopermission-body-end": "Vous pouvez voir les détails dans la {{PLURAL:$1|la page|les pages}} de description du ficher lié ci -dessus.",
+	"commtech-commons-nopermission-summary": "Les fichiers utilisés sur cette page n'ont pas d'informations d'autorisation"
 }

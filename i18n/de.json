@@ -13,5 +13,9 @@
 	"commtech-commons-discussion-body-end-matching": "Nimm an der Löschdiskussion auf der [[$1|Vorschlagsseite]] teil.",
 	"commtech-commons-discussion-body-end-mismatching": "Nimm an {{PLURAL:$1|der Löschdiskussion|den Löschdiskussionen}} teil, die oben verlinkt {{PLURAL:$1|ist|sind}}.",
 	"commtech-commons-discussion-summary": "Auf dieser Seite verwendete Dateien sind zur Löschung vorgesehen",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|Diskussion]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|Diskussion]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Einer Commons-Datei|Commons-Dateien}} auf dieser Seite {{PLURAL:$1|fehlt|fehlen}} die Genehmigung",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Der folgenden Datei|Den folgenden Dateien}} von Wikimedia Commons, die auf dieser Seite verwendet {{PLURAL:$1|wird|werden}}, fehlt die Information zur Genehmigung und sie {{PLURAL:$1|könnte|könnten}} gelöscht werden:",
+	"commtech-commons-nopermission-body-end": "Du kannst die Einzelheiten auf {{PLURAL:$1|der oben verlinkten Dateibeschreibungsseite|den oben verlinkten Dateibeschreibungsseiten}} ansehen.",
+	"commtech-commons-nopermission-summary": "Auf dieser Seite verwendeten Dateien fehlt die Genehmigung"
 }

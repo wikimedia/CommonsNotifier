@@ -14,5 +14,9 @@
 	"commtech-commons-discussion-body-end-matching": "Partecipa alla discussione per la cancellazione sulla [[$1|pagina delle nomine]].",
 	"commtech-commons-discussion-body-end-mismatching": "Partecipa alle {{PLURAL:$1|discussioni}} sulla proposta di cancellazione per {{PLURAL:$1|la pagina collegata|le pagine collegate}} sopra.",
 	"commtech-commons-discussion-summary": "I file utilizzati in questa pagina sono pronti per la cancellazione",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussione]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussione]])",
+	"commtech-commons-nopermission-header": "Per {{PLURAL:$1|un|alcuni}} file da Wikimedia Commons {{PLURAL:$1|utilizzato|utilizzati}} su questa pagina mancano i permessi di utilizzo",
+	"commtech-commons-nopermission-body-start": "Per {{PLURAL:$1|il seguente|i seguenti}} file da Wikimedia Commons {{PLURAL:$1|utilizzato|utilizzati}} su questa pagina mancano le informazioni sui permessi di utilizzo e potrebbe essere cancellato:",
+	"commtech-commons-nopermission-body-end": "Puoi vedere i dettagli {{PLURAL:$1|nella pagina|nelle pagine}} di descrizione dei file {{PLURAL:$1|elencata|elencate}} sopra.",
+	"commtech-commons-nopermission-summary": "Mancano permessi di utilizzo per file utilizzati in questa pagina"
 }
