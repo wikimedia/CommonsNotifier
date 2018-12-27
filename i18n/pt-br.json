@@ -14,7 +14,7 @@
 	"commtech-commons-discussion-body-end-mismatching": "Participe da exclusão {{PLURAL:$1|discussões}} na nomeação {{PLURAL:$1|páginas}} vinculada acima.",
 	"commtech-commons-discussion-summary": "Os arquivos usados nesta página estão prontos para serem excluídos",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussão]])",
-	"commtech-commons-nopermission-header": "{{PLURAL:$1|Um arquivo do Commons|Commons files}} usado nesta página {{PLURAL:$1|estão|está}} está faltando a permissão",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Um arquivo do Commons|arquivos do Commons}} usado nesta página {{PLURAL:$1|está|estão}} faltando a permissão",
 	"commtech-commons-nopermission-body-start": "Os seguintes {{PLURAL:$1|arquivo|arquivos}} no Wikimedia Commons usado na página {{PLURAL:$1|está|estáo}} faltando informações de permissão e podem ser excluídas:",
 	"commtech-commons-nopermission-body-end": "Você pode ver os detalhes na descrição do arquivo {{PLURAL:$1|página|páginas}} ligado acima.",
 	"commtech-commons-nopermission-summary": "Os arquivos usados nesta página estão sem permissão"
