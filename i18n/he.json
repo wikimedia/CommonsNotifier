@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ערן"
+			"ערן",
+			"Amire80"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|קובץ מוויקישיתוף|קבצים מוויקישיתוף}} שבשימוש בדף זה {{PLURAL:$1|הועמד|הועמדו}} למחיקה מהירה",
@@ -13,5 +14,9 @@
 	"commtech-commons-discussion-body-end-matching": "להשתתפות בדיון המחיקה יש לעיין ב[[$1|דף הצעת המחיקה]].",
 	"commtech-commons-discussion-body-end-mismatching": "להשתתפות בדיוני המחיקה יש לעיין בדפי הצעת המחיקה המקושרים לעיל.",
 	"commtech-commons-discussion-summary": "קבצים שבשימוש בדף זה מועמדים למחיקה",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|דיון]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|דיון]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|לקובץ מוויקישיתוף שמופיע|לקבצים מוויקישיתוף שמופיעים}} בדף הזה חסר היתר",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|לקובץ הוויקישיתוף הבא, שמשמש|לקובצי הוויקישיתוף הבאים, שמשמשים}} בדף הזה חסר היתר וייתכן {{PLURAL:$1|שהוא יימחק|שהם יימחקו}}",
+	"commtech-commons-nopermission-body-end": "אפשר לראות את הפרטים {{PLURAL:$1|בדף הפרטים של הקובץ|בדפי הפרטים של הקבצים}} דרך קישור לעיל.",
+	"commtech-commons-nopermission-summary": "לקבצים שמשמשים בדף הזה חסר היתר"
 }
