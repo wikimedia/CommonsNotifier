@@ -14,6 +14,7 @@ usernames['wikipedia']['*'] = \
     usernames['wikiquote']['*'] = \
     usernames['wikisource']['*'] = \
     usernames['wikiversity']['*'] = \
+    usernames['wikivoyage']['*'] = \
     usernames['test']['*'] = \
     'Community Tech bot'
 
