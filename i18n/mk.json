@@ -13,5 +13,9 @@
 	"commtech-commons-discussion-body-end-matching": "Учествувајте во расправата за бришење на [[$1|страницата на предлогот]].",
 	"commtech-commons-discussion-body-end-mismatching": "Учествувајте во {{PLURAL:$1|расправата|расправите}} за бришење на {{PLURAL:$1|страницата на предлогот|страниците на предлозите}}.",
 	"commtech-commons-discussion-summary": "Податотеките што се користат на страницава се за бришење",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|разговор]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|разговор]])",
+	"commtech-commons-nopermission-header": "На страницава има {{PLURAL:$1|податотека|податотеки}} од Ризницата {{PLURAL:$1|која нема дозвола|кои немаат дозвола}}",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Следнава податотека|Следниве податотеки}} од Ризницата на страницава {{PLURAL:$1|нема|немаат}} информации за дозвола и може да {{PLURAL:$1|биде избришана|бидат избришани}}:",
+	"commtech-commons-nopermission-body-end": "Поподробно ќе дознаете на {{PLURAL:$1|горенаведената страница|горенаведените страници}}.",
+	"commtech-commons-nopermission-summary": "На страницава има податотеки кои немаат дозволи"
 }
