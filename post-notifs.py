@@ -139,7 +139,7 @@ def process_list(type, formatter_class):
             state.load_discussion_info(commons)
             page = Page(commons, state.discussion_page)
             if not page.exists():
-                print("Discussion page %s doesn't exist, not notifying about this file", file=sys.stderr)
+                print("Discussion page %s doesn't exist, not notifying about this file" % page, file=sys.stderr)
                 continue
 
         pageset = file.globalusage(MAX_GLOBALUSAGE)
