@@ -11,7 +11,7 @@
 	"commtech-commons-speedy-summary": "Les fichiers utilisés sur cette page sont prêts pour être supprimés rapidement",
 	"commtech-commons-discussion-header": "{{PLURAL:$1|Un fichier|Des fichiers}} de Commons utilisé{{PLURAL:$1||s}} sur cette page  {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression",
 	"commtech-commons-discussion-body-start": "Le {{PLURAL:$1|fichier|s fichiers}} suivant{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression:",
-	"commtech-commons-discussion-body-end-matching": "Participer à la discussion sur la suppression de la [[$1|pages nominées]].",
+	"commtech-commons-discussion-body-end-matching": "Participer à la discussion de suppression sur la [[$1|page des nominations]].",
 	"commtech-commons-discussion-body-end-mismatching": "Participer aux {{PLURAL:$1|discussions}} sur la suppression des {{PLURAL:$1|pages}} nominées liées ci-dessus.",
 	"commtech-commons-discussion-summary": "Les fichiers utilisés sur cette page sont prêts pour la suppression",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
