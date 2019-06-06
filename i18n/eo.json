@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"commtech-commons-speedy-summary": "Oni proponis rapidan forigadon de iuj dosieroj uzataj en ĉi tiu paĝo",
+	"commtech-commons-discussion-body-end-matching": "Partoprenu en la diskuto pri forigado ĉe la [[$1|paĝo de la propono]].",
+	"commtech-commons-discussion-summary": "Oni proponis forigadon de iuj dosieroj uzataj en ĉi tiu paĝo",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
+	"commtech-commons-nopermission-body-end": "Vi povas vidi la detalojn ĉe la {{PLURAL:$1|ĉi-supra paĝo priskribanta|ĉi-supraj paĝoj priskribantaj}} la dosieron."
+}
