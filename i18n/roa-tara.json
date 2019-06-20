@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|'Nu file Commons|File Commons}} ausate jndr'à sta pàgene {{PLURAL:$1|ha state|onne state}} proposte pa scangellazzione immediate",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|'U|Le}} file Uicchimedie Commons {{PLURAL:$1|ausate}} sus 'a sta pàgene {{PLURAL:$1|ha state|onne state}} proposte pa scangellazione immediate:",
+	"commtech-commons-speedy-body-end": "Puè 0ndrucà {{PLURAL:$1|'u|le}} mutive d'a scangellazzione {{PLURAL:$1|jndr'à pàgene|jndr'à le pàggene}} de descrizione d'u file {{PLURAL:$1|collegate}} aqquà sus.",
+	"commtech-commons-speedy-summary": "Le file ausate sus a sta pàgene sò pronde pa scangellazzione immediate",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|'Nu Commons file|Commons file}} ausate sus a sta pàgene {{PLURAL:$1|ave|onne}} state nnomenate pa scangellazzione immediate",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|'U|Le}} file Uicchimedie Commons {{PLURAL:$1|ausate}} jndr'à sta pàgene {{PLURAL:$1|ha state|onne state}} proposte pa scangellazzione:",
+	"commtech-commons-discussion-body-end-matching": "Partecipe a 'u 'ngazzamende pa scangellazzione sus 'a [[$1|pàgene de le nomine]].",
+	"commtech-commons-discussion-body-end-mismatching": "Partecipe a {{PLURAL:$1|'u 'ngazzamende|le 'ngazzaminde}} a 'a nomene {{PLURAL:$1|da pàgene|de le pàggene}} collegate sus.",
+	"commtech-commons-discussion-summary": "Le file ausate jndr'à sta pàgene sò pronde pa scangellazzione",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|'ngazzamende]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|'Nu Commons file|Commons file}} ausate sus a sta pàgene {{PLURAL:$1|ave|onne}} perse le permesse",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Pu|Pe le}} file da Uicchimedie Commons {{PLURAL:$1|ausate}} sus a sta pàgene mangane le 'mbormaziune sus a le permesse de ause e pò essere scangellate:",
+	"commtech-commons-nopermission-body-end": "Puè 'ndrucà le dettaglie {{PLURAL:$1|jndr'à pàgene|jndr'à le pàggene}} de descrizione de le file elengate sus.",
+	"commtech-commons-nopermission-summary": "Le file ausate jndr'à sta pàgene non ge tènene le permesse"
+}
