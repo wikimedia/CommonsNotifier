@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chixvv",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"神樂坂秀吉"
 		]
 	},
 	"commtech-commons-speedy-header": "本页面所引用的共享文件中有{{PLURAL:$1|一个|多个}}已被列为将快速删除",
@@ -14,5 +15,9 @@
 	"commtech-commons-discussion-body-end-matching": "在[[$1|提请删除文件的页面]]参与对文件删除的讨论。",
 	"commtech-commons-discussion-body-end-mismatching": "可以从以上提请删除文件的页面参与对文件删除的讨论。",
 	"commtech-commons-discussion-summary": "使用在本页面的将被删除的文件",
-	"commtech-commons-discussion-line": "[[$1]]（[[$2|讨论]]）"
+	"commtech-commons-discussion-line": "[[$1]]（[[$2|讨论]]）",
+	"commtech-commons-nopermission-header": "用于该页面的{{PLURAL:$1|共享资源文件}}{{PLURAL:$1|}}缺少权限",
+	"commtech-commons-nopermission-body-start": "下列用于该页面的共享资源{{PLURAL:$1|文件}}缺少权限信息且可能已删除：",
+	"commtech-commons-nopermission-body-end": "您可点击上方的文件描述{{PLURAL:$1|页面}}链接以查看详情。",
+	"commtech-commons-nopermission-summary": "用于该页面的文件缺少权限"
 }
