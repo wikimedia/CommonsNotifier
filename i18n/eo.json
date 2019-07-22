@@ -4,8 +4,10 @@
 			"Mirin"
 		]
 	},
+	"commtech-commons-speedy-body-end": "Vi povas vidi la {{PLURAL:$1|kialon|kialojn}} por forigo ĉe la {{PLURAL:$1|ĉi-supre ligita priskriba paĝo|ĉi-supre ligitaj priskribaj paĝoj}} de la dosiero.",
 	"commtech-commons-speedy-summary": "Oni proponis rapidan forigadon de iuj dosieroj uzataj en ĉi tiu paĝo",
 	"commtech-commons-discussion-body-end-matching": "Partoprenu en la diskuto pri forigado ĉe la [[$1|paĝo de la propono]].",
+	"commtech-commons-discussion-body-end-mismatching": "Partoprenu en la {{PLURAL:$1|diskutoj}} pri forigo ĉe la nomuma {{PLURAL:$1|paĝo}} ĉi-supre ligita.",
 	"commtech-commons-discussion-summary": "Oni proponis forigadon de iuj dosieroj uzataj en ĉi tiu paĝo",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
 	"commtech-commons-nopermission-body-end": "Vi povas vidi la detalojn ĉe la {{PLURAL:$1|ĉi-supra paĝo priskribanta|ĉi-supraj paĝoj priskribantaj}} la dosieron.",
