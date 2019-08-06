@@ -27,6 +27,9 @@
                 "discussion",
                 "nopermission"
             ]
+        },
+        "fawiki": {
+            "markasbot": false
         }
     }
 }
