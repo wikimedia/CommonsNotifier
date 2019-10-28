@@ -13,5 +13,9 @@
 	"commtech-commons-discussion-body-end-matching": "Delta i slettediskusjonen på [[$1|nominasjonssiden]].",
 	"commtech-commons-discussion-body-end-mismatching": "Delta i {{PLURAL:$1|slettediskusjonen|slettediskusjonene}} på {{PLURAL:$1|nominasjonssiden|nominasjonssidene}} som lenkes ovenfor.",
 	"commtech-commons-discussion-summary": "Filer brukt på denne siden har blitt nominert for sletting",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|diskusjon]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|diskusjon]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Ei Commons-fil|Commons-filer}} som er brukt på denne siden mangler tillatelse",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Denne fila|Disse filene}} fra Wikimedia Commons som brukes på denne siden mangler tillatelse og kan bli slettet:",
+	"commtech-commons-nopermission-body-end": "Du kan se detaljene på {{PLURAL:$1|filbeskrivelsessiden|filbeskrivelsessidene}} ovenfor.",
+	"commtech-commons-nopermission-summary": "Filer brukt på denne siden mangler tillatelse"
 }
