@@ -1,5 +1,5 @@
 mwparserfromhell == 0.5.1
-pywikibot == 3.0.20180823
+git+https://github.com/wikimedia/pywikibot.git@8ef0b638f8eb387dcade4054658ebdae4414cb49
 pymysql == 0.8.0
 python-dateutil == 2.7.3
 pycodestyle == 2.4.0
