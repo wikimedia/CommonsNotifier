@@ -7,21 +7,18 @@ source $(dirname $0)/vars.sh
 
 echo "Starting cronjob with timestamp ${TIMESTAMP}"
 
-(
-    flock -n 9 || ( echo 'Previous cronjob still running, exiting' ; exit 0 )
+# Save old listfiles
+if compgen -G "${DIR}/lists/*.txt" > /dev/null; then
+    for f in ${DIR}/lists/*.txt; do
+        # Skip if file doesn't exist or empty
+        [ -e "$f" -o ! -s "$f" ] || continue
+        mv -- "$f" "$f.${TIMESTAMP}"
+    done
+fi
 
-    # Save old listfiles
-    if compgen -G "${DIR}/lists/*.txt" > /dev/null; then
-        for f in ${DIR}/lists/*.txt; do
-            # Skip if file doesn't exist or empty
-            [ -e "$f" -o ! -s "$f" ] || continue
-            mv -- "$f" "$f.${TIMESTAMP}"
-        done
-    fi
+cd ${DIR}
+${BIN}/python3 ${DIR}/make-list.py
+${BIN}/python3 ${DIR}/post-notifs.py
 
-    cd ${DIR}
-    ${BIN}/python3 ${DIR}/make-list.py
-    ${BIN}/python3 ${DIR}/post-notifs.py
-) 9> ${DIR}/lockfile
 
 echo "Cronjob ${TIMESTAMP} finished at $(date)"
