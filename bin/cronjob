@@ -20,5 +20,4 @@ cd ${DIR}
 ${BIN}/python3 ${DIR}/make-list.py
 ${BIN}/python3 ${DIR}/post-notifs.py
 
-
 echo "Cronjob ${TIMESTAMP} finished at $(date)"
