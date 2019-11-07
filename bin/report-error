@@ -7,6 +7,6 @@ source $(dirname $0)/vars.sh
 # Wait one minute for log files to flush
 sleep 1m
 
-EMAIL_BODY="Commons notification bot error\n\nLast ${ERROR_LINES} lines from the error log:\n\n$(tail -n ${ERROR_LINES} ${HOME}/commtech-commons.err)"
+EMAIL_BODY="Subject: Commons notification bot error\n\nLast ${ERROR_LINES} lines from the error log:\n\n$(tail -n ${ERROR_LINES} ${HOME}/commtech-commons.err)"
 
-echo ${EMAIL_BODY} | /usr/sbin/exim -odf -i ${ERROR_EMAIL}
+echo -e "${EMAIL_BODY}" | /usr/sbin/exim -odf -i "${ERROR_EMAIL}"
