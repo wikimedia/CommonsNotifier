@@ -2,21 +2,22 @@
 	"@metadata": {
 		"authors": [
 			"Wladek92",
-			"DSwissK"
+			"DSwissK",
+			"Verdy p"
 		]
 	},
-	"commtech-commons-speedy-header": "{{PLURAL:$1|Un fichier de Commons utilisé|Des fichiers de Commons utilisés}} sur cette page {{PLURAL:$1|a été nominé|ont été nominés}} pour la suppression rapide",
-	"commtech-commons-speedy-body-start": "Le {{PLURAL:$1|fichier|s fichiers}} Wikimedia Commons suivant{{PLURAL:$1| utilisé|s utilisés}} sur cette page {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression rapide:",
-	"commtech-commons-speedy-body-end": "Vous pouvez voir {{PLURAL:$1|le motif|les motifs}} de la suppression dans {{PLURAL:$1|la page|les pages}} de description du fichier liée{{PLURAL:$1||s}} ci-dessus.",
-	"commtech-commons-speedy-summary": "Les fichiers utilisés sur cette page sont prêts pour être supprimés rapidement",
-	"commtech-commons-discussion-header": "{{PLURAL:$1|Un fichier|Des fichiers}} de Commons utilisé{{PLURAL:$1||s}} sur cette page  {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression",
-	"commtech-commons-discussion-body-start": "Le {{PLURAL:$1|fichier|s fichiers}} suivant{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression:",
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Un|$1}} fichier{{PLURAL:$1||s}} de Commons utilisé{{PLURAL:$1||s}} sur cette page {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour une suppression rapide",
+	"commtech-commons-speedy-body-start": "Le{{PLURAL:$1||s $1}} fichier{{PLURAL:$1||s}} suivant{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour une suppression rapide :",
+	"commtech-commons-speedy-body-end": "Vous pouvez voir le{{PLURAL:$1||s}} motif{{PLURAL:$1||s}} de suppression dans l{{PLURAL:$1|a|es}} page{{PLURAL:$1||s}} de description d{{PLURAL:$1|u|es}} fichier{{PLURAL:$1||s}}, liée{{PLURAL:$1||s}} ci-dessus.",
+	"commtech-commons-speedy-summary": "Les fichiers utilisés sur cette page sont prêts à être supprimés rapidement",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Un|Des}} fichier{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page  {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression",
+	"commtech-commons-discussion-body-start": "Le{{PLURAL:$1||s}} fichier{{PLURAL:$1||s}} suivant{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour la suppression :",
 	"commtech-commons-discussion-body-end-matching": "Participer à la discussion de suppression sur la [[$1|page des nominations]].",
-	"commtech-commons-discussion-body-end-mismatching": "Participer aux {{PLURAL:$1|discussions}} sur la suppression des {{PLURAL:$1|pages}} nominées liées ci-dessus.",
-	"commtech-commons-discussion-summary": "Les fichiers utilisés sur cette page sont prêts pour la suppression",
+	"commtech-commons-discussion-body-end-mismatching": "Participer aux discussions sur la suppression de{{PLURAL:$1| la|s}} page{{PLURAL:$1|s}} nominée{{PLURAL:$1|s}} liée{{PLURAL:$1|s}} ci-dessus.",
+	"commtech-commons-discussion-summary": "Les fichiers utilisés sur cette page sont prêts à la suppression",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
-	"commtech-commons-nopermission-header": "{{PLURAL:$1|Un fichier|Des fichiers}} de Commons utilisé{{PLURAL:$1||s}} sur cette page n' {{PLURAL:$1|a|ont}} pas d'informations d'autorisation",
-	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Le fichier suivant|Les fichiers suivants}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page n'{{PLURAL:$1|a|ont}} pas d'informations d'autorisation et pourrai{{PLURAL:$1|t|ent}} être supprimé{{PLURAL:$1||s}} :",
-	"commtech-commons-nopermission-body-end": "Vous pouvez voir les détails dans la {{PLURAL:$1|la page|les pages}} de description du ficher lié ci -dessus.",
-	"commtech-commons-nopermission-summary": "Les fichiers utilisés sur cette page n'ont pas d'informations d'autorisation"
+	"commtech-commons-nopermission-header": "Les informations d’autorisation requises manquent pour {{PLURAL:$1|un|$1}} fichier{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page",
+	"commtech-commons-nopermission-body-start": "Le{{PLURAL:$1||s}} fichier{{PLURAL:$1||s}} suivant{{PLURAL:$1||s}} de Wikimedia Commons utilisé{{PLURAL:$1||s}} sur cette page n’{{PLURAL:$1|a|ont}} pas les informations d’autorisation requises et pourrai{{PLURAL:$1||en}}t être supprimé{{PLURAL:$1||s}} :",
+	"commtech-commons-nopermission-body-end": "Vous pouvez voir les détails dans l{{PLURAL:$1|a|es}} page{{PLURAL:$1||s}} de description du ficher liée{{PLURAL:$1||s}} ci-dessus.",
+	"commtech-commons-nopermission-summary": "Certains fichiers utilisés sur cette page n’ont pas les informations d’autorisation requises"
 }
