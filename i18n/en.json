@@ -1,16 +1,16 @@
 {
-    "commtech-commons-speedy-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion",
-    "commtech-commons-speedy-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for speedy deletion:",
+    "commtech-commons-speedy-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page or {{PLURAL:$1|its|their}} Wikidata {{PLURAL:$1|item|items}} {{PLURAL:$1|has|have}} been nominated for speedy deletion",
+    "commtech-commons-speedy-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page or {{PLURAL:$1|its|their}} Wikidata {{PLURAL:$1|item|items}} {{PLURAL:$1|has|have}} been nominated for speedy deletion:",
     "commtech-commons-speedy-body-end": "You can see the {{PLURAL:$1|reason|reasons}} for deletion at the file description {{PLURAL:$1|page|pages}} linked above.",
     "commtech-commons-speedy-summary": "Files used on this page are up for speedy deletion",
-    "commtech-commons-discussion-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion",
-    "commtech-commons-discussion-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|has|have}} been nominated for deletion:",
+    "commtech-commons-discussion-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page or {{PLURAL:$1|its|their}} Wikidata {{PLURAL:$1|item|items}} {{PLURAL:$1|has|have}} been nominated for deletion",
+    "commtech-commons-discussion-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page or {{PLURAL:$1|its|their}} Wikidata {{PLURAL:$1|item|items}} {{PLURAL:$1|has|have}} been nominated for deletion:",
     "commtech-commons-discussion-body-end-matching": "Participate in the deletion discussion at the [[$1|nomination page]].",
     "commtech-commons-discussion-body-end-mismatching": "Participate in the deletion {{PLURAL:$1|discussions}} at the nomination {{PLURAL:$1|pages}} linked above.",
-    "commtech-commons-discussion-summary": "Files used on this page are up for deletion",
+    "commtech-commons-discussion-summary": "Files used on this page or its Wikidata item are up for deletion",
     "commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
-    "commtech-commons-nopermission-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page {{PLURAL:$1|is|are}} missing permission",
-    "commtech-commons-nopermission-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page {{PLURAL:$1|is|are}} missing permission information and may be deleted:",
+    "commtech-commons-nopermission-header": "{{PLURAL:$1|A Commons file|Commons files}} used on this page or {{PLURAL:$1|its|their}} Wikidata {{PLURAL:$1|item|items}} {{PLURAL:$1|is|are}} missing permission",
+    "commtech-commons-nopermission-body-start": "The following Wikimedia Commons {{PLURAL:$1|file|files}} used on this page or {{PLURAL:$1|its|their}} Wikidata {{PLURAL:$1|item|items}} {{PLURAL:$1|is|are}} missing permission information and may be deleted:",
     "commtech-commons-nopermission-body-end": "You can see the details at the file description {{PLURAL:$1|page|pages}} linked above.",
-    "commtech-commons-nopermission-summary": "Files used on this page are missing permission"
+    "commtech-commons-nopermission-summary": "Files used on this page or its Wikidata item are missing permission"
 }
