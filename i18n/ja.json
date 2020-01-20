@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Omotecho"
+		]
+	},
+	"commtech-commons-speedy-header": "このページで使用する{{PLURAL:$1|コモンズのファイル}}は即時削除が提案{{PLURAL:$1|されました}}",
+	"commtech-commons-speedy-body-start": "このページで使用する下記のウィキメディア コモンズの{{PLURAL:$1|ファイル}}は、即時削除の提案が{{PLURAL:$1|されました}}。",
+	"commtech-commons-speedy-body-end": "削除の{{PLURAL:$1|理由}}じゃ上記のリンク先{{PLURAL:$1|ページ}}で参照できます。",
+	"commtech-commons-speedy-summary": "このページで使用するファイルは即時削除が提案されています",
+	"commtech-commons-discussion-header": "このページで使用する{{PLURAL:$1|コモンズのファイル}}の削除が提案{{PLURAL:$1|されました}}",
+	"commtech-commons-discussion-body-start": "このページで使用する下記のウィキメディア コモンズの{{PLURAL:$1|ファイル}}は削除候補に提案{{PLURAL:$1|されました}}。",
+	"commtech-commons-discussion-body-end-matching": "削除候補について[[$1|提案ページ]]の議論にご参加ください。",
+	"commtech-commons-discussion-body-end-mismatching": "上記のリンク先の{{PLURAL:$1|ページ}}で削除が提案されており、{{PLURAL:$1|議論}}へご参加ください。",
+	"commtech-commons-discussion-summary": "このページで使用するファイルは削除が提案されています",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|議論]])",
+	"commtech-commons-nopermission-header": "このページで使用する{{PLURAL:$1|コモンズのファイル}}は権限が不足して{{PLURAL:$1|います}}",
+	"commtech-commons-nopermission-body-start": "このページで使用する下記のウィキメディアコモンズの{{PLURAL:$1|ファイル}}は権限情報が不足 {{PLURAL:$1|しており}}、削除される可能性があります。",
+	"commtech-commons-nopermission-body-end": "詳細は上記リンク先のファイルの解説 {{PLURAL:$1|ページ}} をご参照ください。",
+	"commtech-commons-nopermission-summary": "このページで使用されるファイルには著作権情報がありません"
+}
