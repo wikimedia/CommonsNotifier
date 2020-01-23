@@ -17,5 +17,5 @@
 	"commtech-commons-nopermission-header": "このページで使用する{{PLURAL:$1|コモンズのファイル}}は権限が不足して{{PLURAL:$1|います}}",
 	"commtech-commons-nopermission-body-start": "このページで使用する下記のウィキメディアコモンズの{{PLURAL:$1|ファイル}}は権限情報が不足 {{PLURAL:$1|しており}}、削除される可能性があります。",
 	"commtech-commons-nopermission-body-end": "詳細は上記リンク先のファイルの解説 {{PLURAL:$1|ページ}} をご参照ください。",
-	"commtech-commons-nopermission-summary": "このページで使用されるファイルには著作権情報がありません"
+	"commtech-commons-nopermission-summary": "このページもしくはそのウィキデータ項目で使用されるファイルには著作権情報がありません"
 }

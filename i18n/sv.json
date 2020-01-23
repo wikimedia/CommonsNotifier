@@ -9,7 +9,7 @@
 	"commtech-commons-speedy-body-end": "Du kan se {{PLURAL:$1|anledningen|anledningarna}} för raderingen på {{PLURAL:$1|filbeskrivningen|filbeskrivningarna}} som länkas nedan.",
 	"commtech-commons-speedy-summary": "Filer som används på denna sida är nominerade för snabbradering",
 	"commtech-commons-discussion-header": "{{PLURAL:$1|En Commons-fil|Commons-filer}} som används på denna sida {{PLURAL:$1|har}} nominerades för radering",
-	"commtech-commons-discussion-body-start": "Följande Wikimedia Commons-{{PLURAL:$1|fil|filer}} som används på denna sida {{PLURAL:$1|har}} nominerats för radering:",
+	"commtech-commons-discussion-body-start": "Följande Wikimedia Commons-{{PLURAL:$1|fil|filer}} som används på denna sida eller dess Wikidata-objekt {{PLURAL:$1|har}} nominerats för radering:",
 	"commtech-commons-discussion-body-end-matching": "Delta i raderingsdiskussionen på [[$1|nomineringssidan]].",
 	"commtech-commons-discussion-body-end-mismatching": "Delta i raderings{{PLURAL:$1|diskussionen|diskussionerna}} på nominerings{{PLURAL:$1|sidan|sidorna}} som länkas nedan.",
 	"commtech-commons-discussion-summary": "Filer som används på denna sida är nominerade för radering",
