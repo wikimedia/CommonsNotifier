@@ -4,18 +4,18 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"commtech-commons-speedy-header": "{{PLURAL:$1|Bir Commons dosyası|Commons dosyaları}} bu sayfada kullanılmış hızlı silme için aday gösterildi",
-	"commtech-commons-speedy-body-start": "Bu sayfada kullanılan {{PLURAL:$1|dosya|dosya}} aşağıdaki Wikimedia Commons hızlı silme için aday gösterildi:",
+	"commtech-commons-speedy-header": "Bu sayfada kullanılan {{PLURAL:$1|bir Commons dosyası|Commons dosyası}} veya Vikiveri öğesi hızlı silme için aday gösterildi",
+	"commtech-commons-speedy-body-start": "Bu sayfada veya Vikiveri öğesinde kullanılan aşağıdaki Wikimedia Commons {{PLURAL:$1|dosya|dosya}} hızlı silme için aday gösterildi:",
 	"commtech-commons-speedy-body-end": "Yukarıda {{PLURAL:$1|sayfa|sayfa}} dosya açıklamasında silinmek üzere {{PLURAL:$1|sebep|sebep}} görebilirsiniz.",
 	"commtech-commons-speedy-summary": "Bu sayfada kullanılan dosyalar hızlı bir şekilde silinmek üzere",
-	"commtech-commons-discussion-header": "{{PLURAL:$1|Bir Commons dosyası|Commons dosyaları}} bu sayfada kullanılmış silinmeye aday gösterildi",
-	"commtech-commons-discussion-body-start": "Bu sayfada kullanılan {{PLURAL:$1|dosya|dosya}} adlı aşağıdaki Wikimedia Commons silinmeye aday gösterildi:",
+	"commtech-commons-discussion-header": "Bu sayfada kullanılan {{PLURAL:$1|bir Commons dosyası|Commons dosyası}} veya Vikiveri öğesi silinmek üzere aday gösterildi",
+	"commtech-commons-discussion-body-start": "Bu sayfada veya Vikiveri öğesinde kullanılan aşağıdaki Wikimedia Commons {{PLURAL:$1|dosya|dosya}} silinmek üzere aday gösterildi:",
 	"commtech-commons-discussion-body-end-matching": "Silme tartışmasına [[$1|adaylık sayfasına]] katılın.",
 	"commtech-commons-discussion-body-end-mismatching": "Yukarıda {{PLURAL:$1|sayfalar}} adaylığında {{PLURAL:$1|tartışmaları}} silme sürecine katılın.",
-	"commtech-commons-discussion-summary": "Bu sayfada kullanılan dosyalar silinmek üzere",
+	"commtech-commons-discussion-summary": "Bu sayfada veya Vikiveri öğesinde kullanılan dosyalar silinmek üzere",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|tartışma]])",
-	"commtech-commons-nopermission-header": "{{PLURAL:$1|Bir Commons dosyası|Commons dosyaları}} bu sayfada kullanılan izin eksik",
-	"commtech-commons-nopermission-body-start": "Bu sayfada kullanılan aşağıdaki Wikimedia Commons {{PLURAL:$1|dosya|dosya}} izin bilgileri eksik ve silinebilir:",
+	"commtech-commons-nopermission-header": "Bu sayfada veya Vikiveri öğesinde kullanılan {{PLURAL:$1|bir Commons dosyası|Commons dosyaları}} izni yok",
+	"commtech-commons-nopermission-body-start": "Bu sayfada veya aşağıdaki Vikiveri öğesinde kullanılan aşağıdaki Wikimedia Commons {{PLURAL:$1|dosya|dosya}} için izin bilgileri eksik ve silinebilir:",
 	"commtech-commons-nopermission-body-end": "Ayrıntıları yukarıda {{PLURAL:$1|sayfa|sayfa}} dosya açıklamasında görebilirsiniz.",
-	"commtech-commons-nopermission-summary": "Bu sayfada kullanılan dosyalar izinsiz"
+	"commtech-commons-nopermission-summary": "Bu sayfada veya Vikiveri öğesinde kullanılan dosyaların izni yok"
 }
