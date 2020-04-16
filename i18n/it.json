@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ontsed",
-			"Beta16"
+			"Beta16",
+			"Ontsed"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Un file Commons usato|I file Commons usati}} in questa pagina o {{PLURAL:$1|il suo elemento|i loro elementi}} Wikidata {{PLURAL:$1|è stato proposto|sono stati proposti}} per la cancellazione immediata",

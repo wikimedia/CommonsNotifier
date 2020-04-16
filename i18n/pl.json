@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"WTM",
-			"Wostr",
 			"Malarz pl",
-			"MaxSem"
+			"MaxSem",
+			"WTM",
+			"Wostr"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Plik|Pliki}} {{PLURAL:$1|użyty|użyte}} na tej stronie {{PLURAL:$1|został zgłoszony|zostały zgłoszone}} do natychmiastowego usunięcia",

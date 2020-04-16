@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92",
 			"DSwissK",
-			"Verdy p",
 			"Derugon",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Un|$1}} fichier{{PLURAL:$1||s}} de Commons utilisé{{PLURAL:$1||s}} sur cette page ou sont élément de Wikidata {{PLURAL:$1|a|ont}} été nominé{{PLURAL:$1||s}} pour une suppression rapide",

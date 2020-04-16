@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"commtech-commons-speedy-header": "Header for messages left by Community Tech bot on talk pages of articles that have Commons images nominated for speedy deletion. Parameter:\n* $1 - number of files nominated for deletion for {{PLURAL}}",
 	"commtech-commons-speedy-body-start": "First part of messages left by Community Tech bot on talk pages of articles that have Commons images nominated for speedy deletion. It will be followed by a list of files and {{msg-intuition|commtech-commons-speedy-body-end}}. Parameter:\n* $1 - number of files nominated for deletion for {{PLURAL}}",
 	"commtech-commons-speedy-body-end": "Second part of messages left by Community Tech bot on talk pages of articles that have Commons images nominated for speedy deletion. It's preceded by a list of files and {{msg-intuition|commtech-commons-speedy-body-start}} before it. Parameter:\n* $1 - number of files nominated for deletion for {{PLURAL}}",
