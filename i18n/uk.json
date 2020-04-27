@@ -10,5 +10,7 @@
 	"commtech-commons-speedy-summary": "Файли, що перелічені на цій сторінці, виставлені до швидкого вилучення",
 	"commtech-commons-discussion-header": "{{PLURAL:$1|Файл Commons, що використовується|Файли Commons, що використовуються}} на цій сторінці (або в елементі Вікіданих) номіновано до вилучення",
 	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Наступний файл Commons, що використовується|Наступні файли Commons, що використовуються}} на цій сторінці (або в елементі Вікіданих) номіновано до вилучення:",
-	"commtech-commons-discussion-body-end-mismatching": "Візьміть участь у обговоренні вилучення {{PLURAL:$1|сторінки|сторінок}} за посиланнями вище"
+	"commtech-commons-discussion-body-end-mismatching": "Візьміть участь у обговоренні вилучення {{PLURAL:$1|сторінки|сторінок}} за посиланнями вище",
+	"commtech-commons-discussion-summary": "Файли, що використовуються на цій сторінці або в елементі вікіданих, номіновані до видалення",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|обговорення]])"
 }
