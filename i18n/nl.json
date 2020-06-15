@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"MarcoSwart"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Een bestand|Bestanden}} uit deze pagina of haar item op Wikidata {{PLURAL:$1|is|zijn}} zijn op Commons voorgedragen om snel te worden verwijderd",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Het volgende bestand|De volgende bestanden}} van Wikimedia Commons {{PLURAL:$1|dat wordt|die worden}} gebruikt op deze pagina of haar item op Wikidata {PLURAL:$1|is|zijn}} voorgedragen om snel te worden verwijderd:",
+	"commtech-commons-speedy-body-end": "Je kunt de {{PLURAL:$1|reden|redenen}} voor verwijdering lezen op {{PLURAL:$1|beschrijvingspagina|beschrijvingspagina's}} via de links hierboven.",
+	"commtech-commons-speedy-summary": "Bestanden die op deze pagina worden gebruikt zijn voorgedragen om snel te worden verwijderd.",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Een bestand|Bestanden}} uit deze pagina of haar item op Wikidata {{PLURAL:$1|is|zijn}} voorgedragen voor verwijdering",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Het volgende bestand|De volgende bestanden}} van Wikimedia Commons {{PLURAL:$1|dat wordt|die worden}} gebruikt op deze pagina of haar item op Wikidata {{PLURAL:$1|is|zijn}} voorgedragen voor verwijdering:",
+	"commtech-commons-discussion-body-end-matching": "Je kunt meedoen aan de discussie over de verwijdering op de [[$1|verwijderpagina]].",
+	"commtech-commons-discussion-body-end-mismatching": "Je kunt meedoen aan {{PLURAL:$1|discussies}} over de verwijdering op de {{PLURAL:$1|verwijderpagina's}} via de links hierboven.",
+	"commtech-commons-discussion-summary": "Een of meer bestanden op deze pagina of haar item op Wikidata worden mogelijk verwijderd",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussie]])",
+	"commtech-commons-nopermission-header": "Op Commons ontbreekt vereiste licentie-informatie bij {{PLURAL:$1|een bestand|bestanden}} uit deze pagina of haar item op Wikidata",
+	"commtech-commons-nopermission-body-start": "Bij {{PLURAL:$1|het volgende bestand|de volgende bestanden}} uit deze pagina of haar item op Wikidata ontbreken op Wikimedia Commons de vereiste gegevens over de toestemming voor het gebruik waardoor {{PLURAL:$1|het misschien zal|ze misschien zullen}} worden verwijderd:",
+	"commtech-commons-nopermission-body-end": "Je kunt meer precieze informatie vinden in de {{PLURAL:$1|bestandsbeschrijving via de link|bestandsbeschrijvingen via de links}} hierboven.",
+	"commtech-commons-nopermission-summary": "Bij een of meer bestanden op deze pagina of haar item op Wikidata ontbreekt vereiste licentie-informatie"
+}
