@@ -7,7 +7,7 @@
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Een bestand|Bestanden}} uit deze pagina of haar item op Wikidata {{PLURAL:$1|is|zijn}} zijn op Commons voorgedragen om snel te worden verwijderd",
 	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Het volgende bestand|De volgende bestanden}} van Wikimedia Commons {{PLURAL:$1|dat wordt|die worden}} gebruikt op deze pagina of haar item op Wikidata {PLURAL:$1|is|zijn}} voorgedragen om snel te worden verwijderd:",
 	"commtech-commons-speedy-body-end": "Je kunt de {{PLURAL:$1|reden|redenen}} voor verwijdering lezen op {{PLURAL:$1|beschrijvingspagina|beschrijvingspagina's}} via de links hierboven.",
-	"commtech-commons-speedy-summary": "Bestanden die op deze pagina worden gebruikt zijn voorgedragen om snel te worden verwijderd.",
+	"commtech-commons-speedy-summary": "Een of meer bestanden die op deze pagina worden gebruikt zijn voorgedragen om snel te worden verwijderd.",
 	"commtech-commons-discussion-header": "{{PLURAL:$1|Een bestand|Bestanden}} uit deze pagina of haar item op Wikidata {{PLURAL:$1|is|zijn}} voorgedragen voor verwijdering",
 	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Het volgende bestand|De volgende bestanden}} van Wikimedia Commons {{PLURAL:$1|dat wordt|die worden}} gebruikt op deze pagina of haar item op Wikidata {{PLURAL:$1|is|zijn}} voorgedragen voor verwijdering:",
 	"commtech-commons-discussion-body-end-matching": "Je kunt meedoen aan de discussie over de verwijdering op de [[$1|verwijderpagina]].",
