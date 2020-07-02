@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Majavah"
+		]
+	},
+	"commtech-commons-speedy-header": "Tällä sivulla tai sen Wikidata-kohteessa {{PLURAL:$1|käytettyä tiedostoa|käytettyjä tiedostoita}} on pyydetty pikapoistettavaksi.",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Seuraava|Seuraavat}} Wikimedia Commons -{{PLURAL:$1|tiedosto|tiedostot}} on pyydetty pikapoistettavaksi:",
+	"commtech-commons-speedy-body-end": "Voit nähdä {{PLURAL:$1|poistosyyn tiedoston sivulla, joka on|poistosyyt|tiedostoiden sivuilla, jotka ovat}} linkitetty yläpuolella.",
+	"commtech-commons-speedy-summary": "Tällä sivulla käytettyjä tiedostoja on esitetty pikapoistettavaksi",
+	"commtech-commons-discussion-header": "Tällä sivulla {{PLURAL:$1|käytetty Commons-tiedosto|käytettyjä Commons-tiedostoja}} on esitetty poistettavaksi",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Seuraava|Seuraavat}} Wikimedia Commons -{{PLURAL:$1|tiedosto|tiedostot}} on esitetty poistettavaksi:",
+	"commtech-commons-discussion-body-end-matching": "Osallistu keskusteluun [[$1|esityksen sivulla]].",
+	"commtech-commons-discussion-body-end-mismatching": "Osallistu {{PLURAL:$1|keskusteluun|keskusteluihin}} yllä {{PLURAL:$1|linkitetyillä sivulla|linkitetyillä sivuilla}}.",
+	"commtech-commons-discussion-summary": "Tällä sivulla tai sen Wikidata-kohteessa käytettyjä tiedostoja on esitetty poistettavaksi",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|keskustelu]])",
+	"commtech-commons-nopermission-header": "Tällä sivulla {{PLURAL:$1|käytetty Commons-tiedostolta|käytettyjä Commons-tiedostoilta}} puuttuu lupa",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Seuraavalta|Seuraavilta}} Wikimedia Commons -{{PLURAL:$1|tiedostolta|tiedostoilta}} puuttuu käyttölupa ja ne voidaan poistaa:",
+	"commtech-commons-nopermission-body-end": "Voit katsoa tarkemmat tiedot {{PLURAL:$1|tiedoston kuvaussivulla|tiedostoiden kuvaussivuilla}} yllä.",
+	"commtech-commons-nopermission-summary": "Tällä sivulla tai sen Wikidata-kohteessa käytetyillä tiedostoilla puuttuu käyttölupa"
+}
