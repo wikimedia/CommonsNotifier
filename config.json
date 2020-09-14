@@ -14,6 +14,13 @@
         "enwiki": {
             "markasbot": false
         },
+        "nlwiktionary": {
+            "minoredit": false,
+            "markasbot": false,
+            "tags": [
+                "Commons discussie"
+            ]
+        },
         "testwiki": {
             "notification_types": [
                 "speedy",
