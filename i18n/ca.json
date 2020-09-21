@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mguix"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Un fitxer de Commons utilitzat|Uns fitxers de Commons utilitzats}} en aquesta pàgina o el seu element Wikidata {{PLURAL:$1|ha estat nominat|han estat nominats}} per a una ràpida eliminació",
+	"commtech-commons-speedy-body-start": "El{{PLURAL:$1||s}} fixer{{PLURAL:$1||s}} següent{{PLURAL:$1||s}} de Wikimedia Commons utilitzat{{PLURAL:$1||s}} en aquesta pàgina o el seu element Wikidata {{PLURAL:$1|ha|han}} estat nomina{{PLURAL:$1|t|ts}} per a una ràpida eliminació:",
+	"commtech-commons-speedy-body-end": "Podeu veure {{PLURAL:$1|el motiu|els motius}} de l'eliminació a {{PLURAL:$1|la pàgina|les pàgines}} de descripció del fitxer  {{PLURAL:$1|enllaçada|enllaçades}} anteriorment.",
+	"commtech-commons-speedy-summary": "Els fitxers utilitzats en aquesta pàgina són esborrats ràpidament",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Un|Uns}} fitxer{{PLURAL:$1||s}} de Wikimedia Commons utilitzat{{PLURAL:$1||s}} en aquesta pàgina o el seu element Wikidata {{PLURAL:$1|ha|han}} estat{{PLURAL:$1||s}}  nominat{{PLURAL:$1||s}} per a una ràpida eliminació",
+	"commtech-commons-discussion-body-start": "El{{PLURAL:$1||s}} fitxer{{PLURAL:$1||s}} següent{{PLURAL:$1||s}} de Wikimedia Commons utilitzat{{PLURAL:$1||s}} en aquesta pàgina o el seu element Wikidata {{PLURAL:$1|ha|han}} estat nominat{{PLURAL:$1||s}} per a una ràpida eliminació:",
+	"commtech-commons-discussion-body-end-matching": "Participa en el debat d'eliminació a la  [[$1|pàgina de nominació]].",
+	"commtech-commons-discussion-body-end-mismatching": "Participa en debats sobre l'eliminació de {{PLURAL:$1|la|les}} pàgin{{PLURAL:$1|a|es}} nominad{{PLURAL:$1|a|es}} enllaçad{{PLURAL:$1|a|es}} anterior{{PLURAL:$1||s}}.",
+	"commtech-commons-discussion-summary": "Els fitxers utilitzats en aquesta pàgina o el seu element Wikidata estan a punt d'eliminar-se.",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussió]])",
+	"commtech-commons-nopermission-header": "Falta la informació de permís requerida per al{{PLURAL:$1||s}} fitxer{{PLURAL:$1||s}}  de Wikimedia Commons utilitzat{{PLURAL:$1||s}} en aquesta pàgina o el seu element per Wikidata",
+	"commtech-commons-nopermission-body-start": "El{{PLURAL:$1||s}} següent{{PLURAL:$1||s}} fitxer{{PLURAL:$1||s}} Wikimedia Commons utilitzat{{PLURAL:$1||s}} en aquesta pàgina o el seu element Wikidata no té informació de permisos i pot ser esborrat:",
+	"commtech-commons-nopermission-body-end": "Podeu veure els detalls a {{PLURAL:$1|la pàgina|les pàgines}} de descripció del fitxer enllaçad{{PLURAL:$1|a|es}} a dalt.",
+	"commtech-commons-nopermission-summary": "Els fitxers utilitzats en aquesta pàgina o el seu element Wikidata no tenen permís"
+}
