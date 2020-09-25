@@ -88,15 +88,21 @@ Old listfiles are saved to `logs/{discussion|speedy}.txt.<timestamp>`.
 * Add its dbname to `wikis-enabled` in Git.
 * Make sure that all messages are localized by running `check-i18n.py`.
 * Make sure that the bot account is present on the wiki.
+* Deploy by simply pulling in the new code (the task is continually ran by cron, so you shouldn't need to restart anything):
+  * `become community-tech-tools`
+  * `become commtech-commons`
+  * `cd bot`
+  * `git pull`
+  * The next time the cron runs, it should include the newly added wiki
 
 ## Configuration
 All settings are kept in `config.json`:
 * `dry-run` - whether dry run mode os on, see "Stopping the bot" above.
-** `wiki-options` - dictionary of `dbname: options`, with every wiki possibly overriding setting from `"default"`. Possible per-wiki options:
-*** `minoredit` - (bool) whether edits should be marked as minor
-*** `markasbot` - (bool) whether edits should be marked as bot edits
-*** `tags` (string|null) - pipe-separated edit tags to apply to edits or `null` for none
-*** `language` (string|null) - override for language code used for messages on this wiki, or `null` to not override
+* `wiki-options` - dictionary of `dbname: options`, with every wiki possibly overriding setting from `"default"`. Possible per-wiki options:
+  * `minoredit` - (bool) whether edits should be marked as minor
+  * `markasbot` - (bool) whether edits should be marked as bot edits
+  * `tags` (string|null) - pipe-separated edit tags to apply to edits or `null` for none
+  * `language` (string|null) - override for language code used for messages on this wiki, or `null` to not override
 
 ## Development
 
