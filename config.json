@@ -11,7 +11,20 @@
                 "discussion"
             ]
         },
+        "arwiki": {
+            "markasbot": false
+        },
         "enwiki": {
+            "markasbot": false
+        },
+        "enwikivoyage": {
+            "notification_types": [
+                "speedy",
+                "discussion",
+                "nopermission"
+            ]
+        },
+        "fawiki": {
             "markasbot": false
         },
         "nlwiktionary": {
@@ -27,16 +40,6 @@
                 "discussion",
                 "nopermission"
             ]
-        },
-        "enwikivoyage": {
-            "notification_types": [
-                "speedy",
-                "discussion",
-                "nopermission"
-            ]
-        },
-        "fawiki": {
-            "markasbot": false
         }
     }
 }
