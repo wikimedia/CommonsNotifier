@@ -34,6 +34,16 @@
                 "Commons discussie"
             ]
         },
+        "srwiki": {
+            "tags": [
+                "Дискусија на Викимедијиној Остави"
+            ],
+            "notification_types": [
+                "speedy",
+                "discussion",
+                "nopermission"
+            ]
+        },
         "testwiki": {
             "notification_types": [
                 "speedy",
