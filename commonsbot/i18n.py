@@ -81,7 +81,8 @@ class I18n(object):
     """
     _cache = {}
     _aliases = {
-        'test': 'en'
+        'test': 'en',
+        'sr': 'sr-ec'
     }
 
     @staticmethod
