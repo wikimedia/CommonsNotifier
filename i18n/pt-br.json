@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Um arquivo do Commons|Arquivos do Commons}} usado nesta página ou seu item Wikidata {{PLURAL:$1|foi|foram}} foi indicado para exclusão rápida",
