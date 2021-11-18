@@ -26,7 +26,7 @@ database = s53689__commonsbot
 ```
 For development, you want to either point this to your local MySQL instance. Alternatively, you can use port forwarding to connect to the tools database:
 ```
-ssh -L 33061:tools.db.svc.eqiad.wmflabs:3306 <your labs username>@login.tools.wmflabs.org
+ssh -L 33061:tools.db.svc.eqiad.wmflabs:3306 <your labs username>@login.toolforge.org
 ```
 In such case, the configuration would be:
 ```

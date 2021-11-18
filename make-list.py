@@ -29,7 +29,7 @@ def load_files(categories, depth):
                                              recurse=depth,
                                              namespaces=Namespace.FILE)
         for page in generator:
-            files.add(page.title(withNamespace=False))
+            files.add(page.title(with_ns=False))
 
     return list(files)
 

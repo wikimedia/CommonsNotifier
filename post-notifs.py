@@ -155,7 +155,7 @@ def process_list(type, formatter_class):
                 continue
             if not talk_page.botMayEdit():
                 continue
-            if talk_page.exists() and not talk_page.canBeEdited():
+            if talk_page.exists() and not talk_page.has_permission('edit'):
                 continue
             mapper.add(filename, page)
 
