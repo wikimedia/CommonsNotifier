@@ -34,6 +34,9 @@
                 "Commons discussie"
             ]
         },
+        "ruwiki": {
+            "markasbot": false
+        },
         "srwiki": {
             "tags": [
                 "Дискусија на Викимедијиној Остави"
