@@ -85,7 +85,7 @@ To add some extra verbose debug output, set `verbose_output` to `True` in `user-
 Old listfiles are saved to `logs/{discussion|speedy}.txt.<timestamp>`.
 
 ## Adding a new wiki
-* Add its dbname to `wikis-enabled` in Git.
+* Add its dbname to `wikis-enabled` and configuration in `config.json` in Git.
 * Make sure that all messages are localized by running `check-i18n.py`.
 * Make sure that the bot account is present on the wiki.
 * Deploy by simply pulling in the new code (the task is continually ran by cron, so you shouldn't need to restart anything):
