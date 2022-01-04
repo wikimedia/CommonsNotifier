@@ -58,7 +58,7 @@ class DeletionState(object):
 
     def load_discussion_info(self, site):
         """
-        Loads deletion discussion page information int othis object's discussion_page property
+        Loads deletion discussion page information into this object's discussion_page property
         """
         if self.info_loaded or self.type != 'discussion':
             return
@@ -68,7 +68,8 @@ class DeletionState(object):
             page = pywikibot.Page(site, 'File:' + self.file_name)
         else:
             page = self.discussion_page
-        text = page.get(get_redirect=True)
+
+        text = page.text
 
         discussion = get_nomination_page(text)
         if discussion is None:

@@ -61,7 +61,7 @@ def spam_notifications(notif_type, formatter_class, talk_page, files):
 
     try:
         text = talk_page.get()
-    except pywikibot.exceptions.NoPage:
+    except pywikibot.exceptions.NoPageError:
         text = ''
 
     ourlist = []
@@ -127,6 +127,11 @@ def process_list(type, formatter_class):
 
     for filename in lines:
         file = FilePage(commons, filename)
+
+        if not file.exists():
+            print('File:%s missing, skipping.' % filename, file=sys.stderr)
+            continue
+
         if filename in file_states:
             state = file_states[filename]
         else:
