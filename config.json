@@ -35,7 +35,10 @@
             ]
         },
         "ruwiki": {
-            "markasbot": false
+            "markasbot": false,
+            "notification_types": [
+                "discussion"
+	    ]
         },
         "srwiki": {
             "tags": [
