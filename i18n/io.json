@@ -5,6 +5,8 @@
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Arkivo de Commons|Arkivi de Commons}} uzita en ca pagino o detalo ek lu che Wikidata {{PLURAL:$1|selektesis}} por rapida efaco",
+	"commtech-commons-speedy-body-start": "La sequanta {{PLURAL:$1|arkivo|arkivi}} de Wikimedia Commons uzita en ca pagino od existanta che Wikidata {{PLURAL:$1|nominesis}} por rapida efaco:",
+	"commtech-commons-speedy-summary": "Arkivi uzita en ca pagino indikesis por rapida efaco",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|diskuto]])",
 	"commtech-commons-nopermission-header": "{{PLURAL:$1|Arkivo de Commons o lua detalo|Arkivi de Commons o lia detali}} uzita en ca pagino o che Wikidata {{PLURAL:$1|ne havas informo|ne havas informi}} pri uzo-permiso",
 	"commtech-commons-nopermission-body-end": "Vu povas vidar detali en la deskripto-{{PLURAL:$1|pagino|pagini}} ligata supre.",
