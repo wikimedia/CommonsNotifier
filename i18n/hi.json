@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"commtech-commons-speedy-header": "इस विकिडेटा आयटम पर उपयुक्त {{PLURAL:$1|एक कॉमन्स फ़ाइल|कॉमन्स फ़ाइलों}} को त्वरित हटाने के लिए नामांकित कर दिया गया है।",
+	"commtech-commons-speedy-body-start": "इस विकिडेटा आयटम पर उपयुक्त {{PLURAL:$1|इस फ़ाइल|इन फ़ाइलों}} को विकिमीडिया कॉमन्स पर त्वरित हटाने के लिए नामांकित कर दिया गया है:",
+	"commtech-commons-speedy-body-end": "आप उपरोक्त विवरण {{PLURAL:$1|पृष्ठ|पृष्ठों}} पर चित्रों के {{PLURAL:$1|विवरण|विवरणों}} में हटाने {{PLURAL:$1|का|के}} कारण देख सकते हैं।",
+	"commtech-commons-speedy-summary": "इस पृष्ठ पर उपयुक्त फ़ाइलों को त्वरित हटाने के लिए नामांकित किया गया है",
+	"commtech-commons-discussion-header": "इस पृष्ठ या इसके विकिडेटा आयटम पर उपयुक्त {{PLURAL:$1|एक कॉमन्स फ़ाइल|कॉमन्स फ़ाइलों}} को हटाने के लिए नामांकित कर दिया गया है",
+	"commtech-commons-discussion-body-start": "इस पृष्ठ या इसके विकिडेटा आयटम पर उपयुक्त {{PLURAL:$1|इस फ़ाइल|इन फ़ाइलों}} को विकिमीडिया कॉमन्स पर हटाने के लिए नामांकित कर दिया गया है:",
+	"commtech-commons-discussion-body-end-matching": "[[$1|नामांकन के पृष्ठ]] पर हटाने की चर्चा में शामिल हों।",
+	"commtech-commons-discussion-body-end-mismatching": "उपरोक्त नामांकन {{PLURAL:$1|पृष्ठ|पृष्ठों}} पर हटाने की {{PLURAL:$1|चर्चा|चर्चाओं}} में शामिल हों।",
+	"commtech-commons-discussion-summary": "इस पृष्ठ या इसके विकिडेटा आयटम पर उपयुक्त फ़ाइलों को हटाने के लिए नामांकित किया गया है",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|चर्चा]])",
+	"commtech-commons-nopermission-header": "इस पृष्ठ या इसके विकिडेटा आयटम पर उपयुक्त {{PLURAL:$1|एक कॉमन्स फ़ाइल|कॉमन्स फ़ाइलों}} के लिए अनुमति नहीं है",
+	"commtech-commons-nopermission-body-start": "इस पृष्ठ या इसके विकिडेटा आयटम पर उपयुक्त {{PLURAL:$1|इस फ़ाइल|इन फ़ाइलों}} के लिए अनुमति नहीं है और जानकारी के हट जाने की संभावना है:",
+	"commtech-commons-nopermission-body-end": "आप ऊपर के चित्र विवरण {{PLURAL:$1|पृष्ठ|पृष्ठों}} पर विस्तार देख सकते हैं।",
+	"commtech-commons-nopermission-summary": "इस पृष्ठ या इसके विकिडेटा आयटम पर उपयुक्त फ़ाइलों के लिए अनुमति नहीं है"
+}
