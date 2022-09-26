@@ -4,7 +4,7 @@
 			"Vlad5250"
 		]
 	},
-	"commtech-commons-speedy-header": "{{PLURAL:$1|Datoteka|Datoteke}} na Zajedničkom poslužitelju koji {{PLURAL:$1|koristi|koriste}} se na stranici {{PLURAL:$1|predložena je|predloženi su}} za brzo ispiranje",
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Datoteka|Datoteke}} na Ostavi koji {{PLURAL:$1|koristi|koriste}} se na stranici ili stavci na Wikidata {{PLURAL:$1|predložena je|predloženi su}} za brzo ispiranje",
 	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Sledeća datoteka|Sledeće datoteke}} na Zajedničkom poslužitelju koji {{PLURAL:$1|koristi|koriste}} se na stranici {{PLURAL:$1|predložena je|predloženi su}} za brzo ispiranje:",
 	"commtech-commons-speedy-body-end": "{{PLURAL:$1|Razlog|Razlozi}} za brisanje ćete naći na {{PLURAL:$1|gore opisnoj stranici|gore opisnim stranicama}}.",
 	"commtech-commons-speedy-summary": "Datoteke koje se koristee na ovoj stranici su predložene za brzo brisanje",
