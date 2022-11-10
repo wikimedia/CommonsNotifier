@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Datoteka Zbirke, ki je uporabljena|Datoteki zbirke, ki sta uporabljeni|Datoteke Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njen|njun|njihov}} predmet v Wikipodatkih {{PLURAL:$1|je bil(a) predlagan(a)|sta bila(i) predlagana(i)|so bili(e) predlagani(e)}} za hitri izbris.",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Naslednja datoteka|Naslednji datoteki|Naslednje datoteke}} Wikimedijine zbirke, {{PLURAL:$1|uporabljena|uporabljeni|uporabljene}} na tej strani, ali {{PLURAL:$1|njen predmet|njuna predmeta|njihovi predmeti}} v Wikipodatkih {{PLURAL:$1|je bil(a) predlagan(a)|sta bila(i) predlagana(i)|so bili(e) predlagani(e)}} za hitri izbris.",
+	"commtech-commons-speedy-body-end": "{{PLURAL:$1|Razlog|Razloge} lahko vidite {{PLURAL:pri opisu datoteke, povezanem|pri opisu datotek, povezanih}} zgoraj.",
+	"commtech-commons-speedy-summary": "Datoteke, uporabljene na tej strani, so predlagane za hitri izbris",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Datoteka Zbirke, ki je uporabljena|Datoteki zbirke, ki sta uporabljeni|Datoteke Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njen|njun|njihov}} predmet v Wikipodatkih {{PLURAL:$1|je bil(a) predlagan(a)|sta bila(i) predlagana(i)|so bili(e) predlagani(e)}} za hitri izbris.",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Naslednja datoteka|Naslednji datoteki|Naslednje datoteke}} Wikimedijine zbirke, {{PLURAL:$1|uporabljena|uporabljeni|uporabljene}} na tej strani, ali {{PLURAL:$1|njen predmet|njuna predmeta|njihovi predmeti}} v Wikipodatkih {{PLURAL:$1|je bil(a) predlagan(a)|sta bila(i) predlagana(i)|so bili(e) predlagani(e)}} za hitri izbris.",
+	"commtech-commons-discussion-body-end-matching": "Sodelujte v razpravi o izbrisu na [[ $1|strani s predlogom]].",
+	"commtech-commons-discussion-body-end-mismatching": "Sodelujte v {{PLURAL:$1|razpravi|razpravah}} o izbrisu na zgoraj povezanih {{PLURAL:$1|strani s predlogom|straneh s predlogom}}.",
+	"commtech-commons-discussion-summary": "Datoteke, uporabljene na tej strani, ali njihov predmet v Wikipodatkih so predlagani za izbris",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|pogovor]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Datoteki zbirke, ki je uporabljena|Datotekama zbirke, ki sta uporabljeni|Datotekam Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njenemu predmetu|njunima predmetoma|njihovim predmetom}} v Wikipodatkih manjka dovoljenje",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Naslednji datoteki Zbirke, ki je uporabljena|Naslednjima datotekama Zbirke, ki sta uporabljeni|Naslednjim datotekam Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njenemu predmetu|njunima predmetoma|njihovim predmetom}} v Wikipodatkih manjkajo informacije o dovoljenju in {{PLURAL:$1|bo morda izbrisan(a)|bosta morda izbrisana(i)|bodo morda izbrisani(e)}}",
+	"commtech-commons-nopermission-body-end": "Podrobnosti si lahko ogledate na {{PLURAL:$1|opisni strani|opisnih straneh}} s povezavo zgoraj.",
+	"commtech-commons-nopermission-summary": "Datotekam, uporabljenim na tej strani, ali njihovemu predmetu v Wikipodatkih manjka dovoljenje"
+}
