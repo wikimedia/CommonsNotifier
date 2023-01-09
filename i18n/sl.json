@@ -14,7 +14,7 @@
 	"commtech-commons-discussion-body-end-mismatching": "Sodelujte v {{PLURAL:$1|razpravi|razpravah}} o izbrisu na zgoraj povezanih {{PLURAL:$1|strani s predlogom|straneh s predlogom}}.",
 	"commtech-commons-discussion-summary": "Datoteke, uporabljene na tej strani, ali njihov predmet v Wikipodatkih so predlagani za izbris",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|pogovor]])",
-	"commtech-commons-nopermission-header": "{{PLURAL:$1|Datoteki zbirke, ki je uporabljena|Datotekama zbirke, ki sta uporabljeni|Datotekam Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njenemu predmetu|njunima predmetoma|njihovim predmetom}} v Wikipodatkih manjka dovoljenje",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Datoteki Zbirke, ki je uporabljena|Datotekama Zbirke, ki sta uporabljeni|Datotekam Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njenemu predmetu|njunima predmetoma|njihovim predmetom}} v Wikipodatkih manjka dovoljenje",
 	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Naslednji datoteki Zbirke, ki je uporabljena|Naslednjima datotekama Zbirke, ki sta uporabljeni|Naslednjim datotekam Zbirke, ki so uporabljene}} na tej strani, ali {{PLURAL:$1|njenemu predmetu|njunima predmetoma|njihovim predmetom}} v Wikipodatkih manjkajo informacije o dovoljenju in {{PLURAL:$1|bo morda izbrisan(a)|bosta morda izbrisana(i)|bodo morda izbrisani(e)}}",
 	"commtech-commons-nopermission-body-end": "Podrobnosti si lahko ogledate na {{PLURAL:$1|opisni strani|opisnih straneh}} s povezavo zgoraj.",
 	"commtech-commons-nopermission-summary": "Datotekam, uporabljenim na tej strani, ali njihovemu predmetu v Wikipodatkih manjka dovoljenje"
