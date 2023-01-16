@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Un file|Files}} de Commons usate sur iste pagina o per su elemento de Wikidata ha essite nominate pro deletion rapide",
+	"commtech-commons-speedy-body-start": "Le sequente {{PLURAL:$1|file|files}} de Wikimedia Commons usate sur iste pagina o per su elemento Wikidata ha essite nominate pro deletion rapide:",
+	"commtech-commons-speedy-body-end": "Tu pote vider le motivo{{PLURAL:$1||s}} pro le deletion sur le pagina{{PLURAL:$1||s}} de description ligate hic supra.",
+	"commtech-commons-speedy-summary": "Le file usate sur iste pagina es previste pro deletion rapide",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Un file|Files}} de Commons usate sur iste pagina o per su elemento de Wikidata ha essite nominate pro deletion",
+	"commtech-commons-discussion-body-start": "Le sequente {{PLURAL:$1|file|files}} de Wikimedia Commons usate sur iste pagina o per su elemento Wikidata ha essite nominate pro deletion:",
+	"commtech-commons-discussion-body-end-matching": "Participa al discussion sur le deletion sur le [[$1|pagina del nomination]].",
+	"commtech-commons-discussion-body-end-mismatching": "Pro participar al discussion{{PLURAL:$1||es}} sur le deletion{{PLURAL:$1||es}}, visita le pagina{{PLURAL:$1||s}} ligate hic supra.",
+	"commtech-commons-discussion-summary": "Le files usate sur iste pagina o per su elemento de Wikidata es previste pro deletion",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Un file|Files}} de Commons usate sur iste pagina o per su elemento de Wikidata non ha information sur le permission de uso",
+	"commtech-commons-nopermission-body-start": "Le sequente {{PLURAL:$1|file|files}} de Wikimedia Commons usate sur iste pagina o per su elemento Wikidata non ha information sur le permission de uso e pote esser delite:",
+	"commtech-commons-nopermission-body-end": "Tu pote vider le detalios sur le pagina{{PLURAL:$1||s}} de description ligate hic supra.",
+	"commtech-commons-nopermission-summary": "Le files usate sur iste pagina o per su elemento de Wikidata non ha permission de uso"
+}
