@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Vikitekos failas, naudojamas|Vikitekos failai, naudojami}} šiame puslapyje ar {{PLURAL:$1|jo Vikiduomenų elementas yra|ar jų Vikiduomenų elementai}} nominuoti greitam ištrynimui",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Šis Vikitekos failas, naudojamas|Šie Vikitekos failai, naudojami}} šiame puslapyje arba {{PLURAL:$1|jo Vikiduomenų elementas yra|jų Vikiduomenų elementai}} nominuoti greitam ištrynimui:",
+	"commtech-commons-speedy-body-end": "Galite pamatyti ištrynimo {{PLURAL:$1|priežastį|priežastis}} failo aprašo {{PLURAL:$1|puslapyje, pateiktame|puslapiuose, pateiktuose}} aukščiau.",
+	"commtech-commons-speedy-summary": "Šiame puslapyje naudojami failai yra paruošti greitam ištrynimui",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Vikitekos failas, naudojamas|Vikitekos failai, naudojami}} šiame puslapyje ar {{PLURAL:$1|jo Vikiduomenų elementas|ar jų Vikiduomenų elementai}} nominuoti ištrynimui",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Šis Vikitekos failas, naudojamas|Šie Vikitekos failai, naudojami}} šiame puslapyje arba {{PLURAL:$1|jo Vikiduomenų elementas|jų Vikiduomenų elementai}} nominuoti ištrynimui:",
+	"commtech-commons-discussion-summary": "Šiame puslapyje naudojamus failus arba jo Vikiduomenų elementą ketinama ištrinti",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|aptarimas]])"
+}
