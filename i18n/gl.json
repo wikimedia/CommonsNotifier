@@ -1,17 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Toliño"
 		]
 	},
-	"commtech-commons-speedy-header": "{{PLURAL:$1|Un ficheiro|Varios ficheiros}} de Commons usados nesta páxina {{PLURAL:$1|foi|foron}} nomeados para a súa eliminación rápida",
-	"commtech-commons-speedy-body-start": "{{PLURAL:$1|O seguinte ficheiro|Os seguintes ficheiros}} de Wikimedia Commons {{PLURAL:$1|usado|usados}} nesta páxina {{PLURAL:$1|foi nomeado|foron nomeados}} para a súa eliminación rápida:",
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Un ficheiro|Varios ficheiros}} de Commons {{PLURAL:$1|usado|usados}} nesta páxina ou o seu elemento de Wikidata {{PLURAL:$1|foi marcado|foron marcado}} para a súa eliminación rápida",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|O seguinte ficheiro|Os seguintes ficheiros}} de Wikimedia Commons ou o seu elemento de Wikidata {{PLURAL:$1|usado|usados}} nesta páxina {{PLURAL:$1|foi marcado|foron marcados}} para a súa eliminación rápida:",
 	"commtech-commons-speedy-body-end": "Pode ver {{PLURAL:$1|o motivo|os motivos}} do borrado {{PLURAL:$1|na páxina|nas páxinas}} de descrición {{PLURAL:$1|ligada|ligadas}} enriba.",
 	"commtech-commons-speedy-summary": "Algúns ficheiros usados nesta páxina foron marcados para a súa eliminación rápida",
-	"commtech-commons-discussion-header": "{{PLURAL:$1|Un ficheiro|Varios ficheiros}} de Commons usados nesta páxina {{PLURAL:$1|foi|foron}} nomeados para a súa eliminación",
-	"commtech-commons-discussion-body-start": "{{PLURAL:$1|O seguinte ficheiro|Os seguintes ficheiros}} de Wikimedia Commons {{PLURAL:$1|usado|usados}} nesta páxina {{PLURAL:$1|foi nomeado|foron nomeados}} para a súa eliminación:",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Un ficheiro|Varios ficheiros}} de Commons {{PLURAL:$1|usado|usados}} nesta páxina ou o seu elemento de Wikidata {{PLURAL:$1|foi marcado|foron marcados}} para a súa eliminación",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|O seguinte ficheiro|Os seguintes ficheiros}} de Wikimedia Commons ou o seu elemento de Wikidata {{PLURAL:$1|usado|usados}} nesta páxina {{PLURAL:$1|foi marcado|foron marcados}} para a súa eliminación:",
 	"commtech-commons-discussion-body-end-matching": "Participe no debate de eliminación na [[$1|páxina de nomeamento]].",
 	"commtech-commons-discussion-body-end-mismatching": "Participe {{PLURAL:$1|nas conversas das páxinas}} de nomeamento {{PLURAL:$1|ligadas}} enriba.",
-	"commtech-commons-discussion-summary": "Algúns ficheiros usados nesta páxina foron nomeados para a súa eliminación",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|conversa]])"
+	"commtech-commons-discussion-summary": "Os ficheiros usados nesta páxina ou o seu elemento de Wikidata foron marcados para a súa eliminación",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|conversa]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Un ficheiro|Varios ficheiros}} de Commons {{PLURAL:$1|usado|usados}} nesta páxina ou o seu elemento de Wikidata {{PLURAL:$1|carece|carecen}} de permisos",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|O seguinte ficheiro|Os seguintes ficheiros}} de Wikimedia Commons ou o seu elemento de Wikidata {{PLURAL:$1|usado|usados}} nesta páxina {{PLURAL:$1|carece|carecen}} de permisos e poden ser eliminados:",
+	"commtech-commons-nopermission-body-end": "Pode ver os detalles {{PLURAL:$1|na páxina|nas páxinas}} de descrición do ficheiro {{PLURAL:$1|ligada|ligadas}} arriba.",
+	"commtech-commons-nopermission-summary": "Os ficheiros usados nesta páxina ou o seu elemento de Wikidata carecen de permisos"
 }

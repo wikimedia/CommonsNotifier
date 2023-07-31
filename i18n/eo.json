@@ -1,21 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
+			"Caden99",
 			"Mirin"
 		]
 	},
-	"commtech-commons-speedy-header": "Oni proponis tujan forigon de {{PLURAL:$1|Komuneja dosiero uzata|Komunejaj dosieroj uzataj}} de ĉi tiu paĝo",
-	"commtech-commons-speedy-body-start": "Oni proponis tujan forigon de la {{PLURAL:$1|jena Komuneja dosiero uzata|jenaj Komunejaj dosieroj uzataj}} de ĉi tiu paĝo:",
+	"commtech-commons-speedy-header": "{{PLURAL:$1| Komuna dosiero|Komunaj dosieroj}} uzata en ĉi tiu paĝo aŭ ĝia Vikidatuma ero {{PLURAL:$1| estas|estis}} nomumita por rapida forigo",
+	"commtech-commons-speedy-body-start": "La jena Vikimedia Komunejo {{PLURAL:$1| dosiero|dosieroj}} uzataj en ĉi tiu paĝo aŭ ĝia Vikidatuma ero {{PLURAL:$1| estas|estis}} nomumita por rapida forigo:",
 	"commtech-commons-speedy-body-end": "Vi povas vidi la {{PLURAL:$1|kialon|kialojn}} por forigo ĉe la {{PLURAL:$1|ĉi-supre ligita priskriba paĝo|ĉi-supre ligitaj priskribaj paĝoj}} de la dosiero.",
 	"commtech-commons-speedy-summary": "Oni proponis rapidan forigadon de iuj dosieroj uzataj en ĉi tiu paĝo",
-	"commtech-commons-discussion-header": "Oni proponis forigon de {{PLURAL:$1|Komuneja dosiero uzata|Komunejaj dosieroj uzataj}} de ĉi tiu paĝo",
-	"commtech-commons-discussion-body-start": "Oni proponis forigon de la {{PLURAL:$1|jena Komuneja dosiero uzata|jenaj Komunejaj dosieroj uzataj}} de ĉi tiu paĝo:",
+	"commtech-commons-discussion-header": "{{PLURAL:$1| Komuna dosiero|Komunaj dosieroj}} uzata en ĉi tiu paĝo aŭ ĝia Vikidatuma ero {{PLURAL:$1| estas|estis}} nomumita por rapida forigo",
+	"commtech-commons-discussion-body-start": "La jena Vikimedia Komunejo {{PLURAL:$1| dosiero|dosieroj}} uzataj en ĉi tiu paĝo aŭ ĝia Vikidatuma ero {{PLURAL:$1| estas|estis}} nomumita por rapida forigo:",
 	"commtech-commons-discussion-body-end-matching": "Partoprenu en la diskuto pri forigado ĉe la [[$1|paĝo de la propono]].",
 	"commtech-commons-discussion-body-end-mismatching": "Partoprenu en la {{PLURAL:$1|diskutoj}} pri forigo ĉe la nomuma {{PLURAL:$1|paĝo}} ĉi-supre ligita.",
-	"commtech-commons-discussion-summary": "Oni proponis forigadon de iuj dosieroj uzataj en ĉi tiu paĝo",
+	"commtech-commons-discussion-summary": "Dosieroj uzataj en ĉi tiu paĝo aŭ ĝia Vikidatuma ero estas forigotaj",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|discussion]])",
-	"commtech-commons-nopermission-header": "Permeso mankas ĉe {{PLURAL:$1|Komuneja dosiero uzata|Komunejaj dosieroj uzataj}} en ĉi tiu paĝo",
-	"commtech-commons-nopermission-body-start": "Permeso mankas ĉe la {{PLURAL:$1|jena Komuneja dosiero uzata|jenaj Komunejaj dosieroj uzataj}} en ĉi tiu paĝo; {{PLURAL:$1|tiu dosiero|tiuj dosieroj}} estas eble {{PLURAL:$1|forigota|forigotaj}}:",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1| Komuna dosiero|Komunaj dosieroj}} uzata en ĉi tiu paĝo aŭ ĝia Vikidatuma ero {{PLURAL:$1| estas|estis}} nomumita por rapida forigo",
+	"commtech-commons-nopermission-body-start": "La jena Vikimedia Komunejo {{PLURAL:$1| dosiero|dosieroj}} uzataj en ĉi tiu paĝo aŭ ĝia Vikidatuma ero {{PLURAL:$1| estas|estis}} nomumita por rapida forigo:",
 	"commtech-commons-nopermission-body-end": "Vi povas vidi la detalojn ĉe la {{PLURAL:$1|ĉi-supra paĝo priskribanta|ĉi-supraj paĝoj priskribantaj}} la dosieron.",
-	"commtech-commons-nopermission-summary": "Permeso mankas je dosieroj uzataj en ĉi tiu paĝo"
+	"commtech-commons-nopermission-summary": "Dosieroj uzataj en ĉi tiu paĝo aŭ ĝia Vikidatuma ero estas forigotaj"
 }
