@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"-sasha-"
+		]
+	},
+	"commtech-commons-speedy-header": "Se {{PLURAL:$1|ha|han}} marcado para borrado rápido {{PLURAL:$1|un archivo|varios archivos}} de Commons {{PLURAL:$1|usado|usados}} en esta página o su elemento de Wikidata",
+	"commtech-commons-speedy-body-start": "Se {{PLURAL:$1|ha|han}} marcado para borrado rápido {{PLURAL:$1|el siguiente archivo|los siguientes archivos}} de Wikimedia Commons {{PLURAL:$1|usado|usados}} en esta página o su elemento de Wikidata:",
+	"commtech-commons-speedy-body-end": "Puedes ver {{PLURAL:$1|el motivo|los motivos}} en {{PLURAL:$1|la página|las páginas}} de descripción {{PLURAL:$1|enlazada|enlazadas}} arriba.",
+	"commtech-commons-speedy-summary": "Un archivo usado en esta página ha sido propuesto para borrado rápido",
+	"commtech-commons-discussion-header": "Se ha abierto una consulta de borrado para {{PLURAL:$1|un archivo|varios archivos}} de Commons {{PLURAL:$1|usado|usados}} en esta página o su elemento de Wikidata",
+	"commtech-commons-discussion-body-start": "Se ha abierto una consulta de borrado para {{PLURAL:$1|el siguiente archivo|los siguientes archivos}} de Commons {{PLURAL:$1|usado|usados}} en esta página o su elemento de Wikidata:",
+	"commtech-commons-discussion-body-end-matching": "Participa en la discusión en la [[$1|página correspondiente]].",
+	"commtech-commons-discussion-body-end-mismatching": "Participa en {{PLURAL:$1|las discusiones}} en {{PLURAL:$1|las páginas enlazadas}}.",
+	"commtech-commons-discussion-summary": "Se ha abierto una consulta de borrado para un archivo usado en esta página o su elemento de Wikidata",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|consulta]])",
+	"commtech-commons-nopermission-header": "Falta información sobre permisos en {{PLURAL:$1|un archivo|varios archivos}} de Commons {{PLURAL:$1|usado|usados}} en esta página o su elemento de Wikidata",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|El siguiente archivo|Los siguientes archivos}} de Wikimedia Commons {{PLURAL:$1|usado|usados}} en esta página o su elemento de Wikidata {{PLURAL:$1|carece|carecen}} de información sobre permisos y {{PLURAL:$1|podría ser eliminado|podrían ser elminados}}:",
+	"commtech-commons-nopermission-body-end": "Puedes ver los detalles en {{PLURAL:$1|la página|las páginas}} de descripción enlazadas.",
+	"commtech-commons-nopermission-summary": "Un archivo usado en esta página o su elemento de Wikidata no tiene información sobre permisos"
+}
