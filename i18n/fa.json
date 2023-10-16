@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"4nn1l2"
+			"4nn1l2",
+			"Arian Ar"
 		]
 	},
 	"commtech-commons-speedy-header": "نامزد حذف سریع شدن {{PLURAL:$1|یک|چند}} پروندهٔ ویکی‌انبار استفاده‌شده در این صفحه",
@@ -9,13 +10,13 @@
 	"commtech-commons-speedy-body-end": "{{PLURAL:$1|دلیل|دلایل}} حذف را می‌توانید در {{PLURAL:$1|صفحهٔ|صفحات}} توصیف پرونده که در بالا لینک {{PLURAL:$1|شده|شده‌اند}} ببینید.",
 	"commtech-commons-speedy-summary": "پرونده‌های استفاده‌شده در این صفحه نامزد حذف سریع شده‌اند",
 	"commtech-commons-discussion-header": "نامزد حذف شدن {{PLURAL:$1|یک|چند}} پروندهٔ ویکی‌انبار استفاده‌شده در این صفحه",
-	"commtech-commons-discussion-body-start": "{{PLURAL:$1|پروندهٔ|پرونده‌های}} زیر از ویکی‌انبار که در این صفحه استفاده {{PLURAL:$1|شده|شده‌اند}} نامزد حذف {{PLURAL:$1|شده است|شده‌اند}}:",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|پروندهٔ|پرونده‌های}} زیر از ویکی‌انبار که در این صفحه یا آیتم ویکی‌داده آن استفاده {{PLURAL:$1|شده|شده‌اند}} نامزد حذف {{PLURAL:$1|شده است|شده‌اند}}:",
 	"commtech-commons-discussion-body-end-matching": "در بحث حذف که در [[$1|صفحهٔ نامزدی]] صورت می‌گیرد شرکت کنید.",
 	"commtech-commons-discussion-body-end-mismatching": "در {{PLURAL:$1|بحث‌های}} حذف که در {{PLURAL:$1|صفحات}} نامزدی صورت می‌گیرد شرکت کنید.",
-	"commtech-commons-discussion-summary": "پرونده‌های استفاده‌شده در این صفحه نامزد حذف شده‌اند",
+	"commtech-commons-discussion-summary": "پرونده‌های استفاده‌شده در این صفحه یا آیتم ویکی‌داده آن نامزد حذف شده‌اند",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|بحث]])",
-	"commtech-commons-nopermission-header": "نبود اجازه‌نامه برای {{PLURAL:$1|یک|چند}} پروندهٔ ویکی‌انبار استفاده‌شده در این صفحه",
-	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|پروندهٔ|پرونده‌های}} زیر از ویکی‌انبار که در این صفحه استفاده {{PLURAL:$1|شده|شده‌اند}} اجازه‌نامه {{PLURAL:$1|ندارد|ندارند}} و شاید حذف {{PLURAL:$1|شود|شوند}}:",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|یک|چند}} پروندهٔ ویکی‌انبار استفاده‌شده در این صفحه یا آیتم ویکی‌داده آن اجازه‌نامه {{PLURAL:$1|ندارد|ندارند}}",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|پروندهٔ|پرونده‌های}} زیر از ویکی‌انبار که در این صفحه یا آیتم ویکی‌داده آن استفاده {{PLURAL:$1|شده|شده‌اند}} اجازه‌نامه {{PLURAL:$1|ندارد|ندارند}} و شاید حذف {{PLURAL:$1|شود|شوند}}:",
 	"commtech-commons-nopermission-body-end": "جزئیات بیشتر را می‌توانید در {{PLURAL:$1|صفحهٔ|صفحات}} توصیف پرونده که در بالا لینک {{PLURAL:$1|شده|شده‌اند}} ببینید.",
-	"commtech-commons-nopermission-summary": "پرونده‌های استفاده‌شده در این صفحه اجازه‌نامه ندارند"
+	"commtech-commons-nopermission-summary": "پرونده‌های استفاده‌شده در این صفحه یا آیتم ویکی‌داده آن اجازه‌نامه ندارند"
 }
