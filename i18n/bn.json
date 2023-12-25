@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aishik Rehman",
 			"MdsShakil",
 			"আফতাবুজ্জামান"
 		]
@@ -15,8 +16,8 @@
 	"commtech-commons-discussion-body-end-mismatching": "সংযুক্ত অপসারণ প্রস্তাবনা {{PLURAL:$1|পাতায়}} {{PLURAL:$1|আলোচনাগুলোতে}} অংশ নিন।",
 	"commtech-commons-discussion-summary": "এই পাতায় কিংবা এর উইকিউপাত্ত আইটেমে ব্যবহৃত ফাইলগুলো অপসারণের জন্য মনোনীত হয়েছে",
 	"commtech-commons-discussion-line": "[[$1]] ([[$2|আলোচনা]])",
-	"commtech-commons-nopermission-header": "এই পাতায় বা এর উইকিউপাত্ত আইটেম ব্যবহৃত {{PLURAL:$1|একটি কমন্স ফাইলে|একাধিক কমন্স ফাইলে}} {{PLURAL:$1|এর|সেগুলোর}} ব্যবহারের অনুমতি নিয়ে কোন তথ্য নেই",
-	"commtech-commons-nopermission-body-start": "এই পাতায় বা এর উইকিউপাত্ত আইটেম ব্যবহৃত নিম্নলিখিত কমন্স {{PLURAL:$1|ফাইলে|ফাইলগুলোতে}} অনুমতির কোন তথ্য উপস্থিত নেই এবং {{PLURAL:$1|এটি|এগুলো}} সম্ভবত অপসারণ করা হবে:",
+	"commtech-commons-nopermission-header": "এই পাতায় বা এর উইকিউপাত্ত আইটেম ব্যবহৃত {{PLURAL:$1|একটি কমন্স ফাইলে|একাধিক কমন্স ফাইলে}} {{PLURAL:$1|এর|সেগুলোর}} ব্যবহারের অনুমতি নিয়ে কোনো তথ্য নেই",
+	"commtech-commons-nopermission-body-start": "এই পাতায় বা এর উইকিউপাত্ত আইটেম ব্যবহৃত নিম্নলিখিত কমন্স {{PLURAL:$1|ফাইলে|ফাইলগুলোতে}} অনুমতির কোনো তথ্য উপস্থিত নেই এবং {{PLURAL:$1|এটি|এগুলো}} সম্ভবত অপসারণ করা হবে:",
 	"commtech-commons-nopermission-body-end": "আপনি ফাইলের বর্ণনা {{PLURAL:$1|পাতায়|পাতাগুলোতে}} বিস্তারিত দেখতে পারেন।",
 	"commtech-commons-nopermission-summary": "এই পাতায় কিংবা এর উইকিউপাত্ত আইটেমে ব্যবহৃত ফাইলগুলোর অনুমতির তথ্য উপস্থিত নেই"
 }
