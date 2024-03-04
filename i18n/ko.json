@@ -1,16 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dr1t jg",
 			"Revi",
 			"Ykhwong"
 		]
 	},
-	"commtech-commons-speedy-header": "이 문서에서 사용된 공용 파일이 빠른 삭제 신청되었습니다",
-	"commtech-commons-speedy-body-start": "이 문서에서 사용된 다음 공용 파일이 빠른 삭제 신청되었습니다.",
+	"commtech-commons-speedy-header": "이 페이지나 위키데이터 항목에서 사용된 {{PLURAL:$1|커먼즈 파일|커먼즈 파일들}}이(가) 신속 삭제를 위해 추천되었어",
+	"commtech-commons-speedy-body-start": "다음의 위키미디어 공용 {{PLURAL:$1|파일|파일들}}이 이 페이지나 위키데이터 항목에서 사용되고 있으며, {{PLURAL:$1|해당 파일은|해당 파일들은}} 신속 삭제를 위해 추천되었어:",
 	"commtech-commons-speedy-body-end": "삭제 신청 사유는 위에 링크된 해당 파일 설명 문서에서 볼 수 있습니다.",
 	"commtech-commons-speedy-summary": "이 문서에서 사용된 파일이 삭제될 수 있습니다",
-	"commtech-commons-discussion-header": "이 문서에서 사용된 공용 파일이 삭제 토론 중입니다",
-	"commtech-commons-discussion-body-start": "이 문서에서 사용된 다음 공용 파일이 삭제 토론에 회부되었습니다:",
+	"commtech-commons-discussion-header": "이 페이지나 위키데이터 항목에서 사용된 {{PLURAL:$1|공용 파일|공용 파일들}}이 삭제를 위해 추천되었어",
+	"commtech-commons-discussion-body-start": "다음의 위키미디어 공용 {{PLURAL:$1|파일|파일들}}이 이 페이지 또는 위키데이터 항목에서 사용되고 있으며, {{PLURAL:$1|해당 파일은|해당 파일들은}} 삭제를 위해 추천되었어:",
 	"commtech-commons-discussion-body-end-matching": "[[$1|삭제 토론 문서]]에서 토론에 참여하세요.",
 	"commtech-commons-discussion-body-end-mismatching": "위에 링크된 삭제 토론 문서에서 토론에 참여하세요.",
 	"commtech-commons-discussion-summary": "이 문서에서 사용된 파일이 삭제될 수 있습니다",
