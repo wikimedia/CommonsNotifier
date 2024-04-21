@@ -8,8 +8,6 @@ from pywikibot.site import Namespace
 from pprint import pprint
 
 commons = Site('commons', 'commons')
-userdb = mysql.connect()
-store = DeletionStateStore(userdb)
 
 
 def load_files(categories, depth):
@@ -50,7 +48,11 @@ def make_list(type, categories, depth, delay):
     files = load_files(categories, depth)
     print('%s pages found for %s deletion' % (len(files), type))
 
-    states = store.refresh_state(files, type)
+    userdb = mysql.connect()
+    with userdb:
+        store = DeletionStateStore(userdb)
+        states = store.refresh_state(files, type)
+
     file = open('lists/%s.txt' % type, 'w', encoding='utf8')
     count = 0
     for state in states:
