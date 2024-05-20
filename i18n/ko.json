@@ -4,6 +4,7 @@
 			"Amire80",
 			"Dr1t jg",
 			"Revi",
+			"Suleiman the Magnificent Television",
 			"Ykhwong"
 		]
 	},
@@ -15,6 +16,7 @@
 	"commtech-commons-discussion-body-start": "다음의 위키미디어 공용 {{PLURAL:$1|파일|파일들}}이 이 페이지 또는 위키데이터 항목에서 사용되고 있으며, {{PLURAL:$1|해당 파일은|해당 파일들은}} 삭제를 위해 추천되었어:",
 	"commtech-commons-discussion-body-end-matching": "[[$1|삭제 토론 문서]]에서 토론에 참여하세요.",
 	"commtech-commons-discussion-body-end-mismatching": "위에 링크된 삭제 토론 문서에서 토론에 참여하세요.",
-	"commtech-commons-discussion-summary": "이 문서에서 사용된 파일이 삭제될 수 있습니다",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|토론]])"
+	"commtech-commons-discussion-summary": "이 페이지 또는 위키데이터 항목에서 사용되는 파일은 삭제될 수 있습니다",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|토론]])",
+	"commtech-commons-nopermission-summary": "이 페이지 또는 위키데이터 항목에서 사용되는 파일에는 권한이 없습니다"
 }
