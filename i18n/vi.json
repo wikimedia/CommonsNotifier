@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Băng Tỏa"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Tập tin Commons|Các tập tin Commons}} của trang này hoặc trên Wikidata {{PLURAL:$1|đang bị|đang bị}} treo biển xóa nhanh",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Tập tin|Các tập tin}} Wikimedia Commons của trang này hoặc trang Wikidata {{PLURAL:$1|đang|đang}} bị treo biển xóa nhanh:",
+	"commtech-commons-speedy-body-end": "Xem {{PLURAL:$1|lý do|lý do}} xóa tại {{PLURAL:$1|trang|các trang}} tập tin trên.",
+	"commtech-commons-speedy-summary": "Các tập tin trong trang này đang bị treo biển xóa nhanh",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Đang|Đang}} có thảo luận xóa về {{PLURAL:$1|tập tin Commons|các tập tin Commons}} của trang này hoặc trang Wikidata",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Đang|Đang}} có thảo luận xóa về {{PLURAL:$1|tập tin|các tập tin}} Wikimedia Commons hoặc khoản mục Wikidata của trang này:",
+	"commtech-commons-discussion-body-end-matching": "Tham gia thảo luận xóa tại [[$1|đây]].",
+	"commtech-commons-discussion-body-end-mismatching": "Tham gia vào {{PLURAL:$1|thảo luận}} xóa tại {{PLURAL:$1|các trang}} trên.",
+	"commtech-commons-discussion-summary": "Đang có thảo luận xóa các tập tin hoặc khoản mục Wikidata của trang này",
+	"commtech-commons-discussion-line": "[[ $1 ]] ([[ $2 |thảo luận]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Tập tin Commons|Các tập tin Commons}} hoặc khoản mục Wikidata của trang này {{PLURAL:$1|đang|đang}} thiếu bằng chứng cấp phép",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Tập tin|Các tập tin}} Wikimedia Commons sau hoặc khoản mục Wikidata của trang này {{PLURAL:$1|đang|đang}} thiếu thông tin cấp phép và do đó có thể bị xóa:",
+	"commtech-commons-nopermission-body-end": "Tìm hiểu thêm tại {{PLURAL:$1|trang|các trang}} tập tin trên.",
+	"commtech-commons-nopermission-summary": "Các tập tin của trang này hoặc trang Wikidata đang thiếu bằng chứng cấp phép"
+}
