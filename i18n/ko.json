@@ -7,8 +7,8 @@
 			"Ykhwong"
 		]
 	},
-	"commtech-commons-speedy-header": "이 페이지나 위키데이터 항목에서 사용된 {{PLURAL:$1|커먼즈 파일|커먼즈 파일들}}이(가) 신속 삭제를 위해 추천되었어",
-	"commtech-commons-speedy-body-start": "다음의 위키미디어 공용 {{PLURAL:$1|파일|파일들}}이 이 페이지나 위키데이터 항목에서 사용되고 있으며, {{PLURAL:$1|해당 파일은|해당 파일들은}} 신속 삭제를 위해 추천되었어:",
+	"commtech-commons-speedy-header": "이 문서나 위키데이터항목에 사용된 {{PLURAL:$1|공용파일}}이 빠른삭제를 위해 제안됨",
+	"commtech-commons-speedy-body-start": "문서나 위키데이터항목에 사용된 {{PLURAL:$1|위키미디어 공용파일}}이 빠른삭제후보로 제안됨",
 	"commtech-commons-speedy-body-end": "삭제 신청 사유는 위에 링크된 해당 파일 설명 문서에서 볼 수 있습니다.",
 	"commtech-commons-speedy-summary": "이 문서에서 사용된 파일이 삭제될 수 있습니다",
 	"commtech-commons-discussion-header": "이 페이지나 위키데이터 항목에서 사용된 {{PLURAL:$1|공용 파일|공용 파일들}}이 삭제를 위해 추천되었어",
