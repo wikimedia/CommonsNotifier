@@ -8,7 +8,7 @@ source $(dirname $0)/vars.sh
 find "${DIR}/lists/" -name '*.txt.*' -mtime +7 -delete
 
 # Delete DB rows older than 240 days
-echo "USE ${DB}; DELETE FROM commons_deletions WHERE touched < NOW() - INTERVAL 240 DAY;" | sql local
+mysql --defaults-file=${DIR}/my.cnf -e "DELETE FROM commons_deletions WHERE touched < NOW() - INTERVAL 240 DAY;"
 
 # Rotate logs
 /usr/sbin/logrotate ${DIR}/logrotate.conf --state ${HOME}/logrotate.state
