@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"commtech-commons-speedy-summary": "په دې مخ کې کارېدلې دوتنې د چټک ړنگېدو لپاره نوماند شوې دي",
+	"commtech-commons-discussion-body-end-matching": "د [[$1|نوماندۍ مخ]] د ړنگولو اړوند شننه کې برخه واخلئ.",
+	"commtech-commons-discussion-body-end-mismatching": "د پورته تړوني‌شوي ړنگېدو ته نوماند {{PLURAL:$1|مخونو}} {{PLURAL:$1|شننو}} کې گډون وکړئ.",
+	"commtech-commons-discussion-summary": "په دې مخ کې کارېدلې دوتنې يا د هغوی ويکي‌اومتوک توکي د ړنگولو لپاره دي",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|شننه]])",
+	"commtech-commons-nopermission-header": "په دې مخ يا د هغې ويکي‌اومتوک توکي کارول شوې {{PLURAL:$1|خونديځ دوتنه|خونديځ دوتنې}} اجازه نه لري.",
+	"commtech-commons-nopermission-summary": "په دې مخ کې کارېدلې دوتنې يا د هغوی ويکي‌اومتوک توکي اجازه نه لري"
+}
