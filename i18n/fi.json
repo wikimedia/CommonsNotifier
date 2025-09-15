@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Majavah",
-			"Stryn"
+			"Stryn",
+			"Taavi"
 		]
 	},
 	"commtech-commons-speedy-header": "Tällä sivulla tai sen Wikidata-kohteessa {{PLURAL:$1|käytettyä tiedostoa|käytettyjä tiedostoita}} on pyydetty pikapoistettavaksi.",
