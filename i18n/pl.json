@@ -5,7 +5,8 @@
 			"Malarz pl",
 			"MaxSem",
 			"WTM",
-			"Wostr"
+			"Wostr",
+			"Woytecr"
 		]
 	},
 	"commtech-commons-speedy-header": "{{PLURAL:$1|Plik|Pliki}} {{PLURAL:$1|użyty|użyte}} na tej stronie albo w powiązanym elemencie Wikidanych {{PLURAL:$1|został zgłoszony|zostały zgłoszone}} do natychmiastowego usunięcia",
@@ -17,5 +18,9 @@
 	"commtech-commons-discussion-body-end-matching": "Weź udział w dyskusji nad usunięciem na [[$1|stronie zgłoszenia]].",
 	"commtech-commons-discussion-body-end-mismatching": "Weź udział w dyskusjach nad usunięciem na stronach zgłoszenia podanych powyżej.",
 	"commtech-commons-discussion-summary": "Pliki użyte na tej stronie albo w powiązanym elemencie Wikidanych zostały zgłoszone do usunięcia",
-	"commtech-commons-discussion-line": "[[$1]] ([[$2|dyskusja]])"
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|dyskusja]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Plik z Commons użyty|Pliki z Commons użyte}} na tej stronie lub powiązanym z nim elemencie Wikidanych nie {{PLURAL:$1|ma|mają}} udzielonej zgody",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Poniższy plik z Commons użyty|Poniższe pliki z Commons użyte}} na tej stronie lub powiązanym z nim elemencie Wikidanych nie {{PLURAL:$1|ma|mają}} podanych informacji o udzieleniu zgody na publikację i {{PLURAL:$1|może zostać usunięty|mogą zostać usunięte}}:",
+	"commtech-commons-nopermission-body-end": "Szczegóły można zobaczyć na {{PLURAL:$1|stronie|stronach}} opisu pliku {{PLURAL:$1|podanej|podanych}} powyżej.",
+	"commtech-commons-nopermission-summary": "Pliki użyte na tej stronie albo w powiązanym elemencie Wikidanych nie mają udzielonej zgody na publikację"
 }
