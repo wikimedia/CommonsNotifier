@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aindriu80"
+		]
+	},
+	"commtech-commons-speedy-header": "Ainmníodh {{PLURAL:$1|comhad Commons}} a úsáidtear ar an leathanach seo nó a mhír Wikidata le haghaidh scriosadh tapa.",
+	"commtech-commons-speedy-body-start": "Tá  {{PLURAL:$1|an comhad|na comhaid}} seo a leanas de chuid Wikimedia Commons a úsáidtear ar an leathanach seo nó ar a mhír Wikidata ainmnithe le haghaidh scriosadh tapa:",
+	"commtech-commons-speedy-body-end": "Is féidir leat na {{PLURAL:$1|cúis|cúiseanna}} le haghaidh scriosadh a fheiceáil ag cur síos an chomhaid {{PLURAL:$1|leathanach|leathanaigh}} atá nasctha thuas.",
+	"commtech-commons-speedy-summary": "Tá comhaid a úsáidtear ar an leathanach seo le scriosadh go tapa",
+	"commtech-commons-discussion-header": "Ainmníodh {{PLURAL:$1|Comhad Commons|Comhaid Commons}} a úsáidtear ar an leathanach seo nó a mhír Wikidata le haghaidh scriosadh",
+	"commtech-commons-discussion-body-start": "Tá na comhaid seo a leanas de chuid Wikimedia Commons {{PLURAL:$1|comhad|comhaid}} a úsáidtear ar an leathanach seo nó ar a mhír Wikidata ainmnithe le scriosadh:",
+	"commtech-commons-discussion-body-end-matching": "Glac páirt sa phlé faoi scriosadh ar an [[$1|leathanach ainmniúcháin]].",
+	"commtech-commons-discussion-body-end-mismatching": "Glac páirt sa scriosadh {{PLURAL:$1|pléanna}} ag an ainmniúchán {{PLURAL:$1|leathanach}} atá nasctha thuas.",
+	"commtech-commons-discussion-summary": "Tá comhaid a úsáidtear ar an leathanach seo nó ar a mhír Wikidata le scriosadh",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|plé]])",
+	"commtech-commons-nopermission-header": "Tá cead ar iarraidh ag {{PLURAL:$1|Comhad Commons|Comhaid Commons}} a úsáidtear ar an leathanach seo nó ag a mhír Wikidata",
+	"commtech-commons-nopermission-body-start": "Tá faisnéis cheadanna in easnamh ar na comhaid seo a leanas de chuid Wikimedia Commons {{PLURAL:$1|comhad|comhaid}} a úsáidtear ar an leathanach seo nó ar a mhír Wikidata agus féadfar iad a scriosadh:",
+	"commtech-commons-nopermission-body-end": "Is féidir leat na sonraí a fheiceáil ag cur síos an chomhaid {{PLURAL:$1|leathanach|leathanaigh}} atá nasctha thuas.",
+	"commtech-commons-nopermission-summary": "Tá ceadanna ar iarraidh ag comhaid a úsáidtear ar an leathanach seo nó ar a mhír Wikidata"
+}
