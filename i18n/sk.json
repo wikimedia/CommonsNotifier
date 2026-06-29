@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"commtech-commons-speedy-header": "{{PLURAL:$1|Súbor z Wikimedia Commons použitý na tejto stránke alebo jej položke Wikidát bol nominovaný na rýchle zmazanie|Súbory z Wikimedia Commons použité na tejto stránke alebo jej položke Wikidát boli nominované na rýchle zmazanie}}",
+	"commtech-commons-speedy-body-start": "{{PLURAL:$1|Nasledujúci súbor z Wikimedia Commons použitý na tejto stránke alebo jej položke Wikidát bol nominovaný na rýchle zmazanie|Nasledujúce súbory z Wikimedia Commons použité na tejto stránke alebo jej položke Wikidát boli nominované na rýchle zmazanie}}:",
+	"commtech-commons-speedy-body-end": "{{PLURAL:$1|Dôvod zmazania nájdete na vyššie odkazovanej stránke s popisom súboru|Dôvody zmazania nájdete na vyššie odkazovaných stránkach s popisom súborov}}.",
+	"commtech-commons-speedy-summary": "Súbory použité na tejto stránke sú navrhnuté na rýchle zmazanie",
+	"commtech-commons-discussion-header": "{{PLURAL:$1|Súbor z Wikimedia Commons použitý na tejto stránke alebo jej položke Wikidát bol nominovaný na zmazanie|Súbory z Wikimedia Commons použité na tejto stránke alebo jej položke Wikidát boli nominované na zmazanie}}",
+	"commtech-commons-discussion-body-start": "{{PLURAL:$1|Nasledujúci súbor z Wikimedia Commons použitý na tejto stránke alebo jej položke Wikidát bol nominovaný na zmazanie|Nasledujúce súbory z Wikimedia Commons použité na tejto stránke alebo jej položke Wikidát boli nominované na zmazanie}}:",
+	"commtech-commons-discussion-body-end-matching": "Zapojte sa do diskusie o zmazaní na [[$1|nominačnej stránke]].",
+	"commtech-commons-discussion-body-end-mismatching": "Zapojte sa do {{PLURAL:$1|diskusie|diskusií}} o zmazaní na nominačných {{PLURAL:$1|stránke|stránkach}} odkazovaných vyššie.",
+	"commtech-commons-discussion-summary": "Súbory použité na tejto stránke alebo jej položke Wikidát sú navrhnuté na zmazanie",
+	"commtech-commons-discussion-line": "[[$1]] ([[$2|diskusia]])",
+	"commtech-commons-nopermission-header": "{{PLURAL:$1|Súbor z Wikimedia Commons použitý na tejto stránke alebo jej položke Wikidát nemá povolenie|Súbory z Wikimedia Commons použité na tejto stránke alebo jej položke Wikidát nemajú povolenie}}",
+	"commtech-commons-nopermission-body-start": "{{PLURAL:$1|Nasledujúcemu súboru z Wikimedia Commons použitému na tejto stránke alebo jej položke Wikidát chýbajú informácie o povolení a môže byť zmazaný|Nasledujúcim súborom z Wikimedia Commons použitým na tejto stránke alebo jej položke Wikidát chýbajú informácie o povolení a môžu byť zmazané}}:",
+	"commtech-commons-nopermission-body-end": "{{PLURAL:$1|Podrobnosti nájdete na vyššie odkazovanej stránke s popisom súboru|Podrobnosti nájdete na vyššie odkazovaných stránkach s popisom súborov}}.",
+	"commtech-commons-nopermission-summary": "Súbory použité na tejto stránke alebo jej položke vo Wikidátach nemajú povolenie"
+}
